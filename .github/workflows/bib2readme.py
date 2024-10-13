@@ -9,7 +9,7 @@ from pylatexenc.latex2text import LatexNodes2Text
 VALID_CATEGORIES = ["overview", "software", "paper", "uncategorized"]
 
 README_BADGES = """
-![Awesome](https://img.shields.io/badge/Awesome-List-blue)
+[![Awesome](https://awesome.re/badge-flat2.svg)](https://awesome.re)
 ![Contributions Welcome](https://img.shields.io/badge/Contributions-Welcome-brightgreen)
 ![License: CC0](https://img.shields.io/badge/License-CC0_1.0-lightgrey)
 """
