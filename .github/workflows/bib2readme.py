@@ -51,12 +51,7 @@ class Entry:
         entry_str = f"- **{self.title}**. {self.authors}."
         if self.url:
             entry_str += f"  [[Link]]({self.url})"
-        entry_str += (
-            f"  <details>"
-            f"  <summary>Show BibTeX</summary>\n"
-            f"  <pre><code>{self.bibtex}</code></pre>\n"
-            f"  </details>\n"
-        )
+        entry_str += f"  <details><summary>Show BibTeX</summary><pre><code>{self.bibtex}</code></pre></details>"
         entry_str += "\n"
         return entry_str
 
