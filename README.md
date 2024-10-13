@@ -1,6 +1,12 @@
 # Awesome Amortized Inference
 
 
+![Awesome](https://img.shields.io/badge/Awesome-List-blue)
+![Contributions Welcome](https://img.shields.io/badge/Contributions-Welcome-brightgreen)
+![License: CC0](https://img.shields.io/badge/License-CC0_1.0-lightgrey)
+
+
+
 Welcome to the Awesome Amortized Inference repository!
 This is a curated list of resources, including overviews, software, papers, and other resources related to amortized inference.
 Feel free to explore the entries below and use the provided BibTeX information for citation purposes.
