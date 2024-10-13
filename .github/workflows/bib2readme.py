@@ -48,16 +48,14 @@ class Entry:
         return bibtex_str
 
     def to_string(self) -> str:
-        entry_str = f"- **{self.title}**\n  {self.authors}\n"
+        entry_str = f"- **{self.title}**. {self.authors}."
         if self.url:
-            entry_str += f"  [Link]({self.url})\n"
+            entry_str += f"  [[Link]]({self.url})"
         entry_str += (
-            f"<details>\n"
-            f"<summary>Show BibTeX</summary>\n"
-            f"<pre><code>\n"
-            f"{self.bibtex}\n"
-            f"</code></pre>\n"
-            f"</details>\n"
+            f"  <details>"
+            f"  <summary>Show BibTeX</summary>\n"
+            f"  <pre><code>{self.bibtex}</code></pre>\n"
+            f"  </details>\n"
         )
         entry_str += "\n"
         return entry_str
