@@ -8,6 +8,12 @@ from pylatexenc.latex2text import LatexNodes2Text
 # Define the categories to be printed in the README
 VALID_CATEGORIES = ["overview", "software", "paper", "uncategorized"]
 
+README_BADGES = """
+![Awesome](https://img.shields.io/badge/Awesome-List-blue)
+![Contributions Welcome](https://img.shields.io/badge/Contributions-Welcome-brightgreen)
+![License: CC0](https://img.shields.io/badge/License-CC0_1.0-lightgrey)
+"""
+
 README_INTRO = """
 Welcome to the Awesome Amortized Inference repository!
 This is a curated list of resources, including overviews, software, papers, and other resources related to amortized inference.
@@ -114,7 +120,6 @@ class Entry:
   </code>
   </pre></details>
 """
-        # entry_str += "<br />"
         return entry_str
 
 
@@ -128,6 +133,7 @@ def organize_entries(bib_database) -> Dict[str, List[Entry]]:
 
 def create_readme(entries_by_category: Dict[str, List[Entry]]) -> str:
     readme_content = "# Awesome Amortized Inference\n\n"
+    readme_content += README_BADGES + "\n\n"
     readme_content += README_INTRO
 
     for category in VALID_CATEGORIES:
