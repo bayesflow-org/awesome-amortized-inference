@@ -1,15 +1,15 @@
 # Awesome Amortized Inference
 
+
 Welcome to the Awesome Amortized Inference repository!
 This is a curated list of resources, including overviews, software, papers, and other resources related to amortized inference.
 Feel free to explore the entries below and use the provided BibTeX information for citation purposes.
 Contributioons always welcome, this shall be a community-driven project.
 Contribution guide will follow ASAP.
-
 ## Overview
 
 - **Normalizing flows for probabilistic modeling and inference**
-Papamakarios, George, Nalisnick, Eric, Rezende, Danilo Jimenez, Mohamed, Shakir, Lakshminarayanan, Balaji
+  Papamakarios, George, Nalisnick, Eric, Rezende, Danilo Jimenez, Mohamed, Shakir, Lakshminarayanan, Balaji
   <details>
     <summary>Show BibTeX</summary>
     <button onclick="var btn=this; navigator.clipboard.writeText(`@article{papamakarios2021normalizing,
@@ -51,11 +51,12 @@ Papamakarios, George, Nalisnick, Eric, Rezende, Danilo Jimenez, Mohamed, Shakir,
 </code></pre>
 </details>
 
+
 ## Software
 
 - **BayesFlow: Amortized Bayesian Workflows With Neural Networks**
-Stefan T. Radev, Marvin Schmitt, Lukas Schumacher, Lasse Elsemüller, Valentin Pratz, Yannik Schälte, Ullrich Köthe, Paul-Christian Bürkner
-[Link](https://bayesflow.org/)
+  Stefan T. Radev, Marvin Schmitt, Lukas Schumacher, Lasse Elsemüller, Valentin Pratz, Yannik Schälte, Ullrich Köthe, Paul-Christian Bürkner
+  [Link](https://bayesflow.org/)
   <details>
     <summary>Show BibTeX</summary>
     <button onclick="var btn=this; navigator.clipboard.writeText(`@article{radev2023bayesflow,
@@ -93,9 +94,10 @@ Stefan T. Radev, Marvin Schmitt, Lukas Schumacher, Lasse Elsemüller, Valentin P
 </code></pre>
 </details>
 
+
 - **sbi: A toolkit for simulation-based inference**
-Alvaro Tejero-Cantero, Jan Boelts, Michael Deistler, Jan-Matthis Lueckmann, Conor Durkan, Pedro J. Gonçalves, David S. Greenberg, Jakob H. Macke
-[Link](https://sbi-dev.github.io/sbi/latest/)
+  Alvaro Tejero-Cantero, Jan Boelts, Michael Deistler, Jan-Matthis Lueckmann, Conor Durkan, Pedro J. Gonçalves, David S. Greenberg, Jakob H. Macke
+  [Link](https://sbi-dev.github.io/sbi/latest/)
   <details>
     <summary>Show BibTeX</summary>
     <button onclick="var btn=this; navigator.clipboard.writeText(`@article{tejero-cantero2020sbi,
@@ -133,11 +135,12 @@ Alvaro Tejero-Cantero, Jan Boelts, Michael Deistler, Jan-Matthis Lueckmann, Cono
 </code></pre>
 </details>
 
+
 ## Paper
 
 - **Neural Importance Sampling for Rapid and Reliable Gravitational-Wave Inference**
-Dax, Maximilian, Green, Stephen R., Gair, Jonathan, P\"{u}rrer, Michael, Wildberger, Jonas, Macke, Jakob H., Buonanno, Alessandra, Sch\"{o}lkopf, Bernhard
-[Link](http://dx.doi.org/10.1103/PhysRevLett.130.171403)
+  Dax,  Maximilian, Green,  Stephen R., Gair,  Jonathan, P\"{u}rrer,  Michael, Wildberger,  Jonas, Macke,  Jakob H., Buonanno,  Alessandra, Sch\"{o}lkopf,  Bernhard
+  [Link](http://dx.doi.org/10.1103/PhysRevLett.130.171403)
   <details>
     <summary>Show BibTeX</summary>
     <button onclick="var btn=this; navigator.clipboard.writeText(`@article{dax2023neural,
@@ -175,8 +178,9 @@ Dax, Maximilian, Green, Stephen R., Gair, Jonathan, P\"{u}rrer, Michael, Wildber
 </code></pre>
 </details>
 
+
 - **JANA: Jointly Amortized Neural Approximation of Complex Bayesian Models**
-Radev, Stefan T., Schmitt, Marvin, Pratz, Valentin, Picchini, Umberto, K\"othe, Ullrich, B\"urkner, Paul-Christian
+  Radev, Stefan T., Schmitt, Marvin, Pratz, Valentin, Picchini, Umberto, K\"othe, Ullrich, B\"urkner, Paul-Christian
   <details>
     <summary>Show BibTeX</summary>
     <button onclick="var btn=this; navigator.clipboard.writeText(`@inproceedings{radev2023jana,
@@ -212,9 +216,10 @@ Radev, Stefan T., Schmitt, Marvin, Pratz, Valentin, Picchini, Umberto, K\"othe, 
 </code></pre>
 </details>
 
+
 - **ASPIRE: Iterative Amortized Posterior Inference for Bayesian Inverse Problems**
-Rafael Orozco, Ali Siahkoohi, Mathias Louboutin, Felix J. Herrmann
-[Link](https://arxiv.org/abs/2405.05398)
+  Rafael Orozco, Ali Siahkoohi, Mathias Louboutin, Felix J. Herrmann
+  [Link](https://arxiv.org/abs/2405.05398)
   <details>
     <summary>Show BibTeX</summary>
     <button onclick="var btn=this; navigator.clipboard.writeText(`@misc{orozco2024aspire,
@@ -241,3 +246,5 @@ Rafael Orozco, Ali Siahkoohi, Mathias Louboutin, Felix J. Herrmann
 }
 </code></pre>
 </details>
+
+
