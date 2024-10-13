@@ -54,9 +54,9 @@ class Entry:
         entry_str += (
             f"<details>\n"
             f"<summary>Show BibTeX</summary>\n"
-            f"<pre>```\n"
+            f"<pre><code>\n"
             f"{self.bibtex}\n"
-            f"```</pre>\n"
+            f"</code></pre>\n"
             f"</details>\n"
         )
         entry_str += "\n"
