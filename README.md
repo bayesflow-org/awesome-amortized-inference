@@ -1,7 +1,7 @@
 # Awesome Amortized Inference
 
 
-![Awesome](https://img.shields.io/badge/Awesome-List-blue)
+[![Awesome](https://awesome.re/badge-flat2.svg)](https://awesome.re)
 ![Contributions Welcome](https://img.shields.io/badge/Contributions-Welcome-brightgreen)
 ![License: CC0](https://img.shields.io/badge/License-CC0_1.0-lightgrey)
 
