@@ -10,9 +10,9 @@ Contribution guide will follow ASAP.
 
 - **Normalizing flows for probabilistic modeling and inference**
   Papamakarios, George, Nalisnick, Eric, Rezende, Danilo Jimenez, Mohamed, Shakir, Lakshminarayanan, Balaji
-  <details>
-    <summary>Show BibTeX</summary>
-    <pre><code>
+<details>
+<summary>Show BibTeX</summary>
+<pre>```
 @article{papamakarios2021normalizing,
     category = {overview},
     numpages = {64},
@@ -28,8 +28,8 @@ Contribution guide will follow ASAP.
     title = {Normalizing flows for probabilistic modeling and inference},
     author = {Papamakarios, George and Nalisnick, Eric and Rezende, Danilo Jimenez and Mohamed, Shakir and Lakshminarayanan, Balaji}
 }
-    </code></pre>
-  </details>
+```</pre>
+</details>
 
 
 ## Software
@@ -37,9 +37,9 @@ Contribution guide will follow ASAP.
 - **BayesFlow: Amortized Bayesian Workflows With Neural Networks**
   Stefan T. Radev, Marvin Schmitt, Lukas Schumacher, Lasse Elsemüller, Valentin Pratz, Yannik Schälte, Ullrich Köthe, Paul-Christian Bürkner
   [Link](https://bayesflow.org/)
-  <details>
-    <summary>Show BibTeX</summary>
-    <pre><code>
+<details>
+<summary>Show BibTeX</summary>
+<pre>```
 @article{radev2023bayesflow,
     category = {software},
     journal = {Journal of Open Source Software},
@@ -53,16 +53,16 @@ Contribution guide will follow ASAP.
     url = {https://bayesflow.org/},
     doi = {10.21105/joss.05702}
 }
-    </code></pre>
-  </details>
+```</pre>
+</details>
 
 
 - **sbi: A toolkit for simulation-based inference**
   Alvaro Tejero-Cantero, Jan Boelts, Michael Deistler, Jan-Matthis Lueckmann, Conor Durkan, Pedro J. Gonçalves, David S. Greenberg, Jakob H. Macke
   [Link](https://sbi-dev.github.io/sbi/latest/)
-  <details>
-    <summary>Show BibTeX</summary>
-    <pre><code>
+<details>
+<summary>Show BibTeX</summary>
+<pre>```
 @article{tejero-cantero2020sbi,
     category = {software},
     journal = {Journal of Open Source Software},
@@ -76,8 +76,8 @@ Contribution guide will follow ASAP.
     url = {https://sbi-dev.github.io/sbi/latest/},
     doi = {10.21105/joss.02505}
 }
-    </code></pre>
-  </details>
+```</pre>
+</details>
 
 
 ## Paper
@@ -85,9 +85,9 @@ Contribution guide will follow ASAP.
 - **Neural Importance Sampling for Rapid and Reliable Gravitational-Wave Inference**
   Dax,  Maximilian, Green,  Stephen R., Gair,  Jonathan, P\"{u}rrer,  Michael, Wildberger,  Jonas, Macke,  Jakob H., Buonanno,  Alessandra, Sch\"{o}lkopf,  Bernhard
   [Link](http://dx.doi.org/10.1103/PhysRevLett.130.171403)
-  <details>
-    <summary>Show BibTeX</summary>
-    <pre><code>
+<details>
+<summary>Show BibTeX</summary>
+<pre>```
 @article{dax2023neural,
     category = {paper},
     year = {2023},
@@ -101,15 +101,15 @@ Contribution guide will follow ASAP.
     volume = {130},
     title = {Neural Importance Sampling for Rapid and Reliable Gravitational-Wave Inference}
 }
-    </code></pre>
-  </details>
+```</pre>
+</details>
 
 
 - **JANA: Jointly Amortized Neural Approximation of Complex Bayesian Models**
   Radev, Stefan T., Schmitt, Marvin, Pratz, Valentin, Picchini, Umberto, K\"othe, Ullrich, B\"urkner, Paul-Christian
-  <details>
-    <summary>Show BibTeX</summary>
-    <pre><code>
+<details>
+<summary>Show BibTeX</summary>
+<pre>```
 @inproceedings{radev2023jana,
     category = {paper},
     publisher = {PMLR},
@@ -122,16 +122,16 @@ Contribution guide will follow ASAP.
     author = {Radev, Stefan T. and Schmitt, Marvin and Pratz, Valentin and Picchini, Umberto and K\"othe, Ullrich and B\"urkner, Paul-Christian},
     title = {{JANA: Jointly Amortized Neural Approximation of Complex Bayesian Models}}
 }
-    </code></pre>
-  </details>
+```</pre>
+</details>
 
 
 - **ASPIRE: Iterative Amortized Posterior Inference for Bayesian Inverse Problems**
   Rafael Orozco, Ali Siahkoohi, Mathias Louboutin, Felix J. Herrmann
   [Link](https://arxiv.org/abs/2405.05398)
-  <details>
-    <summary>Show BibTeX</summary>
-    <pre><code>
+<details>
+<summary>Show BibTeX</summary>
+<pre>```
 @misc{orozco2024aspire,
     category = {paper},
     url = {https://arxiv.org/abs/2405.05398},
@@ -140,7 +140,7 @@ Contribution guide will follow ASAP.
     title = {ASPIRE: Iterative Amortized Posterior Inference for Bayesian Inverse Problems},
     author = {Rafael Orozco and Ali Siahkoohi and Mathias Louboutin and Felix J. Herrmann}
 }
-    </code></pre>
-  </details>
+```</pre>
+</details>
 
 
