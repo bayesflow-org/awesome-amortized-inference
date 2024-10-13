@@ -54,12 +54,12 @@ class Entry:
         entry_str += (
             f"  <details>\n"
             f"    <summary>Show BibTeX</summary>\n"
-            f"""    <button onclick="var btn=this; navigator.clipboard.writeText(`{self.bibtex}`).then(function() {{
-                    btn.textContent='Copied!';
-                    setTimeout(function() {{
-                        btn.textContent='Copy BibTeX to Clipboard';
-                    }}, 2000);
-                }});">Copy BibTeX</button>\n"""
+            # f"""    <button onclick="var btn=this; navigator.clipboard.writeText(`{self.bibtex}`).then(function() {{
+            #         btn.textContent='Copied!';
+            #         setTimeout(function() {{
+            #             btn.textContent='Copy BibTeX to Clipboard';
+            #         }}, 2000);
+            #     }});">Copy BibTeX</button>\n"""
             f"<pre><code>\n"
             f"{self.bibtex}\n"
             f"</code></pre>\n"
