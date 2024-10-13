@@ -1,6 +1,3 @@
 *.html
 .DS_Store
 README_files/
-
-# don't commit README because it will be generated on push
-.README.md
