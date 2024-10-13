@@ -12,18 +12,18 @@ Contributions are always welcome, this is a community-driven project.
   <summary>Show BibTeX</summary>
   <pre><code>
   @article{papamakarios2021normalizing,
-  title = {Normalizing flows for probabilistic modeling and inference},
-  year = {2021},
-  publisher = {JMLR.org},
-  volume = {22},
-  number = {1},
-  issn = {1532-4435},
-  journal = {J. Mach. Learn. Res.},
-  month = {jan},
-  articleno = {57},
-  numpages = {64},
-  category = {overview},
-  author = {Papamakarios, George and Nalisnick, Eric and Rezende, Danilo Jimenez and Mohamed, Shakir and Lakshminarayanan, Balaji}
+&nbsp;&nbsp;title = {Normalizing flows for probabilistic modeling and inference},
+&nbsp;&nbsp;year = {2021},
+&nbsp;&nbsp;publisher = {JMLR.org},
+&nbsp;&nbsp;volume = {22},
+&nbsp;&nbsp;number = {1},
+&nbsp;&nbsp;issn = {1532-4435},
+&nbsp;&nbsp;journal = {J. Mach. Learn. Res.},
+&nbsp;&nbsp;month = {jan},
+&nbsp;&nbsp;articleno = {57},
+&nbsp;&nbsp;numpages = {64},
+&nbsp;&nbsp;category = {overview},
+&nbsp;&nbsp;author = {Papamakarios, George and Nalisnick, Eric and Rezende, Danilo Jimenez and Mohamed, Shakir and Lakshminarayanan, Balaji}
   }
   </code>
   </pre></details>
@@ -33,11 +33,11 @@ Contributions are always welcome, this is a community-driven project.
   <summary>Show BibTeX</summary>
   <pre><code>
   @misc{zammit-mangion2024neural,
-  title = {Neural Methods for Amortized Inference},
-  publisher = {arXiv},
-  year = {2024},
-  category = {overview},
-  author = {Zammit-Mangion, Andrew and Sainsbury-Dale, Matthew and Huser, Raphaël}
+&nbsp;&nbsp;title = {Neural Methods for Amortized Inference},
+&nbsp;&nbsp;publisher = {arXiv},
+&nbsp;&nbsp;year = {2024},
+&nbsp;&nbsp;category = {overview},
+&nbsp;&nbsp;author = {Zammit-Mangion, Andrew and Sainsbury-Dale, Matthew and Huser, Raphaël}
   }
   </code>
   </pre></details>
@@ -47,17 +47,17 @@ Contributions are always welcome, this is a community-driven project.
   <summary>Show BibTeX</summary>
   <pre><code>
   @article{Cranmer2020,
-  title = {The frontier of simulation-based inference},
-  volume = {117},
-  ISSN = {1091-6490},
-  DOI = {10.1073/pnas.1912789117},
-  number = {48},
-  journal = {Proceedings of the National Academy of Sciences},
-  publisher = {Proceedings of the National Academy of Sciences},
-  year = {2020},
-  pages = {30055–30062},
-  category = {overview},
-  author = {Cranmer, Kyle and Brehmer, Johann and Louppe, Gilles}
+&nbsp;&nbsp;title = {The frontier of simulation-based inference},
+&nbsp;&nbsp;volume = {117},
+&nbsp;&nbsp;ISSN = {1091-6490},
+&nbsp;&nbsp;DOI = {10.1073/pnas.1912789117},
+&nbsp;&nbsp;number = {48},
+&nbsp;&nbsp;journal = {Proceedings of the National Academy of Sciences},
+&nbsp;&nbsp;publisher = {Proceedings of the National Academy of Sciences},
+&nbsp;&nbsp;year = {2020},
+&nbsp;&nbsp;pages = {30055–30062},
+&nbsp;&nbsp;category = {overview},
+&nbsp;&nbsp;author = {Cranmer, Kyle and Brehmer, Johann and Louppe, Gilles}
   }
   </code>
   </pre></details>
@@ -68,16 +68,16 @@ Contributions are always welcome, this is a community-driven project.
   <summary>Show BibTeX</summary>
   <pre><code>
   @article{radev2023bayesflow,
-  doi = {10.21105/joss.05702},
-  year = {2023},
-  publisher = {The Open Journal},
-  volume = {8},
-  number = {89},
-  pages = {5702},
-  title = {BayesFlow: Amortized Bayesian Workflows With Neural Networks},
-  journal = {Journal of Open Source Software},
-  category = {software},
-  author = {Radev, Stefan T. and Schmitt, Marvin and Schumacher, Lukas and Elsemüller, Lasse and Pratz, Valentin and Schälte, Yannik and Köthe, Ullrich and Bürkner, Paul-Christian}
+&nbsp;&nbsp;doi = {10.21105/joss.05702},
+&nbsp;&nbsp;year = {2023},
+&nbsp;&nbsp;publisher = {The Open Journal},
+&nbsp;&nbsp;volume = {8},
+&nbsp;&nbsp;number = {89},
+&nbsp;&nbsp;pages = {5702},
+&nbsp;&nbsp;title = {BayesFlow: Amortized Bayesian Workflows With Neural Networks},
+&nbsp;&nbsp;journal = {Journal of Open Source Software},
+&nbsp;&nbsp;category = {software},
+&nbsp;&nbsp;author = {Radev, Stefan T. and Schmitt, Marvin and Schumacher, Lukas and Elsemüller, Lasse and Pratz, Valentin and Schälte, Yannik and Köthe, Ullrich and Bürkner, Paul-Christian}
   }
   </code>
   </pre></details>
@@ -87,16 +87,16 @@ Contributions are always welcome, this is a community-driven project.
   <summary>Show BibTeX</summary>
   <pre><code>
   @article{tejero-cantero2020sbi,
-  doi = {10.21105/joss.02505},
-  year = {2020},
-  publisher = {The Open Journal},
-  volume = {5},
-  number = {52},
-  pages = {2505},
-  title = {sbi: A toolkit for simulation-based inference},
-  journal = {Journal of Open Source Software},
-  category = {software},
-  author = {Tejero-Cantero, Alvaro and Boelts, Jan and Deistler, Michael and Lueckmann, Jan-Matthis and Durkan, Conor and Gonçalves, Pedro J. and Greenberg, David S. and Macke, Jakob H.}
+&nbsp;&nbsp;doi = {10.21105/joss.02505},
+&nbsp;&nbsp;year = {2020},
+&nbsp;&nbsp;publisher = {The Open Journal},
+&nbsp;&nbsp;volume = {5},
+&nbsp;&nbsp;number = {52},
+&nbsp;&nbsp;pages = {2505},
+&nbsp;&nbsp;title = {sbi: A toolkit for simulation-based inference},
+&nbsp;&nbsp;journal = {Journal of Open Source Software},
+&nbsp;&nbsp;category = {software},
+&nbsp;&nbsp;author = {Tejero-Cantero, Alvaro and Boelts, Jan and Deistler, Michael and Lueckmann, Jan-Matthis and Durkan, Conor and Gonçalves, Pedro J. and Greenberg, David S. and Macke, Jakob H.}
   }
   </code>
   </pre></details>
@@ -107,16 +107,16 @@ Contributions are always welcome, this is a community-driven project.
   <summary>Show BibTeX</summary>
   <pre><code>
   @article{dax2023neural,
-  title = {Neural Importance Sampling for Rapid and Reliable Gravitational-Wave Inference},
-  volume = {130},
-  ISSN = {1079-7114},
-  DOI = {10.1103/physrevlett.130.171403},
-  number = {17},
-  journal = {Physical Review Letters},
-  publisher = {American Physical Society (APS)},
-  year = {2023},
-  category = {paper},
-  author = {Dax, Maximilian and Green, Stephen R. and Gair, Jonathan and P\"{u}rrer, Michael and Wildberger, Jonas and Macke, Jakob H. and Buonanno, Alessandra and Sch\"{o}lkopf, Bernhard}
+&nbsp;&nbsp;title = {Neural Importance Sampling for Rapid and Reliable Gravitational-Wave Inference},
+&nbsp;&nbsp;volume = {130},
+&nbsp;&nbsp;ISSN = {1079-7114},
+&nbsp;&nbsp;DOI = {10.1103/physrevlett.130.171403},
+&nbsp;&nbsp;number = {17},
+&nbsp;&nbsp;journal = {Physical Review Letters},
+&nbsp;&nbsp;publisher = {American Physical Society (APS)},
+&nbsp;&nbsp;year = {2023},
+&nbsp;&nbsp;category = {paper},
+&nbsp;&nbsp;author = {Dax, Maximilian and Green, Stephen R. and Gair, Jonathan and P\"{u}rrer, Michael and Wildberger, Jonas and Macke, Jakob H. and Buonanno, Alessandra and Sch\"{o}lkopf, Bernhard}
   }
   </code>
   </pre></details>
@@ -126,15 +126,15 @@ Contributions are always welcome, this is a community-driven project.
   <summary>Show BibTeX</summary>
   <pre><code>
   @inproceedings{radev2023jana,
-  title = {{JANA: Jointly Amortized Neural Approximation of Complex Bayesian Models}},
-  booktitle = {Proceedings of the 39th Conference on Uncertainty in Artificial Intelligence},
-  pages = {1695--1706},
-  year = {2023},
-  volume = {216},
-  series = {Proceedings of Machine Learning Research},
-  publisher = {PMLR},
-  category = {paper},
-  author = {Radev, Stefan T. and Schmitt, Marvin and Pratz, Valentin and Picchini, Umberto and K\"othe, Ullrich and B\"urkner, Paul-Christian}
+&nbsp;&nbsp;title = {{JANA: Jointly Amortized Neural Approximation of Complex Bayesian Models}},
+&nbsp;&nbsp;booktitle = {Proceedings of the 39th Conference on Uncertainty in Artificial Intelligence},
+&nbsp;&nbsp;pages = {1695--1706},
+&nbsp;&nbsp;year = {2023},
+&nbsp;&nbsp;volume = {216},
+&nbsp;&nbsp;series = {Proceedings of Machine Learning Research},
+&nbsp;&nbsp;publisher = {PMLR},
+&nbsp;&nbsp;category = {paper},
+&nbsp;&nbsp;author = {Radev, Stefan T. and Schmitt, Marvin and Pratz, Valentin and Picchini, Umberto and K\"othe, Ullrich and B\"urkner, Paul-Christian}
   }
   </code>
   </pre></details>
@@ -144,11 +144,11 @@ Contributions are always welcome, this is a community-driven project.
   <summary>Show BibTeX</summary>
   <pre><code>
   @misc{orozco2024aspire,
-  Title = {ASPIRE: Iterative Amortized Posterior Inference for Bayesian Inverse Problems},
-  Year = {2024},
-  Eprint = {arXiv:2405.05398},
-  category = {paper},
-  author = {Orozco, Rafael and Siahkoohi, Ali and Louboutin, Mathias and Herrmann, Felix J.}
+&nbsp;&nbsp;Title = {ASPIRE: Iterative Amortized Posterior Inference for Bayesian Inverse Problems},
+&nbsp;&nbsp;Year = {2024},
+&nbsp;&nbsp;Eprint = {arXiv:2405.05398},
+&nbsp;&nbsp;category = {paper},
+&nbsp;&nbsp;author = {Orozco, Rafael and Siahkoohi, Ali and Louboutin, Mathias and Herrmann, Felix J.}
   }
   </code>
   </pre></details>
