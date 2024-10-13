@@ -93,7 +93,7 @@ class Entry:
                 f"author = {{{' and '.join(str(person) for person in entry.persons.get('author', []))}}}"
             )
         bibtex_str = (
-            f"@{bibtex_type}{{{bibtex_key},\n  " + ",\n  ".join(bibtex_fields) + "\n  }"
+            f"@{bibtex_type}{{{bibtex_key},\n  " + ",\n  ".join(bibtex_fields) + "\n  }"
         )
         return bibtex_str
 
@@ -103,7 +103,7 @@ class Entry:
             entry_str += " "
             for key, value in self.awesome_fields.items():
                 entry_str += f"[[{key.capitalize()}]]({value}) "
-        entry_str += f"<br />  {self.authors}"
+        entry_str += f"<br />  {self.authors}<br />"
         entry_str += f"""
   <details>
   <summary>Show BibTeX</summary>
