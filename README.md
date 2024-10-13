@@ -24,7 +24,7 @@ Contributions are always welcome, this is a community-driven project.
   numpages = {64},
   category = {overview},
   author = {Papamakarios, George and Nalisnick, Eric and Rezende, Danilo Jimenez and Mohamed, Shakir and Lakshminarayanan, Balaji}
-}
+  }
   </code>
   </pre></details>
 
@@ -38,7 +38,7 @@ Contributions are always welcome, this is a community-driven project.
   year = {2024},
   category = {overview},
   author = {Zammit-Mangion, Andrew and Sainsbury-Dale, Matthew and Huser, Raphaël}
-}
+  }
   </code>
   </pre></details>
 
@@ -58,7 +58,7 @@ Contributions are always welcome, this is a community-driven project.
   pages = {30055–30062},
   category = {overview},
   author = {Cranmer, Kyle and Brehmer, Johann and Louppe, Gilles}
-}
+  }
   </code>
   </pre></details>
 ## Software
@@ -78,7 +78,7 @@ Contributions are always welcome, this is a community-driven project.
   journal = {Journal of Open Source Software},
   category = {software},
   author = {Radev, Stefan T. and Schmitt, Marvin and Schumacher, Lukas and Elsemüller, Lasse and Pratz, Valentin and Schälte, Yannik and Köthe, Ullrich and Bürkner, Paul-Christian}
-}
+  }
   </code>
   </pre></details>
 
@@ -97,7 +97,7 @@ Contributions are always welcome, this is a community-driven project.
   journal = {Journal of Open Source Software},
   category = {software},
   author = {Tejero-Cantero, Alvaro and Boelts, Jan and Deistler, Michael and Lueckmann, Jan-Matthis and Durkan, Conor and Gonçalves, Pedro J. and Greenberg, David S. and Macke, Jakob H.}
-}
+  }
   </code>
   </pre></details>
 ## Paper
@@ -117,7 +117,7 @@ Contributions are always welcome, this is a community-driven project.
   year = {2023},
   category = {paper},
   author = {Dax, Maximilian and Green, Stephen R. and Gair, Jonathan and P\"{u}rrer, Michael and Wildberger, Jonas and Macke, Jakob H. and Buonanno, Alessandra and Sch\"{o}lkopf, Bernhard}
-}
+  }
   </code>
   </pre></details>
 
@@ -135,7 +135,7 @@ Contributions are always welcome, this is a community-driven project.
   publisher = {PMLR},
   category = {paper},
   author = {Radev, Stefan T. and Schmitt, Marvin and Pratz, Valentin and Picchini, Umberto and K\"othe, Ullrich and B\"urkner, Paul-Christian}
-}
+  }
   </code>
   </pre></details>
 
@@ -149,6 +149,6 @@ Contributions are always welcome, this is a community-driven project.
   Eprint = {arXiv:2405.05398},
   category = {paper},
   author = {Orozco, Rafael and Siahkoohi, Ali and Louboutin, Mathias and Herrmann, Felix J.}
-}
+  }
   </code>
   </pre></details>
