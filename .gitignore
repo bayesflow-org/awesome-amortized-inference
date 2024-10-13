@@ -1,3 +1,7 @@
 *.html
 .DS_Store
 README_files/
+
+# We don't want to add the README.md file on manual commits
+# because it will be auto-generated from the .bib file by a GitHub Action
+README.md
