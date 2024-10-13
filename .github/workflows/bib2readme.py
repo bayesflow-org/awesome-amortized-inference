@@ -52,12 +52,12 @@ class Entry:
         if self.url:
             entry_str += f"  [Link]({self.url})\n"
         entry_str += (
-            f"  <details>\n"
-            f"    <summary>Show BibTeX</summary>\n"
-            f"    <pre><code>\n"
+            f"<details>\n"
+            f"<summary>Show BibTeX</summary>\n"
+            f"<pre>```\n"
             f"{self.bibtex}\n"
-            f"    </code></pre>\n"
-            f"  </details>\n"
+            f"```</pre>\n"
+            f"</details>\n"
         )
         entry_str += "\n"
         return entry_str
