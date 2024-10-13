@@ -93,7 +93,9 @@ class Entry:
                 f"author = {{{' and '.join(str(person) for person in entry.persons.get('author', []))}}}"
             )
         bibtex_str = (
-            f"@{bibtex_type}{{{bibtex_key},\n  " + ",\n  ".join(bibtex_fields) + "\n  }"
+            f"@{bibtex_type}{{{bibtex_key},\n&nbsp;&nbsp;"
+            + ",\n&nbsp;&nbsp;".join(bibtex_fields)
+            + "\n  }"
         )
         return bibtex_str
 
