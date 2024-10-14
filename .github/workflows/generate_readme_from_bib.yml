@@ -25,7 +25,8 @@ jobs:
       # Step 3: Install dependencies
       - name: Install dependencies
         run: |
-          pip install -r .github/workflows/requirements_dev.txt
+          python -m pip install --upgrade pip
+          pip install -r .github/workflows/requirements.txt
 
       # Step 4: Run the script to generate README.md
       - name: Run README generation script
