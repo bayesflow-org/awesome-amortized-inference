@@ -22,7 +22,7 @@ Contributions are always welcome, this is a community-driven project.
 > -- hopefully with the help of many awesome people from the community 🧡
 ## Overview
 
-- **Normalizing flows for probabilistic modeling and inference**. [[Paper]](https://arxiv.org/abs/1912.02762) <br />  George Papamakarios, Eric Nalisnick, Danilo Jimenez Rezende, Shakir Mohamed, Balaji Lakshminarayanan<br />
+- **Normalizing flows for probabilistic modeling and inference** (2021). [[Paper]](https://arxiv.org/abs/1912.02762) <br />  George Papamakarios, Eric Nalisnick, Danilo Jimenez Rezende, Shakir Mohamed, Balaji Lakshminarayanan<br />
   <details>
   <summary>Show BibTeX</summary>
   <pre><code>
@@ -43,7 +43,7 @@ Contributions are always welcome, this is a community-driven project.
   </code>
   </pre></details>
 
-- **Neural Methods for Amortized Inference**. [[Paper]](https://arxiv.org/abs/2404.12484) <br />  Andrew Zammit-Mangion, Matthew Sainsbury-Dale, Raphaël Huser<br />
+- **Neural Methods for Amortized Inference** (2024). [[Paper]](https://arxiv.org/abs/2404.12484) <br />  Andrew Zammit-Mangion, Matthew Sainsbury-Dale, Raphaël Huser<br />
   <details>
   <summary>Show BibTeX</summary>
   <pre><code>
@@ -57,7 +57,7 @@ Contributions are always welcome, this is a community-driven project.
   </code>
   </pre></details>
 
-- **The frontier of simulation-based inference**. [[Paper]](http://dx.doi.org/10.1073/pnas.1912789117) <br />  Kyle Cranmer, Johann Brehmer, Gilles Louppe<br />
+- **The frontier of simulation-based inference** (2020). [[Paper]](http://dx.doi.org/10.1073/pnas.1912789117) <br />  Kyle Cranmer, Johann Brehmer, Gilles Louppe<br />
   <details>
   <summary>Show BibTeX</summary>
   <pre><code>
@@ -78,7 +78,7 @@ Contributions are always welcome, this is a community-driven project.
   </pre></details>
 ## Software
 
-- **BayesFlow: Amortized Bayesian Workflows With Neural Networks**. [[Code]](https://bayesflow.org/) <br />  Stefan T. Radev, Marvin Schmitt, Lukas Schumacher, Lasse Elsemüller, Valentin Pratz, Yannik Schälte, Ullrich Köthe, Paul-Christian Bürkner<br />
+- **BayesFlow: Amortized Bayesian Workflows With Neural Networks** (2023). [[Code]](https://bayesflow.org/) <br />  Stefan T. Radev, Marvin Schmitt, Lukas Schumacher, Lasse Elsemüller, Valentin Pratz, Yannik Schälte, Ullrich Köthe, Paul-Christian Bürkner<br />
   <details>
   <summary>Show BibTeX</summary>
   <pre><code>
@@ -97,7 +97,7 @@ Contributions are always welcome, this is a community-driven project.
   </code>
   </pre></details>
 
-- **sbi: A toolkit for simulation-based inference**. [[Code]](https://sbi-dev.github.io/sbi/latest/) <br />  Alvaro Tejero-Cantero, Jan Boelts, Michael Deistler, Jan-Matthis Lueckmann, Conor Durkan, Pedro J. Gonçalves, David S. Greenberg, Jakob H. Macke<br />
+- **sbi: A toolkit for simulation-based inference** (2020). [[Code]](https://sbi-dev.github.io/sbi/latest/) <br />  Alvaro Tejero-Cantero, Jan Boelts, Michael Deistler, Jan-Matthis Lueckmann, Conor Durkan, Pedro J. Gonçalves, David S. Greenberg, Jakob H. Macke<br />
   <details>
   <summary>Show BibTeX</summary>
   <pre><code>
@@ -117,7 +117,7 @@ Contributions are always welcome, this is a community-driven project.
   </pre></details>
 ## Paper
 
-- **Neural Importance Sampling for Rapid and Reliable Gravitational-Wave Inference**. [[Paper]](http://dx.doi.org/10.1103/PhysRevLett.130.171403) <br />  Maximilian Dax, Stephen R. Green, Jonathan Gair, Michael Pürrer, Jonas Wildberger, Jakob H. Macke, Alessandra Buonanno, Bernhard Schölkopf<br />
+- **Neural Importance Sampling for Rapid and Reliable Gravitational-Wave Inference** (2023). [[Paper]](http://dx.doi.org/10.1103/PhysRevLett.130.171403) <br />  Maximilian Dax, Stephen R. Green, Jonathan Gair, Michael Pürrer, Jonas Wildberger, Jakob H. Macke, Alessandra Buonanno, Bernhard Schölkopf<br />
   <details>
   <summary>Show BibTeX</summary>
   <pre><code>
@@ -136,7 +136,7 @@ Contributions are always welcome, this is a community-driven project.
   </code>
   </pre></details>
 
-- **JANA: Jointly Amortized Neural Approximation of Complex Bayesian Models**. [[Paper]](https://proceedings.mlr.press/v216/radev23a) <br />  Stefan T. Radev, Marvin Schmitt, Valentin Pratz, Umberto Picchini, Ullrich Köthe, Paul-Christian Bürkner<br />
+- **JANA: Jointly Amortized Neural Approximation of Complex Bayesian Models** (2023). [[Paper]](https://proceedings.mlr.press/v216/radev23a) <br />  Stefan T. Radev, Marvin Schmitt, Valentin Pratz, Umberto Picchini, Ullrich Köthe, Paul-Christian Bürkner<br />
   <details>
   <summary>Show BibTeX</summary>
   <pre><code>
@@ -154,7 +154,7 @@ Contributions are always welcome, this is a community-driven project.
   </code>
   </pre></details>
 
-- **ASPIRE: Iterative Amortized Posterior Inference for Bayesian Inverse Problems**. [[Paper]](https://arxiv.org/abs/2405.05398) <br />  Rafael Orozco, Ali Siahkoohi, Mathias Louboutin, Felix J. Herrmann<br />
+- **ASPIRE: Iterative Amortized Posterior Inference for Bayesian Inverse Problems** (2024). [[Paper]](https://arxiv.org/abs/2405.05398) <br />  Rafael Orozco, Ali Siahkoohi, Mathias Louboutin, Felix J. Herrmann<br />
   <details>
   <summary>Show BibTeX</summary>
   <pre><code>
@@ -169,7 +169,7 @@ Contributions are always welcome, this is a community-driven project.
   </pre></details>
 ## Uncategorized
 
-- **Flow Matching for Scalable Simulation-Based Inference**. [[Paper]](https://openreview.net/forum?id=D2cS6SoYlP) [[Code]](https://github.com/dingo-gw/flow-matching-posterior-estimation) <br />  Jonas Bernhard Wildberger, Maximilian Dax, Simon Buchholz, Stephen R Green, Jakob H. Macke, Bernhard Schölkopf<br />
+- **Flow Matching for Scalable Simulation-Based Inference** (2023). [[Paper]](https://openreview.net/forum?id=D2cS6SoYlP) [[Code]](https://github.com/dingo-gw/flow-matching-posterior-estimation) <br />  Jonas Bernhard Wildberger, Maximilian Dax, Simon Buchholz, Stephen R Green, Jakob H. Macke, Bernhard Schölkopf<br />
   <details>
   <summary>Show BibTeX</summary>
   <pre><code>
