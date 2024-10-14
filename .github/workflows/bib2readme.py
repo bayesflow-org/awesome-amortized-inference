@@ -39,17 +39,19 @@ class Entry:
         authors: str,
         year: str,
         url: str,
-        category: str,
-        awesome_fields: Dict[str, str],
+        awesome_category: str,
+        awesome_link_fields: Dict[str, str],
         bibtex: str,
+        awesome_tldr: str = "",
     ):
         self.title = title
         self.authors = authors
         self.year = year
         self.url = url
-        self.category = category
-        self.awesome_fields = awesome_fields
+        self.awesome_category = awesome_category
+        self.awesome_link_fields = awesome_link_fields
         self.bibtex = bibtex
+        self.awesome_tldr = awesome_tldr
 
     @classmethod
     def from_bibtex(cls, entry) -> "Entry":
@@ -63,22 +65,34 @@ class Entry:
         )
         url = entry.fields.get("url", "")
         year = entry.fields.get("year", "")
-        category = entry.fields.get("category", "uncategorized").lower()
+        awesome_category = entry.fields.get("awesome-category", "uncategorized").lower()
 
-        # get all fields that start with 'awesome-' and save them in a separate field
-        awesome_fields = {
-            key[len("awesome-") :]: value
+        # get all fields that start with 'awesome-link-' and save them in a separate field
+        awesome_link_fields = {
+            key[len("awesome-link-") :]: value
             for key, value in entry.fields.items()
-            if key.startswith("awesome-")
+            if key.startswith("awesome-link-")
         }
 
-        if category not in VALID_CATEGORIES:
+        # get the TL;DR field
+        awesome_tldr = entry.fields.get("awesome-tldr", "")
+
+        if awesome_category not in VALID_CATEGORIES:
             print(
-                f"Warning: Unrecognized category '{category}' for entry '{title}'. Categorizing as 'uncategorized'."
+                f"Warning: Unrecognized category '{awesome_category}' for entry '{title}'. Categorizing as 'uncategorized'."
             )
-            category = "uncategorized"
+            awesome_category = "uncategorized"
         bibtex = cls.format_bibtex(entry)
-        return cls(title, authors, year, url, category, awesome_fields, bibtex)
+        return cls(
+            title,
+            authors,
+            year,
+            url,
+            awesome_category,
+            awesome_link_fields,
+            bibtex,
+            awesome_tldr,
+        )
 
     @staticmethod
     def person_to_first_last(person) -> str:
@@ -104,7 +118,7 @@ class Entry:
         bibtex_fields = [
             f"{key} = {{{value}}}"
             for key, value in entry.fields.items()
-            if not key.startswith("awesome-")  # exclude awesome fields from BibTeX
+            if not key.startswith("awesome-")  # exclude all awesome fields from BibTeX
         ]
         if "author" in entry.persons:
             bibtex_fields.append(
@@ -117,14 +131,18 @@ class Entry:
 
     def to_string(self) -> str:
         entry_str = f"- **{self.title}**"
-        if self.year:
-            entry_str += f" ({self.year})"
-        entry_str += "."
-        if self.awesome_fields:
+        if self.awesome_category != "software":
+            if self.year:
+                entry_str += f" ({self.year})"
+            entry_str += f".<br />  {self.authors}<br />"
+        else:
+            entry_str += "."
+        if self.awesome_link_fields:
             entry_str += " "
-            for key, value in self.awesome_fields.items():
+            for key, value in self.awesome_link_fields.items():
                 entry_str += f"[[{key.capitalize()}]]({value}) "
-        entry_str += f"<br />  {self.authors}<br />"
+        if self.awesome_tldr:
+            entry_str += f"<br />**TL;DR**: {self.awesome_tldr}<br />"
         entry_str += f"""
   <details>
   <summary>Show BibTeX</summary>
@@ -140,7 +158,7 @@ def organize_entries(bib_database) -> Dict[str, List[Entry]]:
     entries_by_category: Dict[str, List[Entry]] = defaultdict(list)
     for entry_key, entry in bib_database.entries.items():
         entry_obj = Entry.from_bibtex(entry)
-        entries_by_category[entry_obj.category].append(entry_obj)
+        entries_by_category[entry_obj.awesome_category].append(entry_obj)
     return entries_by_category
 
 
