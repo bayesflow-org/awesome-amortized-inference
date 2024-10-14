@@ -1,0 +1,2 @@
+pybtex==0.24.0
+pylatexenc==2.10
