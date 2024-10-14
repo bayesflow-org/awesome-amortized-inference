@@ -10,7 +10,14 @@
 Welcome to the Awesome Amortized Inference repository!
 This is a curated list of resources, including overviews, software, papers, and other resources related to amortized inference.
 Feel free to explore the entries below and use the provided BibTeX information for citation purposes.
-Contributions are always welcome, this is a community-driven project.
+This is a community-driven project which is currently maintained by [Marvin Schmitt](https://www.marvinschmitt.com).
+Contributions are always welcome, see [`CONTRIBUTING.md`](CONTRIBUTING.md) for a contribution guide.
+
+This awesome list currently has some overlap with the `awesome-neural-sbi` list ([Link](https://github.com/smsharma/awesome-neural-sbi)) because
+amortized inference has gained populatity in the context of simulation-based inference (SBI) with neural networks.
+However, there is a trend towards broader amortized inference methods that are not necessarily simulation-based.
+This list aims to cover all amortized inference methods, including but not limited to simulation-based inference.
+We highly recommend checking out the `awesome-neural-sbi` list for more resources on modern simulation-based inference with neural networks.
 
 
 > 🚧 **Under construction** 🚧
@@ -22,7 +29,7 @@ Contributions are always welcome, this is a community-driven project.
 > -- hopefully with the help of many awesome people from the community 🧡
 ## Overview
 
-- **Normalizing flows for probabilistic modeling and inference** (2021).<br />  George Papamakarios, Eric Nalisnick, Danilo Jimenez Rezende, Shakir Mohamed, Balaji Lakshminarayanan<br /> [[Paper]](https://arxiv.org/abs/1912.02762) 
+- **Normalizing flows for probabilistic modeling and inference** (2021)<br />by George Papamakarios, Eric Nalisnick, Danilo Jimenez Rezende, Shakir Mohamed, Balaji Lakshminarayanan<br />[[Paper]](https://arxiv.org/abs/1912.02762) 
   <details>
   <summary>Show BibTeX</summary>
   <pre><code>
@@ -42,7 +49,7 @@ Contributions are always welcome, this is a community-driven project.
   </code>
   </pre></details>
 
-- **Neural Methods for Amortized Inference** (2024).<br />  Andrew Zammit-Mangion, Matthew Sainsbury-Dale, Raphaël Huser<br /> [[Paper]](https://arxiv.org/abs/2404.12484) <br />**TL;DR**: Overview paper of amortized point estimators and full posterior estimators.<br />
+- **Neural Methods for Amortized Inference** (2024)<br />_TLDR: Overview paper of amortized point estimators and full posterior estimators._<br />by Andrew Zammit-Mangion, Matthew Sainsbury-Dale, Raphaël Huser<br />[[Paper]](https://arxiv.org/abs/2404.12484) 
   <details>
   <summary>Show BibTeX</summary>
   <pre><code>
@@ -55,7 +62,7 @@ Contributions are always welcome, this is a community-driven project.
   </code>
   </pre></details>
 
-- **The frontier of simulation-based inference** (2020).<br />  Kyle Cranmer, Johann Brehmer, Gilles Louppe<br /> [[Paper]](http://dx.doi.org/10.1073/pnas.1912789117) 
+- **The frontier of simulation-based inference** (2020)<br />by Kyle Cranmer, Johann Brehmer, Gilles Louppe<br />[[Paper]](http://dx.doi.org/10.1073/pnas.1912789117) 
   <details>
   <summary>Show BibTeX</summary>
   <pre><code>
@@ -75,7 +82,7 @@ Contributions are always welcome, this is a community-driven project.
   </pre></details>
 ## Software
 
-- **BayesFlow: Amortized Bayesian Workflows With Neural Networks**. [[Code]](https://bayesflow.org/) 
+- **BayesFlow: Amortized Bayesian Workflows With Neural Networks**<br />[[Code]](https://bayesflow.org/) 
   <details>
   <summary>Show BibTeX</summary>
   <pre><code>
@@ -93,7 +100,7 @@ Contributions are always welcome, this is a community-driven project.
   </code>
   </pre></details>
 
-- **sbi: A toolkit for simulation-based inference**. [[Code]](https://sbi-dev.github.io/sbi/latest/) 
+- **sbi: A toolkit for simulation-based inference**<br />[[Code]](https://sbi-dev.github.io/sbi/latest/) 
   <details>
   <summary>Show BibTeX</summary>
   <pre><code>
@@ -112,7 +119,7 @@ Contributions are always welcome, this is a community-driven project.
   </pre></details>
 ## Paper
 
-- **Neural Importance Sampling for Rapid and Reliable Gravitational-Wave Inference** (2023).<br />  Maximilian Dax, Stephen R. Green, Jonathan Gair, Michael Pürrer, Jonas Wildberger, Jakob H. Macke, Alessandra Buonanno, Bernhard Schölkopf<br /> [[Paper]](http://dx.doi.org/10.1103/PhysRevLett.130.171403) 
+- **Neural Importance Sampling for Rapid and Reliable Gravitational-Wave Inference** (2023)<br />by Maximilian Dax, Stephen R. Green, Jonathan Gair, Michael Pürrer, Jonas Wildberger, Jakob H. Macke, Alessandra Buonanno, Bernhard Schölkopf<br />[[Paper]](http://dx.doi.org/10.1103/PhysRevLett.130.171403) 
   <details>
   <summary>Show BibTeX</summary>
   <pre><code>
@@ -130,7 +137,7 @@ Contributions are always welcome, this is a community-driven project.
   </code>
   </pre></details>
 
-- **JANA: Jointly Amortized Neural Approximation of Complex Bayesian Models** (2023).<br />  Stefan T. Radev, Marvin Schmitt, Valentin Pratz, Umberto Picchini, Ullrich Köthe, Paul-Christian Bürkner<br /> [[Paper]](https://proceedings.mlr.press/v216/radev23a) 
+- **JANA: Jointly Amortized Neural Approximation of Complex Bayesian Models** (2023)<br />by Stefan T. Radev, Marvin Schmitt, Valentin Pratz, Umberto Picchini, Ullrich Köthe, Paul-Christian Bürkner<br />[[Paper]](https://proceedings.mlr.press/v216/radev23a) 
   <details>
   <summary>Show BibTeX</summary>
   <pre><code>
@@ -147,7 +154,7 @@ Contributions are always welcome, this is a community-driven project.
   </code>
   </pre></details>
 
-- **ASPIRE: Iterative Amortized Posterior Inference for Bayesian Inverse Problems** (2024).<br />  Rafael Orozco, Ali Siahkoohi, Mathias Louboutin, Felix J. Herrmann<br />
+- **ASPIRE: Iterative Amortized Posterior Inference for Bayesian Inverse Problems** (2024)<br />by Rafael Orozco, Ali Siahkoohi, Mathias Louboutin, Felix J. Herrmann
   <details>
   <summary>Show BibTeX</summary>
   <pre><code>
@@ -161,7 +168,7 @@ Contributions are always welcome, this is a community-driven project.
   </pre></details>
 ## Uncategorized
 
-- **Flow Matching for Scalable Simulation-Based Inference** (2023).<br />  Jonas Bernhard Wildberger, Maximilian Dax, Simon Buchholz, Stephen R Green, Jakob H. Macke, Bernhard Schölkopf<br /> [[Paper]](https://openreview.net/forum?id=D2cS6SoYlP) [[Code]](https://github.com/dingo-gw/flow-matching-posterior-estimation) 
+- **Flow Matching for Scalable Simulation-Based Inference** (2023)<br />by Jonas Bernhard Wildberger, Maximilian Dax, Simon Buchholz, Stephen R Green, Jakob H. Macke, Bernhard Schölkopf<br />[[Paper]](https://openreview.net/forum?id=D2cS6SoYlP) [[Code]](https://github.com/dingo-gw/flow-matching-posterior-estimation) 
   <details>
   <summary>Show BibTeX</summary>
   <pre><code>
