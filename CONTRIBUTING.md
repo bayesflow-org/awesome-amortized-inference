@@ -1,6 +1,7 @@
-# Contributing to Awesome Amortized Inference
+# Contributing to the Awesome Amortized Inference Resources
 
 Thank you for your interest in contributing to the Awesome Amortized Inference repository! This is a community-driven project, and contributions are always welcome. You can add new resources by simply adding a BibTeX entry to the `data.bib` file.
+Information on how to contribute to the backend code can be found at the bottom of this file.
 
 ## How to Contribute
 
@@ -65,3 +66,9 @@ Once you have added your BibTeX entry to `data.bib`, follow these steps to submi
 If you have any questions or run into any issues, feel free to open an issue in the repository. We're here to help!
 
 Thank you for contributing and helping make this resource more useful for everyone!
+
+# Contributing to the Backend Code
+
+If you are interested in contributing to the backend code that generates the `README.md` file, you can find the code in the `.github/workflows/` directory.
+The generation of the `README.md` file is handled by a GitHub Action workflow, which in turn calls the Python backend.
+Please lint your code with `ruff` before submitting a pull request that involves Python code.
