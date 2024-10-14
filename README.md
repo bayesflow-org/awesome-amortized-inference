@@ -11,6 +11,15 @@ Welcome to the Awesome Amortized Inference repository!
 This is a curated list of resources, including overviews, software, papers, and other resources related to amortized inference.
 Feel free to explore the entries below and use the provided BibTeX information for citation purposes.
 Contributions are always welcome, this is a community-driven project.
+
+
+> 🚧 **Under construction** 🚧
+> This repository is a development version under construction. The list of resources is just a small set for debugging and development purposes.
+> For now, we focus on developing features that we think could be useful for the community (e.g., `BibTex`-first structure).
+> Then, we will evaluate whether this project has the potential to be useful for the community in addition to existing lists
+> that are specifically designated to *simulation-based inference* and not *amortized inference* (which doesn't need to be simulation-based).
+> Once we figure out the direction and deem the project potentially useful for the community, we'll launch and add an extensive set of resources 
+> -- hopefully with the help of many awesome people from the community 🧡
 ## Overview
 
 - **Normalizing flows for probabilistic modeling and inference**.<br />  George Papamakarios, Eric Nalisnick, Danilo Jimenez Rezende, Shakir Mohamed, Balaji Lakshminarayanan<br />
