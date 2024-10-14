@@ -18,7 +18,14 @@ README_INTRO = """
 Welcome to the Awesome Amortized Inference repository!
 This is a curated list of resources, including overviews, software, papers, and other resources related to amortized inference.
 Feel free to explore the entries below and use the provided BibTeX information for citation purposes.
-Contributions are always welcome, this is a community-driven project.
+This is a community-driven project which is currently maintained by [Marvin Schmitt](https://www.marvinschmitt.com).
+Contributions are always welcome, see [`CONTRIBUTING.md`](CONTRIBUTING.md) for a contribution guide.
+
+This awesome list currently has some overlap with the `awesome-neural-sbi` list ([Link](https://github.com/smsharma/awesome-neural-sbi)) because
+amortized inference has gained populatity in the context of simulation-based inference (SBI) with neural networks.
+However, there is a trend towards broader amortized inference methods that are not necessarily simulation-based.
+This list aims to cover all amortized inference methods, including but not limited to simulation-based inference.
+We highly recommend checking out the `awesome-neural-sbi` list for more resources on modern simulation-based inference with neural networks.
 
 
 > 🚧 **Under construction** 🚧
@@ -131,18 +138,23 @@ class Entry:
 
     def to_string(self) -> str:
         entry_str = f"- **{self.title}**"
-        if self.awesome_category != "software":
+
+        if self.awesome_category == "software":
+            if self.awesome_tldr:
+                entry_str += f"<br />_TLDR: {self.awesome_tldr}_"
+
+        elif self.awesome_category != "software":
             if self.year:
                 entry_str += f" ({self.year})"
-            entry_str += f".<br />  {self.authors}<br />"
-        else:
-            entry_str += "."
+            if self.awesome_tldr:
+                entry_str += f"<br />_TLDR: {self.awesome_tldr}_"
+            if self.authors:
+                entry_str += f"<br />by {self.authors}"
+
         if self.awesome_link_fields:
-            entry_str += " "
+            entry_str += "<br />"
             for key, value in self.awesome_link_fields.items():
                 entry_str += f"[[{key.capitalize()}]]({value}) "
-        if self.awesome_tldr:
-            entry_str += f"<br />**TL;DR**: {self.awesome_tldr}<br />"
         entry_str += f"""
   <details>
   <summary>Show BibTeX</summary>
@@ -178,9 +190,9 @@ def create_readme(entries_by_category: Dict[str, List[Entry]]) -> str:
 
 def main():
     try:
-        bib_database = parse_file("data.bib")
+        bib_database = parse_file("resources.bib")
     except FileNotFoundError:
-        print("The data.bib file was not found.")
+        print("The resources.bib file was not found.")
         exit(1)
     except PybtexSyntaxError as e:
         print(f"Error parsing BibTeX file: {e}")
