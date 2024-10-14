@@ -37,6 +37,7 @@ class Entry:
         self,
         title: str,
         authors: str,
+        year: str,
         url: str,
         category: str,
         awesome_fields: Dict[str, str],
@@ -44,6 +45,7 @@ class Entry:
     ):
         self.title = title
         self.authors = authors
+        self.year = year
         self.url = url
         self.category = category
         self.awesome_fields = awesome_fields
@@ -60,6 +62,7 @@ class Entry:
             or "No author"
         )
         url = entry.fields.get("url", "")
+        year = entry.fields.get("year", "")
         category = entry.fields.get("category", "uncategorized").lower()
 
         # get all fields that start with 'awesome-' and save them in a separate field
@@ -75,7 +78,7 @@ class Entry:
             )
             category = "uncategorized"
         bibtex = cls.format_bibtex(entry)
-        return cls(title, authors, url, category, awesome_fields, bibtex)
+        return cls(title, authors, year, url, category, awesome_fields, bibtex)
 
     @staticmethod
     def person_to_first_last(person) -> str:
@@ -113,7 +116,10 @@ class Entry:
         return bibtex_str
 
     def to_string(self) -> str:
-        entry_str = f"- **{self.title}**."
+        entry_str = f"- **{self.title}**"
+        if self.year:
+            entry_str += f" ({self.year})"
+        entry_str += "."
         if self.awesome_fields:
             entry_str += " "
             for key, value in self.awesome_fields.items():
