@@ -15,14 +15,14 @@ Contributions are always welcome, this is a community-driven project.
 
 > 🚧 **Under construction** 🚧
 > This repository is a development version under construction. The list of resources is just a small set for debugging and development purposes.
-> For now, we focus on developing features that we think could be useful for the community (e.g., `BibTex`-first structure).
+> For now, we focus on developing features that we think could be useful for the community (e.g., `BibTeX`-first structure).
 > Then, we will evaluate whether this project has the potential to be useful for the community in addition to existing lists
 > that are specifically designated to *simulation-based inference* and not *amortized inference* (which doesn't need to be simulation-based).
 > Once we figure out the direction and deem the project potentially useful for the community, we'll launch and add an extensive set of resources 
 > -- hopefully with the help of many awesome people from the community 🧡
 ## Overview
 
-- **Normalizing flows for probabilistic modeling and inference**.<br />  George Papamakarios, Eric Nalisnick, Danilo Jimenez Rezende, Shakir Mohamed, Balaji Lakshminarayanan<br />
+- **Normalizing flows for probabilistic modeling and inference**. [[Paper]](https://arxiv.org/abs/1912.02762) <br />  George Papamakarios, Eric Nalisnick, Danilo Jimenez Rezende, Shakir Mohamed, Balaji Lakshminarayanan<br />
   <details>
   <summary>Show BibTeX</summary>
   <pre><code>
@@ -70,7 +70,7 @@ Contributions are always welcome, this is a community-driven project.
   journal = {Proceedings of the National Academy of Sciences},
   publisher = {Proceedings of the National Academy of Sciences},
   year = {2020},
-  pages = {30055–30062},
+  pages = {30055-30062},
   category = {overview},
   author = {Cranmer, Kyle and Brehmer, Johann and Louppe, Gilles}
   }
@@ -164,6 +164,21 @@ Contributions are always welcome, this is a community-driven project.
   Eprint = {arXiv:2405.05398},
   category = {paper},
   author = {Orozco, Rafael and Siahkoohi, Ali and Louboutin, Mathias and Herrmann, Felix J.}
+  }
+  </code>
+  </pre></details>
+## Uncategorized
+
+- **Flow Matching for Scalable Simulation-Based Inference**. [[Paper]](https://openreview.net/forum?id=D2cS6SoYlP) [[Code]](https://github.com/dingo-gw/flow-matching-posterior-estimation) <br />  Jonas Bernhard Wildberger, Maximilian Dax, Simon Buchholz, Stephen R Green, Jakob H. Macke, Bernhard Schölkopf<br />
+  <details>
+  <summary>Show BibTeX</summary>
+  <pre><code>
+  @inproceedings{wildberger2023flow,
+  title = {Flow Matching for Scalable Simulation-Based Inference},
+  booktitle = {Thirty-seventh Conference on Neural Information Processing Systems},
+  year = {2023},
+  url = {https://openreview.net/forum?id=D2cS6SoYlP},
+  author = {Wildberger, Jonas Bernhard and Dax, Maximilian and Buchholz, Simon and Green, Stephen R and Macke, Jakob H. and Sch{\"o}lkopf, Bernhard}
   }
   </code>
   </pre></details>
