@@ -23,7 +23,7 @@ Contributions are always welcome, this is a community-driven project.
 
 > 🚧 **Under construction** 🚧
 > This repository is a development version under construction. The list of resources is just a small set for debugging and development purposes.
-> For now, we focus on developing features that we think could be useful for the community (e.g., `BibTex`-first structure).
+> For now, we focus on developing features that we think could be useful for the community (e.g., `BibTeX`-first structure).
 > Then, we will evaluate whether this project has the potential to be useful for the community in addition to existing lists
 > that are specifically designated to *simulation-based inference* and not *amortized inference* (which doesn't need to be simulation-based).
 > Once we figure out the direction and deem the project potentially useful for the community, we'll launch and add an extensive set of resources 
