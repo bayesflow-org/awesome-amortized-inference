@@ -1,11 +1,9 @@
-# Awesome Amortized Inference
 
+# Awesome Amortized Inference
 
 [![Awesome](https://awesome.re/badge-flat2.svg)](https://awesome.re)
 ![Contributions Welcome](https://img.shields.io/badge/Contributions-Welcome-brightgreen)
 ![License: CC0](https://img.shields.io/badge/License-CC0_1.0-lightgrey)
-
-
 
 Welcome to the Awesome Amortized Inference repository!
 This is a curated list of resources, including overviews, software, papers, and other resources related to amortized inference.
@@ -27,7 +25,30 @@ We highly recommend checking out the `awesome-neural-sbi` list for more resource
 > that are specifically designated to *simulation-based inference* and not *amortized inference* (which doesn't need to be simulation-based).
 > Once we figure out the direction and deem the project potentially useful for the community, we'll launch and add an extensive set of resources 
 > -- hopefully with the help of many awesome people from the community 🧡
-## Overview
+
+
+## Contents
+
+- [Overview Articles](#overview)
+- [Software](#software)
+- [Research Articles](#paper)
+- [Uncategorized](#uncategorized)
+
+
+## Overview Articles
+
+- **Neural Methods for Amortized Inference** (2024)<br />_TLDR: Overview paper of amortized point estimators and full posterior estimators._<br />by Andrew Zammit-Mangion, Matthew Sainsbury-Dale, Raphaël Huser<br />[[Paper]](https://arxiv.org/abs/2404.12484) 
+  <details>
+  <summary>Show BibTeX</summary>
+  <pre><code>
+  @misc{zammit-mangion2024neural,
+  title = {Neural Methods for Amortized Inference},
+  publisher = {arXiv},
+  year = {2024},
+  author = {Zammit-Mangion, Andrew and Sainsbury-Dale, Matthew and Huser, Raphaël}
+  }
+  </code>
+  </pre></details>
 
 - **Normalizing flows for probabilistic modeling and inference** (2021)<br />by George Papamakarios, Eric Nalisnick, Danilo Jimenez Rezende, Shakir Mohamed, Balaji Lakshminarayanan<br />[[Paper]](https://arxiv.org/abs/1912.02762) 
   <details>
@@ -45,19 +66,6 @@ We highly recommend checking out the `awesome-neural-sbi` list for more resource
   articleno = {57},
   numpages = {64},
   author = {Papamakarios, George and Nalisnick, Eric and Rezende, Danilo Jimenez and Mohamed, Shakir and Lakshminarayanan, Balaji}
-  }
-  </code>
-  </pre></details>
-
-- **Neural Methods for Amortized Inference** (2024)<br />_TLDR: Overview paper of amortized point estimators and full posterior estimators._<br />by Andrew Zammit-Mangion, Matthew Sainsbury-Dale, Raphaël Huser<br />[[Paper]](https://arxiv.org/abs/2404.12484) 
-  <details>
-  <summary>Show BibTeX</summary>
-  <pre><code>
-  @misc{zammit-mangion2024neural,
-  title = {Neural Methods for Amortized Inference},
-  publisher = {arXiv},
-  year = {2024},
-  author = {Zammit-Mangion, Andrew and Sainsbury-Dale, Matthew and Huser, Raphaël}
   }
   </code>
   </pre></details>
@@ -117,7 +125,34 @@ We highly recommend checking out the `awesome-neural-sbi` list for more resource
   }
   </code>
   </pre></details>
-## Paper
+## Research Articles
+
+- **ASPIRE: Iterative Amortized Posterior Inference for Bayesian Inverse Problems** (2024)<br />by Rafael Orozco, Ali Siahkoohi, Mathias Louboutin, Felix J. Herrmann
+  <details>
+  <summary>Show BibTeX</summary>
+  <pre><code>
+  @misc{orozco2024aspire,
+  Title = {ASPIRE: Iterative Amortized Posterior Inference for Bayesian Inverse Problems},
+  Year = {2024},
+  Eprint = {arXiv:2405.05398},
+  author = {Orozco, Rafael and Siahkoohi, Ali and Louboutin, Mathias and Herrmann, Felix J.}
+  }
+  </code>
+  </pre></details>
+
+- **Sensitivity-Aware Amortized Bayesian Inference** (2024)<br />_TLDR: Efficient amortized sensitivity analyses with context variables_<br />by Lasse Elsemüller, Hans Olischläger, Marvin Schmitt, Paul-Christian Bürkner, Ullrich Koethe, Stefan T. Radev<br />[[Code]](https://github.com/bayesflow-org/SA-ABI) [[Paper]](https://openreview.net/forum?id=Kxtpa9rvM0) 
+  <details>
+  <summary>Show BibTeX</summary>
+  <pre><code>
+  @article{elsemueller2024sensitivity,
+  title = {Sensitivity-Aware Amortized Bayesian Inference},
+  journal = {Transactions on Machine Learning Research},
+  issn = {2835-8856},
+  year = {2024},
+  author = {Elsem{\"u}ller, Lasse and Olischl{\"a}ger, Hans and Schmitt, Marvin and B{\"u}rkner, Paul-Christian and Koethe, Ullrich and Radev, Stefan T.}
+  }
+  </code>
+  </pre></details>
 
 - **Neural Importance Sampling for Rapid and Reliable Gravitational-Wave Inference** (2023)<br />by Maximilian Dax, Stephen R. Green, Jonathan Gair, Michael Pürrer, Jonas Wildberger, Jakob H. Macke, Alessandra Buonanno, Bernhard Schölkopf<br />[[Paper]](http://dx.doi.org/10.1103/PhysRevLett.130.171403) 
   <details>
@@ -150,33 +185,6 @@ We highly recommend checking out the `awesome-neural-sbi` list for more resource
   series = {Proceedings of Machine Learning Research},
   publisher = {PMLR},
   author = {Radev, Stefan T. and Schmitt, Marvin and Pratz, Valentin and Picchini, Umberto and K\"othe, Ullrich and B\"urkner, Paul-Christian}
-  }
-  </code>
-  </pre></details>
-
-- **ASPIRE: Iterative Amortized Posterior Inference for Bayesian Inverse Problems** (2024)<br />by Rafael Orozco, Ali Siahkoohi, Mathias Louboutin, Felix J. Herrmann
-  <details>
-  <summary>Show BibTeX</summary>
-  <pre><code>
-  @misc{orozco2024aspire,
-  Title = {ASPIRE: Iterative Amortized Posterior Inference for Bayesian Inverse Problems},
-  Year = {2024},
-  Eprint = {arXiv:2405.05398},
-  author = {Orozco, Rafael and Siahkoohi, Ali and Louboutin, Mathias and Herrmann, Felix J.}
-  }
-  </code>
-  </pre></details>
-
-- **Sensitivity-Aware Amortized Bayesian Inference** (2024)<br />_TLDR: Efficient amortized sensitivity analyses with context variables_<br />by Lasse Elsemüller, Hans Olischläger, Marvin Schmitt, Paul-Christian Bürkner, Ullrich Koethe, Stefan T. Radev<br />[[Code]](https://github.com/bayesflow-org/SA-ABI) [[Paper]](https://openreview.net/forum?id=Kxtpa9rvM0) 
-  <details>
-  <summary>Show BibTeX</summary>
-  <pre><code>
-  @article{elsemueller2024sensitivity,
-  title = {Sensitivity-Aware Amortized Bayesian Inference},
-  journal = {Transactions on Machine Learning Research},
-  issn = {2835-8856},
-  year = {2024},
-  author = {Elsem{\"u}ller, Lasse and Olischl{\"a}ger, Hans and Schmitt, Marvin and B{\"u}rkner, Paul-Christian and Koethe, Ullrich and Radev, Stefan T.}
   }
   </code>
   </pre></details>
