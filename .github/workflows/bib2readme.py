@@ -6,15 +6,20 @@ from pybtex.scanner import PybtexSyntaxError
 from pylatexenc.latex2text import LatexNodes2Text
 
 # Define the categories to be printed in the README
-VALID_CATEGORIES = ["overview", "software", "paper", "uncategorized"]
+VALID_CATEGORIES = {
+    "overview": "Overview Articles",
+    "software": "Software",
+    "paper": "Research Articles",
+    "uncategorized": "Uncategorized",
+}
 
-README_BADGES = """
+README_HEADERS = """
+# Awesome Amortized Inference
+
 [![Awesome](https://awesome.re/badge-flat2.svg)](https://awesome.re)
 ![Contributions Welcome](https://img.shields.io/badge/Contributions-Welcome-brightgreen)
 ![License: CC0](https://img.shields.io/badge/License-CC0_1.0-lightgrey)
-"""
 
-README_INTRO = """
 Welcome to the Awesome Amortized Inference repository!
 This is a curated list of resources, including overviews, software, papers, and other resources related to amortized inference.
 Feel free to explore the entries below and use the provided BibTeX information for citation purposes.
@@ -175,15 +180,26 @@ def organize_entries(bib_database) -> Dict[str, List[Entry]]:
 
 
 def create_readme(entries_by_category: Dict[str, List[Entry]]) -> str:
-    readme_content = "# Awesome Amortized Inference\n\n"
-    readme_content += README_BADGES + "\n\n"
-    readme_content += README_INTRO
+    readme_content = README_HEADERS
 
-    for category in VALID_CATEGORIES:
-        if category in entries_by_category:
-            readme_content += f"## {category.capitalize()}\n\n"
+    # Add Table of Contents
+    readme_content += "\n\n"
+    readme_content += "## Contents\n\n"
+    for category_key, category_value in VALID_CATEGORIES.items():
+        if category_key in entries_by_category:
+            readme_content += f"- [{category_value}](#{category_key})\n"
+    readme_content += "\n\n"
+
+    # Add Sections
+    for category_key, category_value in VALID_CATEGORIES.items():
+        if category_key in entries_by_category:
+            if category_key in ["overview", "paper", "uncategorized"]:
+                entries_by_category[category_key].sort(
+                    key=lambda x: x.year if x.year.isdigit() else "0000", reverse=True
+                )
+            readme_content += f"## {category_value}\n\n"
             readme_content += "\n".join(
-                [entry.to_string() for entry in entries_by_category[category]]
+                [entry.to_string() for entry in entries_by_category[category_key]]
             )
     return readme_content
 
