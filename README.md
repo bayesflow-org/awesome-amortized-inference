@@ -166,6 +166,20 @@ We highly recommend checking out the `awesome-neural-sbi` list for more resource
   }
   </code>
   </pre></details>
+
+- **Sensitivity-Aware Amortized Bayesian Inference** (2024)<br />_TLDR: Efficient amortized sensitivity analyses with context variables_<br />by Lasse Elsemüller, Hans Olischläger, Marvin Schmitt, Paul-Christian Bürkner, Ullrich Koethe, Stefan T. Radev<br />[[Code]](https://github.com/bayesflow-org/SA-ABI) [[Paper]](https://openreview.net/forum?id=Kxtpa9rvM0) 
+  <details>
+  <summary>Show BibTeX</summary>
+  <pre><code>
+  @article{elsemueller2024sensitivity,
+  title = {Sensitivity-Aware Amortized Bayesian Inference},
+  journal = {Transactions on Machine Learning Research},
+  issn = {2835-8856},
+  year = {2024},
+  author = {Elsem{\"u}ller, Lasse and Olischl{\"a}ger, Hans and Schmitt, Marvin and B{\"u}rkner, Paul-Christian and Koethe, Ullrich and Radev, Stefan T.}
+  }
+  </code>
+  </pre></details>
 ## Uncategorized
 
 - **Flow Matching for Scalable Simulation-Based Inference** (2023)<br />by Jonas Bernhard Wildberger, Maximilian Dax, Simon Buchholz, Stephen R Green, Jakob H. Macke, Bernhard Schölkopf<br />[[Paper]](https://openreview.net/forum?id=D2cS6SoYlP) [[Code]](https://github.com/dingo-gw/flow-matching-posterior-estimation) 
