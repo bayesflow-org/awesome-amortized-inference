@@ -190,6 +190,19 @@ We highly recommend checking out the `awesome-neural-sbi` list for more resource
   </pre></details>
 ## Uncategorized
 
+- **Evaluating Sparse Galaxy Simulations via Out-of-Distribution Detection and Amortized Bayesian Model Comparison** (2024)<br />by Lingyi Zhou, Stefan T. Radev, William H. Oliver, Aura Obreja, Zehao Jin, Tobias Buck<br />[[Paper]](https://arxiv.org/abs/2410.10606) 
+  <details>
+  <summary>Show BibTeX</summary>
+  <pre><code>
+  @inproceedings{zhou2024EvaluatingSparseGalaxy,
+  title = {Evaluating {{Sparse Galaxy Simulations}} via {{Out-of-Distribution Detection}} and {{Amortized Bayesian Model Comparison}}},
+  booktitle = {38th {{Conference}} on {{Neural Information Processing Systems}}},
+  year = {2024},
+  author = {Zhou, Lingyi and Radev, Stefan T. and Oliver, William H. and Obreja, Aura and Jin, Zehao and Buck, Tobias}
+  }
+  </code>
+  </pre></details>
+
 - **Flow Matching for Scalable Simulation-Based Inference** (2023)<br />by Jonas Bernhard Wildberger, Maximilian Dax, Simon Buchholz, Stephen R Green, Jakob H. Macke, Bernhard Schölkopf<br />[[Paper]](https://openreview.net/forum?id=D2cS6SoYlP) [[Code]](https://github.com/dingo-gw/flow-matching-posterior-estimation) 
   <details>
   <summary>Show BibTeX</summary>
