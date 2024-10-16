@@ -31,7 +31,8 @@ We highly recommend checking out the `awesome-neural-sbi` list for more resource
 
 - [Overview Articles](#overview)
 - [Software](#software)
-- [Research Articles](#paper)
+- [Methodological Papers](#method)
+- [Application Papers](#application)
 - [Uncategorized](#uncategorized)
 
 
@@ -125,7 +126,7 @@ We highly recommend checking out the `awesome-neural-sbi` list for more resource
   }
   </code>
   </pre></details>
-## Research Articles
+## Methodological Papers
 
 - **ASPIRE: Iterative Amortized Posterior Inference for Bayesian Inverse Problems** (2024)<br />by Rafael Orozco, Ali Siahkoohi, Mathias Louboutin, Felix J. Herrmann
   <details>
@@ -188,7 +189,7 @@ We highly recommend checking out the `awesome-neural-sbi` list for more resource
   }
   </code>
   </pre></details>
-## Uncategorized
+## Application Papers
 
 - **Evaluating Sparse Galaxy Simulations via Out-of-Distribution Detection and Amortized Bayesian Model Comparison** (2024)<br />by Lingyi Zhou, Stefan T. Radev, William H. Oliver, Aura Obreja, Zehao Jin, Tobias Buck<br />[[Paper]](https://arxiv.org/abs/2410.10606) 
   <details>
@@ -202,6 +203,7 @@ We highly recommend checking out the `awesome-neural-sbi` list for more resource
   }
   </code>
   </pre></details>
+## Uncategorized
 
 - **Flow Matching for Scalable Simulation-Based Inference** (2023)<br />by Jonas Bernhard Wildberger, Maximilian Dax, Simon Buchholz, Stephen R Green, Jakob H. Macke, Bernhard Schölkopf<br />[[Paper]](https://openreview.net/forum?id=D2cS6SoYlP) [[Code]](https://github.com/dingo-gw/flow-matching-posterior-estimation) 
   <details>
