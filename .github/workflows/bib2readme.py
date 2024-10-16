@@ -9,7 +9,8 @@ from pylatexenc.latex2text import LatexNodes2Text
 VALID_CATEGORIES = {
     "overview": "Overview Articles",
     "software": "Software",
-    "paper": "Research Articles",
+    "method": "Methodological Papers",
+    "application": "Application Papers",
     "uncategorized": "Uncategorized",
 }
 
@@ -193,7 +194,7 @@ def create_readme(entries_by_category: Dict[str, List[Entry]]) -> str:
     # Add Sections
     for category_key, category_value in VALID_CATEGORIES.items():
         if category_key in entries_by_category:
-            if category_key in ["overview", "paper", "uncategorized"]:
+            if category_key in ["overview", "method", "application", "uncategorized"]:
                 entries_by_category[category_key].sort(
                     key=lambda x: x.year if x.year.isdigit() else "0000", reverse=True
                 )
