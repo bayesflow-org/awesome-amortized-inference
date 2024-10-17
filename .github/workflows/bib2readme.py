@@ -146,16 +146,17 @@ class Entry:
 
     def to_string(self) -> str:
         entry_str = f"- **{self.title}**"
+        tldr_str = "<br />_TLDR: Reading this paper? Please consider contributing a TLDR summary._"
+        if self.awesome_tldr:
+            tldr_str = f"<br />_TLDR: {self.awesome_tldr}_"
 
         if self.awesome_category == "software":
-            if self.awesome_tldr:
-                entry_str += f"<br />_TLDR: {self.awesome_tldr}_"
+            entry_str += tldr_str
 
         elif self.awesome_category != "software":
             if self.year:
                 entry_str += f" ({self.year})"
-            if self.awesome_tldr:
-                entry_str += f"<br />_TLDR: {self.awesome_tldr}_"
+            entry_str += tldr_str
             if self.authors:
                 entry_str += f"<br />by {self.authors}"
 
