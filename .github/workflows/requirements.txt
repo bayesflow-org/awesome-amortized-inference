@@ -1,2 +1,3 @@
 pybtex==0.24.0
 pylatexenc==2.10
+python-slugify==8.0.4

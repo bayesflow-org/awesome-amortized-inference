@@ -5,6 +5,8 @@ from pybtex.database import parse_file
 from pybtex.scanner import PybtexSyntaxError
 from pylatexenc.latex2text import LatexNodes2Text
 
+from slugify import slugify
+
 # Define the categories to be printed in the README
 VALID_CATEGORIES = {
     "overview": "Overview Articles",
@@ -188,7 +190,7 @@ def create_readme(entries_by_category: Dict[str, List[Entry]]) -> str:
     readme_content += "## Contents\n\n"
     for category_key, category_value in VALID_CATEGORIES.items():
         if category_key in entries_by_category:
-            readme_content += f"- [{category_value}](#{category_key})\n"
+            readme_content += f"- [{category_value}](#{slugify(category_value)})\n"
     readme_content += "\n\n"
 
     # Add Sections
