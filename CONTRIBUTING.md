@@ -1,6 +1,6 @@
 # Contributing to the Awesome Amortized Inference Resources
 
-Thank you for your interest in contributing to the Awesome Amortized Inference repository! This is a community-driven project, and contributions are always welcome. You can add new resources by simply adding a BibTeX entry to the `data.bib` file.
+Thank you for your interest in contributing to the Awesome Amortized Inference repository! This is a community-driven project, and contributions are always welcome. You can add new resources by simply adding a BibTeX entry to the `resources.bib` file.
 Information on how to contribute to the backend code can be found at the bottom of this file.
 
 ## How to Contribute
@@ -9,7 +9,7 @@ To contribute a new resource, follow these steps:
 
 1. **Clone the Repository**: Fork this repository and clone it to your local machine.
 
-2. **Edit the `data.bib` File**: Add your resource to the `data.bib` file.
+2. **Edit the `resources.bib` File**: Add your resource to the `resources.bib` file.
 
    - Make sure to follow the guidelines below when creating a new BibTeX entry.
 
@@ -22,9 +22,14 @@ To contribute a new resource, follow these steps:
   - `title`: The title of the resource.
   - `author`: The list of authors. Use the standard BibTeX format (e.g., `author = {Doe, John and Smith, Jane}`).
 
-- **Awesome Fields**: You can add additional information using fields of the form `awesome-<key> = {<value>}`. These fields will create links in the `README.md`:
+- **Awesome Fields**: You can add important meta-information for the resource list in the `awesome-` fields:
+  - `awesome-category`: The category of the paper, choose from `software, method, application, overview`.
+  - `awesome-tldr`: A short one-sentence summary of the paper (TL;DR = too long, didn't read). Please try to make the TLDR say more than the title. We know it's hard but it's well worth the effort because it helps others get the gist of a resource.
+  - These fields will **not** be included in the BibTeX export.
 
-  - For example: `awesome-paper = {https://arxiv.org/abs/2302.09125}` will render as `[Paper](https://arxiv.org/abs/2302.09125)`.
+- **Awesome Links**: You can add any additional links using fields of the form `awesome-link-<key> = {<value>}`. These fields will create links in the `README.md`:
+
+  - For example: `awesome-link-paper = {https://arxiv.org/abs/2302.09125}` will render as `[Paper](https://arxiv.org/abs/2302.09125)`.
   - These fields will **not** be included in the BibTeX export.
 
 - **Other Fields**: All other fields, such as `journal`, `year`, etc., will be included in the BibTeX export and are optional.
@@ -37,23 +42,26 @@ To contribute a new resource, follow these steps:
   author = {Doe, John and Smith, Jane},
   journal = {Journal of Example Studies},
   year = {2023},
-  awesome-paper = {https://arxiv.org/abs/2302.09125},
-  awesome-code = {https://github.com/example/software}
+  awesome-category = {method},
+  awesome-tldr = {Creating examples for resources significantly increases the quality of contributions.},
+  awesome-link-paper = {https://arxiv.org/abs/2302.09125},
+  awesome-link-code = {https://github.com/example/software}
 }
 ```
 
 In the above example:
 
 - The `title`, `author`, `journal`, and `year` fields are standard BibTeX fields.
-- The `awesome-paper` and `awesome-software` fields will generate links labeled `[Paper]` and `[Code]`, respectively, in the `README.md`.
+- The resource will be categorized in the "Methodological Papers" section and have the TLDR _Creating examples for resources significantly increases the quality of contributions._
+- The `awesome-link-paper` and `awesome-link-software` fields will generate links labeled `[Paper]` and `[Code]`, respectively, in the `README.md`.
 
 ## Important Note
 
-The `README.md` file is automatically generated from the `data.bib` file by a GitHub Action workflow. **Do not edit the `README.md` file directly**, as your changes will be overwritten. Instead, make all changes by editing the `data.bib` file.
+The `README.md` file is automatically generated from the `resources.bib` file by a GitHub Action workflow. **Do not edit the `README.md` file directly**, as your changes will be overwritten. Instead, make all changes by editing the `data.bib` file.
 
 ## Submitting Your Contribution
 
-Once you have added your BibTeX entry to `data.bib`, follow these steps to submit your contribution:
+Once you have added your BibTeX entry to `resources.bib`, follow these steps to submit your contribution:
 
 1. **Commit Your Changes**: Commit your changes with a clear commit message.
 
