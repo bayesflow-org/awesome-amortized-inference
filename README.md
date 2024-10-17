@@ -91,7 +91,7 @@ We highly recommend checking out the `awesome-neural-sbi` list for more resource
   </pre></details>
 ## Software
 
-- **BayesFlow: Amortized Bayesian Workflows With Neural Networks**<br />_TLDR: Reading this paper? Please consider contributing a TLDR summary._<br />[[Code]](https://bayesflow.org/) 
+- **BayesFlow: Amortized Bayesian Workflows With Neural Networks**<br />[[Code]](https://bayesflow.org/) 
   <details>
   <summary>Show BibTeX</summary>
   <pre><code>
@@ -109,7 +109,7 @@ We highly recommend checking out the `awesome-neural-sbi` list for more resource
   </code>
   </pre></details>
 
-- **sbi: A toolkit for simulation-based inference**<br />_TLDR: Reading this paper? Please consider contributing a TLDR summary._<br />[[Code]](https://sbi-dev.github.io/sbi/latest/) 
+- **sbi: A toolkit for simulation-based inference**<br />[[Code]](https://sbi-dev.github.io/sbi/latest/) 
   <details>
   <summary>Show BibTeX</summary>
   <pre><code>
@@ -205,7 +205,7 @@ We highly recommend checking out the `awesome-neural-sbi` list for more resource
   </pre></details>
 ## Uncategorized
 
-- **Flow Matching for Scalable Simulation-Based Inference** (2023)<br />_TLDR: Reading this paper? Please consider contributing a TLDR summary._<br />by Jonas Bernhard Wildberger, Maximilian Dax, Simon Buchholz, Stephen R Green, Jakob H. Macke, Bernhard Schölkopf<br />[[Paper]](https://openreview.net/forum?id=D2cS6SoYlP) [[Code]](https://github.com/dingo-gw/flow-matching-posterior-estimation) 
+- **Flow Matching for Scalable Simulation-Based Inference** (2023)<br />by Jonas Bernhard Wildberger, Maximilian Dax, Simon Buchholz, Stephen R Green, Jakob H. Macke, Bernhard Schölkopf<br />[[Paper]](https://openreview.net/forum?id=D2cS6SoYlP) [[Code]](https://github.com/dingo-gw/flow-matching-posterior-estimation) 
   <details>
   <summary>Show BibTeX</summary>
   <pre><code>
