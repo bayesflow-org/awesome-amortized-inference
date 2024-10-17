@@ -9,7 +9,7 @@ Welcome to the Awesome Amortized Inference repository!
 This is a curated list of resources, including overviews, software, papers, and other resources related to amortized inference.
 Feel free to explore the entries below and use the provided BibTeX information for citation purposes.
 This is a community-driven project which is currently maintained by [Marvin Schmitt](https://www.marvinschmitt.com).
-Contributions are always welcome, see [`CONTRIBUTING.md`](CONTRIBUTING.md) for a contribution guide.
+Contributions are always welcome, see [`CONTRIBUTING.md`](https://github.com/bayesflow-org/awesome-amortized-inference/blob/main/CONTRIBUTING.md) for a contribution guide.
 
 This awesome list currently has some overlap with the `awesome-neural-sbi` list ([Link](https://github.com/smsharma/awesome-neural-sbi)) because
 amortized inference has gained populatity in the context of simulation-based inference (SBI) with neural networks.
