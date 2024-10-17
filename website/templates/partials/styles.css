@@ -1,0 +1,93 @@
+/* set variables for light and dark mode*/
+:root {
+  --layout-max-width: 50rem;
+  --background-color: #fffff4;
+  --header-color: aliceblue;
+  --text-color: black;
+  --link-color: #0366d6;
+  --link-visited-color: #5a3bb1;
+  --separator-color: #eaecef;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background-color: #1c1919;
+    --header-color: #252431;
+    --text-color: #f5f5f5;
+    --link-color: #3e8df2;
+    --link-visited-color: #9a76ff;
+    --separator-color: #373644;
+  }
+}
+
+body {
+  margin: 0;
+  background: var(--background-color);
+  color: var(--text-color);
+}
+
+h2 {
+  border-bottom: 1px solid var(--separator-color);
+  padding-bottom: 0.3rem;
+}
+
+a {
+  color: var(--link-color);
+}
+
+a:visited {
+  color: var(--link-visited-color);
+}
+
+.content {
+  max-width: var(--layout-max-width);
+  margin: auto;
+}
+
+/* Navigation/Top bar*/
+
+.navigation-container {
+  background-color: var(--header-color);
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-grow: space-between;
+  padding: 0.4rem;
+  margin: auto;
+  max-width: var(--layout-max-width);
+}
+
+.top-bar--title {
+  flex: 1;
+}
+
+.top-bar--title>a[href] {
+  font-size: 2rem;
+  text-decoration: none;
+  font-weight: bold;
+  color: var(--text-color);
+}
+
+.top-bar--links a {
+  color: var(--text-color);
+  font-size: 1.4rem;
+  text-decoration: none;
+}
+
+.top-bar--links a:hover {
+  text-decoration: underline;
+}
+
+/* Hide the first heading to avoid double headings */
+.content h1:first-child {
+  display: none;
+}
+
+footer .c {
+  display: flex;
+  justify-content: center;
+}

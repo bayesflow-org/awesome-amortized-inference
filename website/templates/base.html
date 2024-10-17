@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  {#- meta tags #}
+  <meta charset="utf-8" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="base" content="{{ config.base_url | safe }}" />
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="color-scheme" content="dark light">
+  <meta name="theme-color" media="(prefers-color-scheme: dark)">
+  <meta name="theme-color" media="(prefers-color-scheme: light)">
+  {#- Security: CSP, referrer #}
+  {%- if config.extra.security_header_referrer %}
+  <meta name="referrer" content="{{ config.extra.security_header_referrer | safe }}" />
+  {%- endif %}
+  {%- if config.extra.security_header_csp %}
+  <meta http-equiv="Content-Security-Policy" content="{{ config.extra.security_header_csp | safe }}" />
+  {%- endif %}
+  {#- Style Sheets #}
+  {% set css = load_data(path="templates/partials/styles.css") %}
+  <style>{{ css | safe }}</style>
+</head>
+<body>
+{%- block header %}
+  <header>
+    <div class="navigation-container">
+    <nav class="site-navigation top-bar" role="navigation">
+      <div class="top-bar--title">
+        
+        {%- if config.extra.logo -%}
+
+        <a href="{{ get_url(path="/", lang=lang) }}" title="{{config.title}}">
+        {%- if config.extra.logo.file -%}
+        <img src="{{ config.base_url | safe }}/{{ config.extra.logo.file | safe }}"{%- if config.extra.logo.alt %} alt="{{ config.extra.logo.alt | safe }}"{%- endif %}{%- if config.extra.logo.width %} width="{{ config.extra.logo.width | safe }}"{%- endif %}{%- if config.extra.logo.height %} height="{{ config.extra.logo.height | safe }}"{%- endif %} />
+        {%- endif -%}
+        {%- if config.extra.logo.text -%}{{ config.extra.logo.text | safe }}{%- endif -%}
+        </a>
+
+        {%- elif config.extra.textlogo -%}
+        <a href="{{ get_url(path="/", lang=lang) }}" title="{{config.title}}">{{ config.extra.textlogo | safe }}</a>
+        {%- elif config.title -%}
+        <a href="{{ get_url(path="/", lang=lang) }}" title="{{config.title}}">{{ config.title | safe }}</a>
+        {%- endif -%}
+      </div>
+
+      <div class="top-bar--links">
+        <a href="https://github.com/bayesflow-org/awesome-amortized-inference/blob/main/CONTRIBUTING.md">Contribute here!</a>
+      </div>
+    </nav>
+    {%- if config.extra.sitedesc %}
+    {%- if config.description %}
+    <div class="desc">{{ config.description }}</div>
+    {%- endif %}
+    {%- endif %}
+    {%- if config.extra.headhr %}
+    <hr />
+    {%- endif %}
+    </div>
+  </header>
+{%- endblock header %}
+  <main>
+  {%- block content %}
+  {%- endblock content %}
+  </main>
+{%- block footer %}
+  <footer>
+    {%- if config.extra.foothr %}
+    <hr />
+    {%- endif %}
+    <div class="c">
+
+      {%- if config.extra.menu_footer %}
+      <nav class="vpad">
+        {%- for i in config.extra.menu_footer -%}
+        {%- if i.url is matching("^http[s]?://") %}
+        {%- set furl=i.url %}
+        {%- elif i.url != "sitemap.xml" %}
+        {%- set furl=get_url(path=i.url, lang=lang, trailing_slash=i.slash) %}
+        {%- else %}
+        {%- set furl=get_url(path=i.url, trailing_slash=i.slash) %}
+        {%- endif %}
+        <a class="rpad{%- if i.size %} {{ i.size }}{% endif %}" href="{{ furl | safe }}{%- if i.slash and uglyurls %}index.html{%- endif %}"{% if i.blank %} target="_blank"{% endif %}>{{ i.name | safe }} </a>
+        {%- endfor %}
+      </nav>
+      {%- endif %}
+
+      {#- Copyright START #}
+      {%- set current_year = now() | date(format="%Y") %}
+      {%- set current_year = '<span id="year">' ~ current_year ~ '</span>' %}
+
+        {%- if config.extra.copyright_override -%}
+          {%- if lang != config.default_language %}
+            {%- set copyright_string = '© $CURRENT_YEAR $SITE_TITLE' | replace(from="$CURRENT_YEAR", to=current_year) | replace(from="$SITE_TITLE", to=config.title) %}
+          {% else %}
+            {%- set copyright_string = config.extra.copyright_override | replace(from="$CURRENT_YEAR", to=current_year) | replace(from="$SITE_TITLE", to=config.title) %}
+          {% endif -%}
+        {%- else -%}
+          {%- set copyright_string = "&copy;" ~ current_year ~ " " ~ config.title %}
+        {%- endif %}
+        <p> {{ copyright_string | safe }}. Powered by <a href="https://www.getzola.org/" target="_blank">Zola</a>.</p>    </div>
+  </footer>
+{%- endblock footer %}
+{%- block gotop %}
+{%- endblock gotop %}
+</body>
+</html>

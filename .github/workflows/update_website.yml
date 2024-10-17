@@ -1,0 +1,26 @@
+name: Generate Website
+run-name: generate website from README.
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - 'README.md'
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/main'
+    steps:
+      - name: checkout
+        uses: actions/checkout@v4
+      - run: cp README.md website/content/_index.md
+      - run: "sed -i '1i ---\\ntemplate: index.html\\n---\\n' website/content/_index.md"
+      - name: build_and_deploy
+        uses: shalzz/zola-deploy-action@v0.17.2
+        env:
+          # Target branch
+          PAGES_BRANCH: gh-pages
+          # Provide personal access token
+          # TOKEN: ${{ secrets.TOKEN }}
+          # Or if publishing to the same repo, use the automatic token
+          TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          BUILD_DIR: './website'
