@@ -29,10 +29,10 @@ We highly recommend checking out the `awesome-neural-sbi` list for more resource
 
 ## Contents
 
-- [Overview Articles](#overview)
+- [Overview Articles](#overview-articles)
 - [Software](#software)
-- [Methodological Papers](#method)
-- [Application Papers](#application)
+- [Methodological Papers](#methodological-papers)
+- [Application Papers](#application-papers)
 - [Uncategorized](#uncategorized)
 
 
