@@ -1,4 +1,4 @@
-/* set variables for light and dark mode*/
+/* Set variables for light and dark mode */
 :root {
   --layout-max-width: 50rem;
   --background-color: #fffff4;
@@ -7,6 +7,12 @@
   --link-color: #0366d6;
   --link-visited-color: #5a3bb1;
   --separator-color: #eaecef;
+  --button-bg-color: #0366d6;
+  --button-text-color: #fff;
+  --hover-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  --border-radius: 8px;
+  --font-family: 'Inter', sans-serif;
+  --font-size: 16px;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -17,6 +23,7 @@
     --link-color: #3e8df2;
     --link-visited-color: #9a76ff;
     --separator-color: #373644;
+    --button-bg-color: #3e8df2;
   }
 }
 
@@ -24,15 +31,25 @@ body {
   margin: 0;
   background: var(--background-color);
   color: var(--text-color);
+  font-family: var(--font-family);
+  font-size: var(--font-size);
+  line-height: 1.6;
 }
 
 h2 {
   border-bottom: 1px solid var(--separator-color);
   padding-bottom: 0.3rem;
+  margin-bottom: 1rem;
 }
 
 a {
   color: var(--link-color);
+  text-decoration: none;
+  transition: color 0.2s ease-in-out;
+}
+
+a:hover {
+  color: var(--button-bg-color);
 }
 
 a:visited {
@@ -42,52 +59,111 @@ a:visited {
 .content {
   max-width: var(--layout-max-width);
   margin: auto;
+  padding: 1rem;
 }
 
-/* Navigation/Top bar*/
+button, .btn {
+  background-color: var(--button-bg-color);
+  color: var(--button-text-color);
+  padding: 0.6rem 1rem;
+  border-radius: var(--border-radius);
+  border: none;
+  cursor: pointer;
+  transition: box-shadow 0.2s ease-in-out, background-color 0.2s ease-in-out;
+}
+
+button:hover, .btn:hover {
+  box-shadow: var(--hover-shadow);
+  background-color: #005bb5; /* Slightly darker shade */
+}
+
+/* Navigation/Top bar */
 
 .navigation-container {
   background-color: var(--header-color);
+  box-shadow: var(--hover-shadow);
+  padding: 1rem 0;
 }
 
 nav {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  flex-grow: space-between;
-  padding: 0.4rem;
-  margin: auto;
   max-width: var(--layout-max-width);
+  margin: auto;
 }
 
 .top-bar--title {
-  flex: 1;
-}
-
-.top-bar--title>a[href] {
   font-size: 2rem;
-  text-decoration: none;
   font-weight: bold;
   color: var(--text-color);
 }
 
+.top-bar--links {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  gap: 1rem;
+}
+
 .top-bar--links a {
-  color: var(--text-color);
-  font-size: 1.4rem;
+  font-size: 1.1rem;
   text-decoration: none;
+  color: var(--link-color);
+  transition: color 0.2s ease-in-out;
 }
 
 .top-bar--links a:hover {
   text-decoration: underline;
+  color: var(--button-bg-color);
 }
 
-/* Hide the first heading to avoid double headings */
+/* Content tweaks */
 .content h1:first-child {
-  display: none;
+  display: none; /* Hide duplicate h1 */
+}
+
+footer {
+  background-color: var(--header-color);
+  padding: 1rem 0;
+  text-align: center;
 }
 
 footer .c {
   display: flex;
   justify-content: center;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+footer a {
+  color: var(--link-color);
+}
+
+footer a:hover {
+  color: var(--button-bg-color);
+}
+
+/* Small tweaks for modern spacing */
+p {
+  margin-bottom: 1.2rem;
+}
+
+h2, h3 {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+/* Improve button-like link appearance */
+.btn {
+  text-align: center;
+  display: inline-block;
+  padding: 0.8rem 1.5rem;
+  border-radius: var(--border-radius);
+  background-color: var(--button-bg-color);
+  color: var(--button-text-color);
+}
+
+.btn:hover {
+  background-color: var(--link-color);
+  box-shadow: var(--hover-shadow);
 }

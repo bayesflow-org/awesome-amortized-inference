@@ -1,26 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  {#- meta tags #}
-  <meta charset="utf-8" />
-  <meta http-equiv="x-ua-compatible" content="ie=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="base" content="{{ config.base_url | safe }}" />
-  <meta name="HandheldFriendly" content="True" />
-  <meta name="color-scheme" content="dark light">
-  <meta name="theme-color" media="(prefers-color-scheme: dark)">
-  <meta name="theme-color" media="(prefers-color-scheme: light)">
-  {#- Security: CSP, referrer #}
-  {%- if config.extra.security_header_referrer %}
-  <meta name="referrer" content="{{ config.extra.security_header_referrer | safe }}" />
-  {%- endif %}
-  {%- if config.extra.security_header_csp %}
-  <meta http-equiv="Content-Security-Policy" content="{{ config.extra.security_header_csp | safe }}" />
-  {%- endif %}
-  {#- Style Sheets #}
-  {% set css = load_data(path="templates/partials/styles.css") %}
-  <style>{{ css | safe }}</style>
-</head>
+  <head>
+    {#- meta tags #}
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="base" content="{{ config.base_url | safe }}" />
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="color-scheme" content="dark light">
+    <meta name="theme-color" media="(prefers-color-scheme: dark)">
+    <meta name="theme-color" media="(prefers-color-scheme: light)">
+    {#- Security: CSP, referrer #}
+    {%- if config.extra.security_header_referrer %}
+    <meta name="referrer" content="{{ config.extra.security_header_referrer | safe }}" />
+    {%- endif %}
+    {%- if config.extra.security_header_csp %}
+    <meta http-equiv="Content-Security-Policy" content="{{ config.extra.security_header_csp | safe }}" />
+    {%- endif %}
+    
+    {# Add Google Fonts Inter #}
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    
+    {#- Style Sheets #}
+    {% set css = load_data(path="templates/partials/styles.css") %}
+    <style>{{ css | safe }}</style>
+  </head>  
 <body>
 {%- block header %}
   <header>
