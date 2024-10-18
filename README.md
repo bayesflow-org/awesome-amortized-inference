@@ -51,7 +51,7 @@ We highly recommend checking out the `awesome-neural-sbi` list for more resource
   </code>
   </pre></details>
 
-- **Normalizing flows for probabilistic modeling and inference** (2021)<br />_TLDR: Reading this paper? Please consider contributing a TLDR summary._<br />by George Papamakarios, Eric Nalisnick, Danilo Jimenez Rezende, Shakir Mohamed, Balaji Lakshminarayanan<br />[[Paper]](https://arxiv.org/abs/1912.02762) 
+- **Normalizing flows for probabilistic modeling and inference** (2021)<br />_Reading this paper? Please consider contributing a TLDR summary._<br />by George Papamakarios, Eric Nalisnick, Danilo Jimenez Rezende, Shakir Mohamed, Balaji Lakshminarayanan<br />[[Paper]](https://arxiv.org/abs/1912.02762) 
   <details>
   <summary>Show BibTeX</summary>
   <pre><code>
@@ -71,7 +71,7 @@ We highly recommend checking out the `awesome-neural-sbi` list for more resource
   </code>
   </pre></details>
 
-- **The frontier of simulation-based inference** (2020)<br />_TLDR: Reading this paper? Please consider contributing a TLDR summary._<br />by Kyle Cranmer, Johann Brehmer, Gilles Louppe<br />[[Paper]](http://dx.doi.org/10.1073/pnas.1912789117) 
+- **The frontier of simulation-based inference** (2020)<br />_Reading this paper? Please consider contributing a TLDR summary._<br />by Kyle Cranmer, Johann Brehmer, Gilles Louppe<br />[[Paper]](http://dx.doi.org/10.1073/pnas.1912789117) 
   <details>
   <summary>Show BibTeX</summary>
   <pre><code>
@@ -128,7 +128,7 @@ We highly recommend checking out the `awesome-neural-sbi` list for more resource
   </pre></details>
 ## Methodological Papers
 
-- **ASPIRE: Iterative Amortized Posterior Inference for Bayesian Inverse Problems** (2024)<br />_TLDR: Reading this paper? Please consider contributing a TLDR summary._<br />by Rafael Orozco, Ali Siahkoohi, Mathias Louboutin, Felix J. Herrmann
+- **ASPIRE: Iterative Amortized Posterior Inference for Bayesian Inverse Problems** (2024)<br />_Reading this paper? Please consider contributing a TLDR summary._<br />by Rafael Orozco, Ali Siahkoohi, Mathias Louboutin, Felix J. Herrmann
   <details>
   <summary>Show BibTeX</summary>
   <pre><code>
@@ -155,7 +155,7 @@ We highly recommend checking out the `awesome-neural-sbi` list for more resource
   </code>
   </pre></details>
 
-- **Neural Importance Sampling for Rapid and Reliable Gravitational-Wave Inference** (2023)<br />_TLDR: Reading this paper? Please consider contributing a TLDR summary._<br />by Maximilian Dax, Stephen R. Green, Jonathan Gair, Michael Pürrer, Jonas Wildberger, Jakob H. Macke, Alessandra Buonanno, Bernhard Schölkopf<br />[[Paper]](http://dx.doi.org/10.1103/PhysRevLett.130.171403) 
+- **Neural Importance Sampling for Rapid and Reliable Gravitational-Wave Inference** (2023)<br />_Reading this paper? Please consider contributing a TLDR summary._<br />by Maximilian Dax, Stephen R. Green, Jonathan Gair, Michael Pürrer, Jonas Wildberger, Jakob H. Macke, Alessandra Buonanno, Bernhard Schölkopf<br />[[Paper]](http://dx.doi.org/10.1103/PhysRevLett.130.171403) 
   <details>
   <summary>Show BibTeX</summary>
   <pre><code>
@@ -173,7 +173,7 @@ We highly recommend checking out the `awesome-neural-sbi` list for more resource
   </code>
   </pre></details>
 
-- **JANA: Jointly Amortized Neural Approximation of Complex Bayesian Models** (2023)<br />_TLDR: Reading this paper? Please consider contributing a TLDR summary._<br />by Stefan T. Radev, Marvin Schmitt, Valentin Pratz, Umberto Picchini, Ullrich Köthe, Paul-Christian Bürkner<br />[[Paper]](https://proceedings.mlr.press/v216/radev23a) 
+- **JANA: Jointly Amortized Neural Approximation of Complex Bayesian Models** (2023)<br />_Reading this paper? Please consider contributing a TLDR summary._<br />by Stefan T. Radev, Marvin Schmitt, Valentin Pratz, Umberto Picchini, Ullrich Köthe, Paul-Christian Bürkner<br />[[Paper]](https://proceedings.mlr.press/v216/radev23a) 
   <details>
   <summary>Show BibTeX</summary>
   <pre><code>
@@ -191,7 +191,7 @@ We highly recommend checking out the `awesome-neural-sbi` list for more resource
   </pre></details>
 ## Application Papers
 
-- **Evaluating Sparse Galaxy Simulations via Out-of-Distribution Detection and Amortized Bayesian Model Comparison** (2024)<br />_TLDR: Reading this paper? Please consider contributing a TLDR summary._<br />by Lingyi Zhou, Stefan T. Radev, William H. Oliver, Aura Obreja, Zehao Jin, Tobias Buck<br />[[Paper]](https://arxiv.org/abs/2410.10606) 
+- **Evaluating Sparse Galaxy Simulations via Out-of-Distribution Detection and Amortized Bayesian Model Comparison** (2024)<br />_Reading this paper? Please consider contributing a TLDR summary._<br />by Lingyi Zhou, Stefan T. Radev, William H. Oliver, Aura Obreja, Zehao Jin, Tobias Buck<br />[[Paper]](https://arxiv.org/abs/2410.10606) 
   <details>
   <summary>Show BibTeX</summary>
   <pre><code>
