@@ -159,7 +159,7 @@ class Entry:
                 entry_str += f"<br />_TLDR: {self.awesome_tldr}_"
             # for papers: ask for a contribution if no TLDR is available yet
             elif self.awesome_category in ["overview", "method", "application"]:
-                entry_str += "<br />_TLDR: Reading this paper? Please consider contributing a TLDR summary._"
+                entry_str += "<br />_Reading this paper? Please consider contributing a TLDR summary._"
 
             if self.authors:
                 entry_str += f"<br />by {self.authors}"
