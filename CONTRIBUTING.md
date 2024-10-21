@@ -80,3 +80,37 @@ Thank you for contributing and helping make this resource more useful for everyo
 If you are interested in contributing to the backend code that generates the `README.md` file, you can find the code in the `.github/workflows/` directory.
 The generation of the `README.md` file is handled by a GitHub Action workflow, which in turn calls the Python backend.
 Please lint your code with `ruff` before submitting a pull request that involves Python code.
+
+## Building the Website Locally
+
+We use the static site generator [Zola](https://www.getzola.org/) to render the `README.md` into a simple website.
+The HTML templates reside in `website/templates`, the CSS can be found in `website/templates/partials/styles.css`.
+The `website/content` directory is empty, as the `README.md` file is automatically copied in the GitHub action we use to build the site.
+
+To build the website locally, first [install Zola](https://www.getzola.org/documentation/getting-started/installation/).
+Next, copy the `README.md` to `website/content/_index.md`.
+
+```
+$ cp README.md website/content/_index.md
+```
+
+Then, add the following _frontmatter_ at the top of `website/content/_index.md`:
+
+```
+---
+template: index.html
+---
+```
+
+You can either do this manually, or (on Linux-based systems) use the following `sed` command:
+
+```
+$ sed -i '1i ---\\ntemplate: index.html\\n---\\n' website/content/_index.md
+```
+
+Finally, change into the `website` directory and run Zola:
+
+```
+$ cd website
+$ zola serve --open
+```
