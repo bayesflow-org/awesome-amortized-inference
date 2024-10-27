@@ -57,6 +57,7 @@ class Entry:
         awesome_link_fields: Dict[str, str],
         bibtex: str,
         awesome_tldr: str = "",
+        awesome_tags: List[str] = [],
     ):
         self.title = title
         self.authors = authors
@@ -66,6 +67,7 @@ class Entry:
         self.awesome_link_fields = awesome_link_fields
         self.bibtex = bibtex
         self.awesome_tldr = awesome_tldr
+        self.awesome_tags = awesome_tags
 
     @classmethod
     def from_bibtex(cls, entry) -> "Entry":
@@ -91,6 +93,10 @@ class Entry:
         # get the TL;DR field
         awesome_tldr = entry.fields.get("awesome-tldr", "")
 
+        # Parse tags
+        awesome_tags = entry.fields.get("awesome-tags", "").replace(";", ",").split(",")
+        awesome_tags = [tag.strip() for tag in awesome_tags if tag.strip()]
+
         if awesome_category not in VALID_CATEGORIES:
             print(
                 f"Warning: Unrecognized category '{awesome_category}' for entry '{title}'. Categorizing as 'uncategorized'."
@@ -106,6 +112,7 @@ class Entry:
             awesome_link_fields,
             bibtex,
             awesome_tldr,
+            awesome_tags,
         )
 
     @staticmethod
@@ -163,12 +170,20 @@ class Entry:
 
             if self.awesome_tldr:
                 entry_str += f"<br />_TLDR: {self.awesome_tldr}_"
-            # for papers: ask for a contribution if no TLDR is available yet
             elif self.awesome_category in ["overview", "method", "application"]:
                 entry_str += "<br />_Reading this paper? Please consider contributing a TLDR summary._"
 
-            if self.authors:
-                entry_str += f"<br />by {self.authors}"
+        if self.awesome_tags:
+            tags_str = " ".join(
+                [
+                    f'<span style="display: inline-block; padding: 0.2em 0.5em; margin: 0 0.5em 0.5em 0; font-size: 0.8em; background-color: #f0f0f0; border-radius: 3px;">{tag}</span>'
+                    for tag in self.awesome_tags
+                ]
+            )
+            entry_str += f"<br />{tags_str}"
+
+        if self.authors:
+            entry_str += f"<br />by {self.authors}"
 
         if self.awesome_link_fields:
             entry_str += "<br />"
