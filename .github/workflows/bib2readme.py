@@ -174,7 +174,7 @@ class Entry:
                 entry_str += "<br />_Reading this paper? Please consider contributing a TLDR summary._"
 
         if self.awesome_tags:
-            tags_str = " ".join([f"┃🏷️ {tag}┃" for tag in self.awesome_tags])
+            tags_str = " ".join([f"`[🏷️ {tag}]`" for tag in self.awesome_tags])
             entry_str += f"<br />{tags_str}"
 
         if self.authors:
