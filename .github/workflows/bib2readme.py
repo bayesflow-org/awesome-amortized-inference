@@ -4,7 +4,6 @@ from typing import Dict, List
 from pybtex.database import parse_file
 from pybtex.scanner import PybtexSyntaxError
 from pylatexenc.latex2text import LatexNodes2Text
-
 from slugify import slugify
 
 # Define the categories to be printed in the README
@@ -123,8 +122,7 @@ class Entry:
             if part
         ]
         name = " ".join(name_parts)
-
-        return LatexNodes2Text().latex_to_text(name)
+        return LatexNodes2Text(strict_latex_spaces=True).latex_to_text(name)
 
     @staticmethod
     def format_bibtex(entry) -> str:
@@ -135,10 +133,18 @@ class Entry:
             for key, value in entry.fields.items()
             if not key.startswith("awesome-")  # exclude all awesome fields from BibTeX
         ]
+
+        # Convert LaTeX special characters in author names using LatexNodes2Text
+        latex_converter = LatexNodes2Text()
+
         if "author" in entry.persons:
-            bibtex_fields.append(
-                f"author = {{{' and '.join(str(person) for person in entry.persons.get('author', []))}}}"
+            authors_latex = " and ".join(
+                " ".join(person.prelast_names + person.last_names)
+                for person in entry.persons.get("author", [])
             )
+            authors_text = latex_converter.latex_to_text(authors_latex)
+            bibtex_fields.append(f"author = {{{authors_text}}}")
+
         bibtex_str = (
             f"@{bibtex_type}{{{bibtex_key},\n  " + ",\n  ".join(bibtex_fields) + "\n  }"
         )
@@ -203,7 +209,11 @@ def create_readme(entries_by_category: Dict[str, List[Entry]]) -> str:
         if category_key in entries_by_category:
             if category_key in ["overview", "method", "application", "uncategorized"]:
                 entries_by_category[category_key].sort(
-                    key=lambda x: x.year if x.year.isdigit() else "0000", reverse=True
+                    key=lambda x: (
+                        -int(x.year) if x.year.isdigit() else float("inf"),
+                        x.authors.split(",")[0].split()[-1],
+                    ),
+                    reverse=False,
                 )
             readme_content += f"## {category_value}\n\n"
             readme_content += "\n".join(
