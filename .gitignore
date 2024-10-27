@@ -5,3 +5,5 @@ README_files/
 # because it will be auto-generated from the .bib file by a GitHub Action
 README.md
 website/content/_index.md
+
+.idea/
