@@ -163,8 +163,7 @@ class Entry:
         if self.awesome_category == "software":
             if self.awesome_tldr:
                 entry_str += f"<br />_TLDR: {self.awesome_tldr}_"
-
-        elif self.awesome_category != "software":
+        else:
             if self.year:
                 entry_str += f" ({self.year})"
 
@@ -173,17 +172,18 @@ class Entry:
             elif self.awesome_category in ["overview", "method", "application"]:
                 entry_str += "<br />_Reading this paper? Please consider contributing a TLDR summary._"
 
-        if self.awesome_tags:
-            tags_str = " ".join([f"[🏷️ {tag}]" for tag in self.awesome_tags])
-            entry_str += f"<br />{tags_str}"
+            if self.authors:
+                entry_str += f"<br />by {self.authors}"
 
-        if self.authors:
-            entry_str += f"<br />by {self.authors}"
+        if self.awesome_tags:
+            tags_str = " ".join([f"┃🏷️ {tag}┃" for tag in self.awesome_tags])
+            entry_str += f"<br />{tags_str}"
 
         if self.awesome_link_fields:
             entry_str += "<br />"
             for key, value in self.awesome_link_fields.items():
                 entry_str += f"[[{key.capitalize()}]]({value}) "
+
         entry_str += f"""
   <details>
   <summary>Show BibTeX</summary>
