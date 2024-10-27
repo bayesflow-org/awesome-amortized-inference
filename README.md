@@ -37,23 +37,6 @@ We highly recommend checking out the `awesome-neural-sbi` list for more resource
 
 ## Overview Articles
 
-- **Advancing Tools for Simulation-Based Inference** (2024)<br />_Reading this paper? Please consider contributing a TLDR summary._<br />by Henning Bahl, Victor Bresó, Giovanni De Crescenzo, Tilman Plehn
-  <details>
-  <summary>Show BibTeX</summary>
-  <pre><code>
-  @misc{bahl2024advancing,
-  title = {Advancing {{Tools}} for {{Simulation-Based Inference}}},
-  year = {2024},
-  number = {arXiv:2410.07315},
-  eprint = {2410.07315},
-  primaryclass = {hep-ph},
-  publisher = {arXiv},
-  archiveprefix = {arXiv},
-  author = {Bahl and Bresó and Crescenzo and Plehn}
-  }
-  </code>
-  </pre></details>
-
 - **A Practical Guide to Sample-Based Statistical Distances for Evaluating Generative Models in Science** (2024)<br />_Reading this paper? Please consider contributing a TLDR summary._<br />by Sebastian Bischoff, Alana Darcher, Michael Deistler, Richard Gao, Franziska Gerken, Manuel Gloeckler, Lisa Haxel, Jaivardhan Kapoor, Janne K Lappalainen, Jakob H. Macke, Guy Moss, Matthijs Pals, Felix C Pei, Rachel Rapp, A Erdem Sağtekin, Cornelius Schröder, Auguste Schulz, Zinovia Stefanidi, Shoji Toyota, Linda Ulmer, Julius Vetter
   <details>
   <summary>Show BibTeX</summary>
@@ -64,6 +47,23 @@ We highly recommend checking out the `awesome-neural-sbi` list for more resource
   journal = {Transactions on Machine Learning Research},
   issn = {2835-8856},
   author = {Bischoff and Darcher and Deistler and Gao and Gerken and Gloeckler and Haxel and Kapoor and Lappalainen and Macke and Moss and Pals and Pei and Rapp and Sağtekin and Schröder and Schulz and Stefanidi and Toyota and Ulmer and Vetter}
+  }
+  </code>
+  </pre></details>
+
+- **Neural Methods for Amortised Parameter Inference** (2024)<br />_Reading this paper? Please consider contributing a TLDR summary._<br />by Andrew Zammit-Mangion, Matthew Sainsbury-Dale, Raphaël Huser
+  <details>
+  <summary>Show BibTeX</summary>
+  <pre><code>
+  @misc{zammit2024neural,
+  title = {Neural Methods for Amortised Parameter Inference},
+  year = {2024},
+  number = {arXiv:2404.12484},
+  eprint = {2404.12484},
+  primaryclass = {cs},
+  publisher = {arXiv},
+  archiveprefix = {arXiv},
+  author = {Zammit-Mangion and Sainsbury-Dale and Huser}
   }
   </code>
   </pre></details>
@@ -140,12 +140,12 @@ We highly recommend checking out the `awesome-neural-sbi` list for more resource
   </code>
   </pre></details>
 
-- **Sbi: A Toolkit for Simulation-Based Inference**
+- **sbi: A Toolkit for Simulation-Based Inference**
   <details>
   <summary>Show BibTeX</summary>
   <pre><code>
   @article{tejero-cantero2020sbi,
-  title = {Sbi: {{A}} Toolkit for Simulation-Based Inference},
+  title = {{sbi}: {{A}} Toolkit for Simulation-Based Inference},
   year = {2020},
   journal = {Journal of Open Source Software},
   volume = {5},
@@ -447,25 +447,6 @@ We highly recommend checking out the `awesome-neural-sbi` list for more resource
   </code>
   </pre></details>
 
-- **BayesFlow: Learning Complex Stochastic Models With Invertible Neural Networks** (2022)<br />_Reading this paper? Please consider contributing a TLDR summary._<br />by Stefan T. Radev, Ulf K. Mertens, Andreas Voss, Lynton Ardizzone, Ullrich Köthe
-  <details>
-  <summary>Show BibTeX</summary>
-  <pre><code>
-  @article{radev2022bayesflow,
-  title = {{{BayesFlow}}: {{Learning Complex Stochastic Models With Invertible Neural Networks}}},
-  shorttitle = {{{BayesFlow}}},
-  year = {2022},
-  journal = {IEEE Transactions on Neural Networks and Learning Systems},
-  volume = {33},
-  number = {4},
-  pages = {1452--1466},
-  issn = {2162-237X, 2162-2388},
-  doi = {10.1109/TNNLS.2020.3042395},
-  author = {Radev and Mertens and Voss and Ardizzone and Köthe}
-  }
-  </code>
-  </pre></details>
-
 - **Robust Neural Posterior Estimation and Statistical Model Criticism** (2022)<br />_Reading this paper? Please consider contributing a TLDR summary._<br />by Daniel Ward, Patrick Cannon, Mark Beaumont, Matteo Fasiolo, Sebastian M. Schmon
   <details>
   <summary>Show BibTeX</summary>
@@ -493,7 +474,43 @@ We highly recommend checking out the `awesome-neural-sbi` list for more resource
   }
   </code>
   </pre></details>
+
+- **BayesFlow: Learning Complex Stochastic Models With Invertible Neural Networks** (2020)<br />_Reading this paper? Please consider contributing a TLDR summary._<br />by Stefan T. Radev, Ulf K. Mertens, Andreas Voss, Lynton Ardizzone, Ullrich Köthe
+  <details>
+  <summary>Show BibTeX</summary>
+  <pre><code>
+  @article{radev2020bayesflow,
+  title = {{{BayesFlow}}: {{Learning Complex Stochastic Models With Invertible Neural Networks}}},
+  shorttitle = {{{BayesFlow}}},
+  year = {2020},
+  journal = {IEEE Transactions on Neural Networks and Learning Systems},
+  volume = {33},
+  number = {4},
+  pages = {1452--1466},
+  issn = {2162-237X, 2162-2388},
+  doi = {10.1109/TNNLS.2020.3042395},
+  author = {Radev and Mertens and Voss and Ardizzone and Köthe}
+  }
+  </code>
+  </pre></details>
 ## Application Papers
+
+- **Advancing Tools for Simulation-Based Inference** (2024)<br />_Reading this paper? Please consider contributing a TLDR summary._<br />by Henning Bahl, Victor Bresó, Giovanni De Crescenzo, Tilman Plehn
+  <details>
+  <summary>Show BibTeX</summary>
+  <pre><code>
+  @misc{bahl2024advancing,
+  title = {Advancing {{Tools}} for {{Simulation-Based Inference}}},
+  year = {2024},
+  number = {arXiv:2410.07315},
+  eprint = {2410.07315},
+  primaryclass = {hep-ph},
+  publisher = {arXiv},
+  archiveprefix = {arXiv},
+  author = {Bahl and Bresó and Crescenzo and Plehn}
+  }
+  </code>
+  </pre></details>
 
 - **Amortized Template-Matching of Molecular Conformations from Cryo-Electron Microscopy Images Using Simulation-Based Inference** (2024)<br />_Reading this paper? Please consider contributing a TLDR summary._<br />by Lars Dingeldein, David Silva-Sánchez, Luke Evans, Edoardo D'Imprima, Nikolaus Grigorieff, Roberto Covino, Pilar Cossio
   <details>
