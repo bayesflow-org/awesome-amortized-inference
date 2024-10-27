@@ -8,7 +8,7 @@ from slugify import slugify
 
 # Define the categories to be printed in the README
 VALID_CATEGORIES = {
-    "overview": "Overview Articles",
+    "review": "Review Articles",
     "software": "Software",
     "method": "Methodological Papers",
     "application": "Application Papers",
@@ -23,7 +23,7 @@ README_HEADERS = """
 ![License: CC0](https://img.shields.io/badge/License-CC0_1.0-lightgrey)
 
 Welcome to the Awesome Amortized Inference repository!
-This is a curated list of resources, including overviews, software, papers, and other resources related to amortized inference.
+This is a curated list of resources, including reviews, software, papers, and other resources related to amortized inference.
 Feel free to explore the entries below and use the provided BibTeX information for citation purposes.
 This is a community-driven project which is currently maintained by [Marvin Schmitt](https://www.marvinschmitt.com).
 Contributions are always welcome, see [`CONTRIBUTING.md`](https://github.com/bayesflow-org/awesome-amortized-inference/blob/main/CONTRIBUTING.md) for a contribution guide.
@@ -169,7 +169,7 @@ class Entry:
 
             if self.awesome_tldr:
                 entry_str += f"<br />_TLDR: {self.awesome_tldr}_"
-            elif self.awesome_category in ["overview", "method", "application"]:
+            elif self.awesome_category in ["review", "method", "application"]:
                 entry_str += "<br />_Reading this paper? Please consider contributing a TLDR summary._"
 
             if self.authors:
@@ -217,7 +217,7 @@ def create_readme(entries_by_category: Dict[str, List[Entry]]) -> str:
     # Add Sections
     for category_key, category_value in VALID_CATEGORIES.items():
         if category_key in entries_by_category:
-            if category_key in ["overview", "method", "application", "uncategorized"]:
+            if category_key in ["review", "method", "application", "uncategorized"]:
                 entries_by_category[category_key].sort(
                     key=lambda x: (
                         -int(x.year) if x.year.isdigit() else float("inf"),
