@@ -122,7 +122,7 @@ We highly recommend checking out the `awesome-neural-sbi` list for more resource
   </pre></details>
 ## Software
 
-- **BayesFlow: Amortized Bayesian Workflows with Neural Networks**<br />by Stefan T. Radev, Marvin Schmitt, Lukas Schumacher, Lasse Elsemüller, Valentin Pratz, Yannik Schälte, Ullrich Köthe, Paul-Christian Bürkner
+- **BayesFlow: Amortized Bayesian Workflows with Neural Networks**
   <details>
   <summary>Show BibTeX</summary>
   <pre><code>
@@ -140,7 +140,7 @@ We highly recommend checking out the `awesome-neural-sbi` list for more resource
   </code>
   </pre></details>
 
-- **sbi: A Toolkit for Simulation-Based Inference**<br />by Alvaro Tejero-Cantero, Jan Boelts, Michael Deistler, Jan-Matthis Lueckmann, Conor Durkan, Pedro J. Gonçalves, David S. Greenberg, Jakob H. Macke
+- **sbi: A Toolkit for Simulation-Based Inference**
   <details>
   <summary>Show BibTeX</summary>
   <pre><code>
@@ -189,7 +189,7 @@ We highly recommend checking out the `awesome-neural-sbi` list for more resource
   </code>
   </pre></details>
 
-- **Amortized Bayesian Multilevel Models** (2024)<br />_Reading this paper? Please consider contributing a TLDR summary._<br />[🏷️ parameter estimation]<br />by Daniel Habermann, Marvin Schmitt, Lars Kühmichel, Andreas Bulling, Stefan T. Radev, Paul-Christian Bürkner
+- **Amortized Bayesian Multilevel Models** (2024)<br />_Reading this paper? Please consider contributing a TLDR summary._<br />by Daniel Habermann, Marvin Schmitt, Lars Kühmichel, Andreas Bulling, Stefan T. Radev, Paul-Christian Bürkner<br />┃🏷️ parameter estimation┃
   <details>
   <summary>Show BibTeX</summary>
   <pre><code>
@@ -205,7 +205,7 @@ We highly recommend checking out the `awesome-neural-sbi` list for more resource
   </code>
   </pre></details>
 
-- **Likelihood-Free Parameter Estimation with Neural Bayes Estimators** (2024)<br />_Reading this paper? Please consider contributing a TLDR summary._<br />[🏷️ parameter estimation]<br />by Matthew Sainsbury-Dale, Andrew Zammit-Mangion, Raphaël Huser
+- **Likelihood-Free Parameter Estimation with Neural Bayes Estimators** (2024)<br />_Reading this paper? Please consider contributing a TLDR summary._<br />by Matthew Sainsbury-Dale, Andrew Zammit-Mangion, Raphaël Huser<br />┃🏷️ parameter estimation┃
   <details>
   <summary>Show BibTeX</summary>
   <pre><code>
@@ -460,7 +460,7 @@ We highly recommend checking out the `awesome-neural-sbi` list for more resource
   </code>
   </pre></details>
 
-- **Deep Adaptive Design: Amortizing Sequential Bayesian Experimental Design** (2021)<br />_Reading this paper? Please consider contributing a TLDR summary._<br />[🏷️ BED] [🏷️ adaptive design]<br />by Adam Foster, Desi R. Ivanova, Malik Ilyas, Tom Rainforth
+- **Deep Adaptive Design: Amortizing Sequential Bayesian Experimental Design** (2021)<br />_Reading this paper? Please consider contributing a TLDR summary._<br />by Adam Foster, Desi R. Ivanova, Malik Ilyas, Tom Rainforth<br />┃🏷️ BED┃ ┃🏷️ adaptive design┃
   <details>
   <summary>Show BibTeX</summary>
   <pre><code>
@@ -553,7 +553,7 @@ We highly recommend checking out the `awesome-neural-sbi` list for more resource
   </code>
   </pre></details>
 
-- **A General Integrative Neurocognitive Modeling Framework to Jointly Describe EEG and Decision-making on Single Trials** (2023)<br />_Reading this paper? Please consider contributing a TLDR summary._<br />[🏷️ cognitive modeling]<br />by Amin Ghaderi-Kangavari, Jamal Amani Rad, Michael D. Nunez
+- **A General Integrative Neurocognitive Modeling Framework to Jointly Describe EEG and Decision-making on Single Trials** (2023)<br />_Reading this paper? Please consider contributing a TLDR summary._<br />by Amin Ghaderi-Kangavari, Jamal Amani Rad, Michael D. Nunez<br />┃🏷️ cognitive modeling┃
   <details>
   <summary>Show BibTeX</summary>
   <pre><code>
@@ -571,7 +571,7 @@ We highly recommend checking out the `awesome-neural-sbi` list for more resource
   </code>
   </pre></details>
 
-- **Amortized Inference with User Simulations** (2023)<br />_Reading this paper? Please consider contributing a TLDR summary._<br />[🏷️ human-computer interaction]<br />by Hee-Seung Moon, Antti Oulasvirta, Byungjoo Lee
+- **Amortized Inference with User Simulations** (2023)<br />_Reading this paper? Please consider contributing a TLDR summary._<br />by Hee-Seung Moon, Antti Oulasvirta, Byungjoo Lee<br />┃🏷️ human-computer interaction┃
   <details>
   <summary>Show BibTeX</summary>
   <pre><code>
