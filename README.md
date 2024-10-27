@@ -6,7 +6,7 @@
 ![License: CC0](https://img.shields.io/badge/License-CC0_1.0-lightgrey)
 
 Welcome to the Awesome Amortized Inference repository!
-This is a curated list of resources, including overviews, software, papers, and other resources related to amortized inference.
+This is a curated list of resources, including reviews, software, papers, and other resources related to amortized inference.
 Feel free to explore the entries below and use the provided BibTeX information for citation purposes.
 This is a community-driven project which is currently maintained by [Marvin Schmitt](https://www.marvinschmitt.com).
 Contributions are always welcome, see [`CONTRIBUTING.md`](https://github.com/bayesflow-org/awesome-amortized-inference/blob/main/CONTRIBUTING.md) for a contribution guide.
@@ -29,13 +29,13 @@ We highly recommend checking out the `awesome-neural-sbi` list for more resource
 
 ## Contents
 
-- [Overview Articles](#overview-articles)
+- [Review Articles](#review-articles)
 - [Software](#software)
 - [Methodological Papers](#methodological-papers)
 - [Application Papers](#application-papers)
 
 
-## Overview Articles
+## Review Articles
 
 - **A Practical Guide to Sample-Based Statistical Distances for Evaluating Generative Models in Science** (2024)<br />_Reading this paper? Please consider contributing a TLDR summary._<br />by Sebastian Bischoff, Alana Darcher, Michael Deistler, Richard Gao, Franziska Gerken, Manuel Gloeckler, Lisa Haxel, Jaivardhan Kapoor, Janne K Lappalainen, Jakob H. Macke, Guy Moss, Matthijs Pals, Felix C Pei, Rachel Rapp, A Erdem Sağtekin, Cornelius Schröder, Auguste Schulz, Zinovia Stefanidi, Shoji Toyota, Linda Ulmer, Julius Vetter
   <details>
