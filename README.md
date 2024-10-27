@@ -140,12 +140,12 @@ We highly recommend checking out the `awesome-neural-sbi` list for more resource
   </code>
   </pre></details>
 
-- **Sbi: A Toolkit for Simulation-Based Inference**
+- **sbi: A Toolkit for Simulation-Based Inference**
   <details>
   <summary>Show BibTeX</summary>
   <pre><code>
   @article{tejero-cantero2020sbi,
-  title = {Sbi: {{A}} Toolkit for Simulation-Based Inference},
+  title = {{sbi}: {{A}} Toolkit for Simulation-Based Inference},
   year = {2020},
   journal = {Journal of Open Source Software},
   volume = {5},
