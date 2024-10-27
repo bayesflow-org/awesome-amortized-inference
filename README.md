@@ -51,6 +51,23 @@ We highly recommend checking out the `awesome-neural-sbi` list for more resource
   </code>
   </pre></details>
 
+- **Neural Methods for Amortised Parameter Inference** (2024)<br />_Reading this paper? Please consider contributing a TLDR summary._<br />by Andrew Zammit-Mangion, Matthew Sainsbury-Dale, Raphaël Huser
+  <details>
+  <summary>Show BibTeX</summary>
+  <pre><code>
+  @misc{zammit2024neural,
+  title = {Neural Methods for Amortised Parameter Inference},
+  year = {2024},
+  number = {arXiv:2404.12484},
+  eprint = {2404.12484},
+  primaryclass = {cs},
+  publisher = {arXiv},
+  archiveprefix = {arXiv},
+  author = {Zammit-Mangion and Sainsbury-Dale and Huser}
+  }
+  </code>
+  </pre></details>
+
 - **Simulation Intelligence: Towards a New Generation of Scientific Methods** (2022)<br />_Reading this paper? Please consider contributing a TLDR summary._<br />by Alexander Lavin, David Krakauer, Hector Zenil, Justin Gottschlich, Tim Mattson, Johann Brehmer, Anima Anandkumar, Sanjay Choudry, Kamil Rocki, Atılım Güneş Baydin, Carina Prunkl, Brooks Paige, Olexandr Isayev, Erik Peterson, Peter L. McMahon, Jakob Macke, Kyle Cranmer, Jiaxin Zhang, Haruko Wainwright, Adi Hanuka, Manuela Veloso, Samuel Assefa, Stephan Zheng, Avi Pfeffer
   <details>
   <summary>Show BibTeX</summary>
@@ -430,25 +447,6 @@ We highly recommend checking out the `awesome-neural-sbi` list for more resource
   </code>
   </pre></details>
 
-- **BayesFlow: Learning Complex Stochastic Models With Invertible Neural Networks** (2022)<br />_Reading this paper? Please consider contributing a TLDR summary._<br />by Stefan T. Radev, Ulf K. Mertens, Andreas Voss, Lynton Ardizzone, Ullrich Köthe
-  <details>
-  <summary>Show BibTeX</summary>
-  <pre><code>
-  @article{radev2022bayesflow,
-  title = {{{BayesFlow}}: {{Learning Complex Stochastic Models With Invertible Neural Networks}}},
-  shorttitle = {{{BayesFlow}}},
-  year = {2022},
-  journal = {IEEE Transactions on Neural Networks and Learning Systems},
-  volume = {33},
-  number = {4},
-  pages = {1452--1466},
-  issn = {2162-237X, 2162-2388},
-  doi = {10.1109/TNNLS.2020.3042395},
-  author = {Radev and Mertens and Voss and Ardizzone and Köthe}
-  }
-  </code>
-  </pre></details>
-
 - **Robust Neural Posterior Estimation and Statistical Model Criticism** (2022)<br />_Reading this paper? Please consider contributing a TLDR summary._<br />by Daniel Ward, Patrick Cannon, Mark Beaumont, Matteo Fasiolo, Sebastian M. Schmon
   <details>
   <summary>Show BibTeX</summary>
@@ -473,6 +471,25 @@ We highly recommend checking out the `awesome-neural-sbi` list for more resource
   volume = {139},
   publisher = {PMLR},
   author = {Foster and Ivanova and Ilyas and Rainforth}
+  }
+  </code>
+  </pre></details>
+
+- **BayesFlow: Learning Complex Stochastic Models With Invertible Neural Networks** (2020)<br />_Reading this paper? Please consider contributing a TLDR summary._<br />by Stefan T. Radev, Ulf K. Mertens, Andreas Voss, Lynton Ardizzone, Ullrich Köthe
+  <details>
+  <summary>Show BibTeX</summary>
+  <pre><code>
+  @article{radev2020bayesflow,
+  title = {{{BayesFlow}}: {{Learning Complex Stochastic Models With Invertible Neural Networks}}},
+  shorttitle = {{{BayesFlow}}},
+  year = {2020},
+  journal = {IEEE Transactions on Neural Networks and Learning Systems},
+  volume = {33},
+  number = {4},
+  pages = {1452--1466},
+  issn = {2162-237X, 2162-2388},
+  doi = {10.1109/TNNLS.2020.3042395},
+  author = {Radev and Mertens and Voss and Ardizzone and Köthe}
   }
   </code>
   </pre></details>
