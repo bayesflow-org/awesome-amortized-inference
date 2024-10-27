@@ -37,23 +37,6 @@ We highly recommend checking out the `awesome-neural-sbi` list for more resource
 
 ## Overview Articles
 
-- **Advancing Tools for Simulation-Based Inference** (2024)<br />_Reading this paper? Please consider contributing a TLDR summary._<br />by Henning Bahl, Victor Bresó, Giovanni De Crescenzo, Tilman Plehn
-  <details>
-  <summary>Show BibTeX</summary>
-  <pre><code>
-  @misc{bahl2024advancing,
-  title = {Advancing {{Tools}} for {{Simulation-Based Inference}}},
-  year = {2024},
-  number = {arXiv:2410.07315},
-  eprint = {2410.07315},
-  primaryclass = {hep-ph},
-  publisher = {arXiv},
-  archiveprefix = {arXiv},
-  author = {Bahl and Bresó and Crescenzo and Plehn}
-  }
-  </code>
-  </pre></details>
-
 - **A Practical Guide to Sample-Based Statistical Distances for Evaluating Generative Models in Science** (2024)<br />_Reading this paper? Please consider contributing a TLDR summary._<br />by Sebastian Bischoff, Alana Darcher, Michael Deistler, Richard Gao, Franziska Gerken, Manuel Gloeckler, Lisa Haxel, Jaivardhan Kapoor, Janne K Lappalainen, Jakob H. Macke, Guy Moss, Matthijs Pals, Felix C Pei, Rachel Rapp, A Erdem Sağtekin, Cornelius Schröder, Auguste Schulz, Zinovia Stefanidi, Shoji Toyota, Linda Ulmer, Julius Vetter
   <details>
   <summary>Show BibTeX</summary>
@@ -494,6 +477,23 @@ We highly recommend checking out the `awesome-neural-sbi` list for more resource
   </code>
   </pre></details>
 ## Application Papers
+
+- **Advancing Tools for Simulation-Based Inference** (2024)<br />_Reading this paper? Please consider contributing a TLDR summary._<br />by Henning Bahl, Victor Bresó, Giovanni De Crescenzo, Tilman Plehn
+  <details>
+  <summary>Show BibTeX</summary>
+  <pre><code>
+  @misc{bahl2024advancing,
+  title = {Advancing {{Tools}} for {{Simulation-Based Inference}}},
+  year = {2024},
+  number = {arXiv:2410.07315},
+  eprint = {2410.07315},
+  primaryclass = {hep-ph},
+  publisher = {arXiv},
+  archiveprefix = {arXiv},
+  author = {Bahl and Bresó and Crescenzo and Plehn}
+  }
+  </code>
+  </pre></details>
 
 - **Amortized Template-Matching of Molecular Conformations from Cryo-Electron Microscopy Images Using Simulation-Based Inference** (2024)<br />_Reading this paper? Please consider contributing a TLDR summary._<br />by Lars Dingeldein, David Silva-Sánchez, Luke Evans, Edoardo D'Imprima, Nikolaus Grigorieff, Roberto Covino, Pilar Cossio
   <details>
