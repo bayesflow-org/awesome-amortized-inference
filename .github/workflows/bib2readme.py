@@ -174,12 +174,7 @@ class Entry:
                 entry_str += "<br />_Reading this paper? Please consider contributing a TLDR summary._"
 
         if self.awesome_tags:
-            tags_str = " ".join(
-                [
-                    f'<span style="display: inline-block; padding: 0.2em 0.5em; margin: 0 0.5em 0.5em 0; font-size: 0.8em; background-color: #f0f0f0; border-radius: 3px;">{tag}</span>'
-                    for tag in self.awesome_tags
-                ]
-            )
+            tags_str = " ".join([f"┃🏷️ {tag}┃" for tag in self.awesome_tags])
             entry_str += f"<br />{tags_str}"
 
         if self.authors:
