@@ -24,7 +24,7 @@ To contribute a new resource, follow these steps:
 
 - **Awesome Fields**: You can add important meta-information for the resource list in the `awesome-` fields:
   - `awesome-category`: The category of the paper, choose from `software, method, application, overview`.
-  - `awesome-tldr`: A short one-sentence summary of the paper (TL;DR = too long, didn't read). Please try to make the TLDR say more than the title. We know it's hard but it's well worth the effort because it helps others get the gist of a resource.
+  - `awesome-tldr`: A short one-sentence summary of the paper (TL;DR = too long, didn't read). Please try to make the TLDR say more than the title. We know it's hard, but it's well worth the effort because it helps others get the gist of a resource.
   - These fields will **not** be included in the BibTeX export.
 
 - **Awesome Links**: You can add any additional links using fields of the form `awesome-link-<key> = {<value>}`. These fields will create links in the `README.md`:
@@ -57,7 +57,7 @@ In the above example:
 
 ## Important Note
 
-The `README.md` file is automatically generated from the `resources.bib` file by a GitHub Action workflow. **Do not edit the `README.md` file directly**, as your changes will be overwritten. Instead, make all changes by editing the `data.bib` file.
+The `README.md` file is automatically generated from the `resources.bib` file by a GitHub Action workflow. **Do not edit the `README.md` file directly**, as your changes will be overwritten. Instead, make all changes by editing the `resources.bib` file.
 
 ## Submitting Your Contribution
 
