@@ -155,6 +155,19 @@ We highly recommend checking out these lists for more resources on modern simula
   </pre></details>
 ## Methodological Papers
 
+- **An amortized approach to non-linear mixed-effects modeling based on neural posterior estimation** (2024)<br />_TLDR: Neural posterior estimation for hierarchical models, where the NPE is used in a first stage on a local level and then repeatedly used for global inference leveraging amortization._<br />by Jonas Arruda, Yannik Schälte, Clemens Peiter, Olga Teplytska, Ulrich Jaehde, Jan Hasenauer<br />[[Paper]](https://openreview.net/forum?id=uCdcXRuHnC) [[Code]](https://github.com/arrjon/Amortized-NLME-Models/tree/ICML2024) 
+  <details>
+  <summary>Show BibTeX</summary>
+  <pre><code>
+  @inproceedings{arruda2024anamortized,
+  title = {An amortized approach to non-linear mixed-effects modeling based on neural posterior estimation},
+  booktitle = {Forty-first International Conference on Machine Learning},
+  year = {2024},
+  author = {Arruda and Schälte and Peiter and Teplytska and Jaehde and Hasenauer}
+  }
+  </code>
+  </pre></details>
+
 - **A Deep Learning Method for Comparing Bayesian Hierarchical Models.** (2024)<br />_Reading this paper? Please consider contributing a TLDR summary._<br />by Lasse Elsemüller, Martin Schnuerch, Paul-Christian Bürkner, Stefan T. Radev
   <details>
   <summary>Show BibTeX</summary>
@@ -311,6 +324,25 @@ We highly recommend checking out these lists for more resources on modern simula
   publisher = {arXiv},
   archiveprefix = {arXiv},
   author = {Starostin and Dax and Gerlach and Hinderhofer and Tejero-Cantero and Schreiber}
+  }
+  </code>
+  </pre></details>
+
+- **Missing data in amortized simulation-based neural posterior estimation** (2024)<br />_TLDR: Encoding missing data in a time series by augmenting the data vector with binary indicators for presence or absence yields the most robust performance._<br />by Zijian Wang, Jan Hasenauer, Yannik Schälte<br />[[Paper]](https://doi.org/10.1371/journal.pcbi.1012184) [[Code]](https://github.com/emune-dev/Data-missingness-paper) 
+  <details>
+  <summary>Show BibTeX</summary>
+  <pre><code>
+  @article{wang2024missing,
+  doi = {10.1371/journal.pcbi.1012184},
+  journal = {PLOS Computational Biology},
+  publisher = {Public Library of Science},
+  title = {Missing data in amortized simulation-based neural posterior estimation},
+  year = {2024},
+  month = {06},
+  volume = {20},
+  pages = {1-17},
+  number = {6},
+  author = {Wang and Hasenauer and Schälte}
   }
   </code>
   </pre></details>
