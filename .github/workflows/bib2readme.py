@@ -29,7 +29,7 @@ This is a community-driven project which is currently maintained by [Marvin Schm
 Contributions are always welcome, see [`CONTRIBUTING.md`](https://github.com/bayesflow-org/awesome-amortized-inference/blob/main/CONTRIBUTING.md) for a contribution guide 🧡
 
 This list currently has some overlap with the `awesome-neural-sbi` list ([Link](https://github.com/smsharma/awesome-neural-sbi)) because
-amortized inference has gained populatity in the context of simulation-based inference (SBI) with neural networks.
+amortized inference has gained popularity in the context of simulation-based inference (SBI) with neural networks.
 However, there is a trend towards broader amortized inference methods that are not necessarily simulation-based.
 This list aims to cover all amortized inference methods, including but not limited to simulation-based inference.
 We highly recommend checking out these lists for more resources on modern simulation-based inference:
