@@ -12,7 +12,7 @@ This is a community-driven project which is currently maintained by [Marvin Schm
 Contributions are always welcome, see [`CONTRIBUTING.md`](https://github.com/bayesflow-org/awesome-amortized-inference/blob/main/CONTRIBUTING.md) for a contribution guide 🧡
 
 This list currently has some overlap with the `awesome-neural-sbi` list ([Link](https://github.com/smsharma/awesome-neural-sbi)) because
-amortized inference has gained populatity in the context of simulation-based inference (SBI) with neural networks.
+amortized inference has gained popularity in the context of simulation-based inference (SBI) with neural networks.
 However, there is a trend towards broader amortized inference methods that are not necessarily simulation-based.
 This list aims to cover all amortized inference methods, including but not limited to simulation-based inference.
 We highly recommend checking out these lists for more resources on modern simulation-based inference:
@@ -118,7 +118,7 @@ We highly recommend checking out these lists for more resources on modern simula
   </pre></details>
 ## Software
 
-- **BayesFlow: Amortized Bayesian Workflows with Neural Networks**
+- **BayesFlow: Amortized Bayesian Workflows with Neural Networks**<br />[[Paper]](https://joss.theoj.org/papers/10.21105/joss.05702) [[Code]](https://github.com/bayesflow-org/bayesflow) 
   <details>
   <summary>Show BibTeX</summary>
   <pre><code>
@@ -136,7 +136,7 @@ We highly recommend checking out these lists for more resources on modern simula
   </code>
   </pre></details>
 
-- **sbi: A Toolkit for Simulation-Based Inference**
+- **sbi: A Toolkit for Simulation-Based Inference**<br />[[Paper]](https://joss.theoj.org/papers/10.21105/joss.02505) [[Code]](https://github.com/sbi-dev/sbi) 
   <details>
   <summary>Show BibTeX</summary>
   <pre><code>
@@ -168,7 +168,7 @@ We highly recommend checking out these lists for more resources on modern simula
   </code>
   </pre></details>
 
-- **A Deep Learning Method for Comparing Bayesian Hierarchical Models.** (2024)<br />_Reading this paper? Please consider contributing a TLDR summary._<br />by Lasse Elsemüller, Martin Schnuerch, Paul-Christian Bürkner, Stefan T. Radev
+- **A Deep Learning Method for Comparing Bayesian Hierarchical Models.** (2024)<br />_TLDR: Proposes a multilevel neural architecture for compressing hierarchical data structures in Bayesian model comparison._<br />by Lasse Elsemüller, Martin Schnuerch, Paul-Christian Bürkner, Stefan T. Radev<br />[[Paper]](https://arxiv.org/abs/2301.11873) [[Code]](https://github.com/bayesflow-org/Hierarchical-Model-Comparison) 
   <details>
   <summary>Show BibTeX</summary>
   <pre><code>
@@ -184,7 +184,7 @@ We highly recommend checking out these lists for more resources on modern simula
   </code>
   </pre></details>
 
-- **Sensitivity-Aware Amortized Bayesian Inference** (2024)<br />_Reading this paper? Please consider contributing a TLDR summary._<br />by Lasse Elsemüller, Hans Olischläger, Marvin Schmitt, Paul-Christian Bürkner, Ullrich Köthe, Stefan T. Radev
+- **Sensitivity-Aware Amortized Bayesian Inference** (2024)<br />_TLDR: Proposes a framework for amortized and thus efficient sensitivity analyses on all major dimensions of a Bayesian model._<br />by Lasse Elsemüller, Hans Olischläger, Marvin Schmitt, Paul-Christian Bürkner, Ullrich Köthe, Stefan T. Radev<br />[[Paper]](https://openreview.net/forum?id=Kxtpa9rvM0) [[Code]](https://github.com/bayesflow-org/SA-ABI) 
   <details>
   <summary>Show BibTeX</summary>
   <pre><code>
