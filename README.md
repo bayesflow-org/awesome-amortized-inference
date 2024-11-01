@@ -168,7 +168,7 @@ We highly recommend checking out these lists for more resources on modern simula
   </code>
   </pre></details>
 
-- **A Deep Learning Method for Comparing Bayesian Hierarchical Models.** (2024)<br />_TLDR: Proposes a multilevel neural architecture for compressing hierarchical data structures in Bayesian model comparison._<br />by Lasse Elsemüller, Martin Schnuerch, Paul-Christian Bürkner, Stefan T. Radev<br />[[Paper]](https://arxiv.org/abs/2301.11873) [[Code]](https://github.com/bayesflow-org/Hierarchical-Model-Comparison) 
+- **A Deep Learning Method for Comparing Bayesian Hierarchical Models.** (2024)<br />_TLDR: Proposes a multilevel neural architecture for compressing hierarchical data structures in Bayesian model comparison._<br />by Lasse Elsemüller, Martin Schnuerch, Paul-Christian Bürkner, Stefan T. Radev<br />┃🏷️ hierarchical models┃ ┃🏷️ model comparison┃ ┃🏷️ simulation-based┃<br />[[Paper]](https://arxiv.org/abs/2301.11873) [[Code]](https://github.com/bayesflow-org/Hierarchical-Model-Comparison) 
   <details>
   <summary>Show BibTeX</summary>
   <pre><code>
@@ -178,7 +178,6 @@ We highly recommend checking out these lists for more resources on modern simula
   journal = {Psychological Methods},
   issn = {1939-1463, 1082-989X},
   doi = {10.1037/met0000645},
-  langid = {english},
   author = {Elsemüller and Schnuerch and Bürkner and Radev}
   }
   </code>
