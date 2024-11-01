@@ -33,20 +33,6 @@ We highly recommend checking out these lists for more resources on modern simula
 
 ## Review Articles
 
-- **A Practical Guide to Sample-Based Statistical Distances for Evaluating Generative Models in Science** (2024)<br />_Reading this paper? Please consider contributing a TLDR summary._<br />by Sebastian Bischoff, Alana Darcher, Michael Deistler, Richard Gao, Franziska Gerken, Manuel Gloeckler, Lisa Haxel, Jaivardhan Kapoor, Janne K Lappalainen, Jakob H. Macke, Guy Moss, Matthijs Pals, Felix C Pei, Rachel Rapp, A Erdem Sağtekin, Cornelius Schröder, Auguste Schulz, Zinovia Stefanidi, Shoji Toyota, Linda Ulmer, Julius Vetter
-  <details>
-  <summary>Show BibTeX</summary>
-  <pre><code>
-  @article{bischoff2024practical,
-  title = {A Practical Guide to Sample-Based Statistical Distances for Evaluating Generative Models in Science},
-  year = {2024},
-  journal = {Transactions on Machine Learning Research},
-  issn = {2835-8856},
-  author = {Bischoff and Darcher and Deistler and Gao and Gerken and Gloeckler and Haxel and Kapoor and Lappalainen and Macke and Moss and Pals and Pei and Rapp and Sağtekin and Schröder and Schulz and Stefanidi and Toyota and Ulmer and Vetter}
-  }
-  </code>
-  </pre></details>
-
 - **Neural Methods for Amortised Parameter Inference** (2024)<br />_Reading this paper? Please consider contributing a TLDR summary._<br />by Andrew Zammit-Mangion, Matthew Sainsbury-Dale, Raphaël Huser
   <details>
   <summary>Show BibTeX</summary>
@@ -155,7 +141,7 @@ We highly recommend checking out these lists for more resources on modern simula
   </pre></details>
 ## Methodological Papers
 
-- **An amortized approach to non-linear mixed-effects modeling based on neural posterior estimation** (2024)<br />_TLDR: Neural posterior estimation for hierarchical models, where the NPE is used in a first stage on a local level and then repeatedly used for global inference leveraging amortization._<br />by Jonas Arruda, Yannik Schälte, Clemens Peiter, Olga Teplytska, Ulrich Jaehde, Jan Hasenauer<br />[[Paper]](https://openreview.net/forum?id=uCdcXRuHnC) [[Code]](https://github.com/arrjon/Amortized-NLME-Models/tree/ICML2024) 
+- **An amortized approach to non-linear mixed-effects modeling based on neural posterior estimation** (2024)<br />_TLDR: Neural posterior estimation for hierarchical models, where the NPE is used in a first stage on a local level and then repeatedly used for global inference leveraging amortization._<br />by Jonas Arruda, Yannik Schälte, Clemens Peiter, Olga Teplytska, Ulrich Jaehde, Jan Hasenauer<br />┃🏷️ parameter estimation┃ ┃🏷️ hierarchical models┃<br />[[Paper]](https://openreview.net/forum?id=uCdcXRuHnC) [[Code]](https://github.com/arrjon/Amortized-NLME-Models/tree/ICML2024) 
   <details>
   <summary>Show BibTeX</summary>
   <pre><code>
@@ -164,6 +150,20 @@ We highly recommend checking out these lists for more resources on modern simula
   booktitle = {Forty-first International Conference on Machine Learning},
   year = {2024},
   author = {Arruda and Schälte and Peiter and Teplytska and Jaehde and Hasenauer}
+  }
+  </code>
+  </pre></details>
+
+- **A Practical Guide to Sample-Based Statistical Distances for Evaluating Generative Models in Science** (2024)<br />_Reading this paper? Please consider contributing a TLDR summary._<br />by Sebastian Bischoff, Alana Darcher, Michael Deistler, Richard Gao, Franziska Gerken, Manuel Gloeckler, Lisa Haxel, Jaivardhan Kapoor, Janne K Lappalainen, Jakob H. Macke, Guy Moss, Matthijs Pals, Felix C Pei, Rachel Rapp, A Erdem Sağtekin, Cornelius Schröder, Auguste Schulz, Zinovia Stefanidi, Shoji Toyota, Linda Ulmer, Julius Vetter<br />┃🏷️ diagnostics┃ ┃🏷️ model evaluation┃
+  <details>
+  <summary>Show BibTeX</summary>
+  <pre><code>
+  @article{bischoff2024practical,
+  title = {A Practical Guide to Sample-Based Statistical Distances for Evaluating Generative Models in Science},
+  year = {2024},
+  journal = {Transactions on Machine Learning Research},
+  issn = {2835-8856},
+  author = {Bischoff and Darcher and Deistler and Gao and Gerken and Gloeckler and Haxel and Kapoor and Lappalainen and Macke and Moss and Pals and Pei and Rapp and Sağtekin and Schröder and Schulz and Stefanidi and Toyota and Ulmer and Vetter}
   }
   </code>
   </pre></details>
@@ -184,7 +184,7 @@ We highly recommend checking out these lists for more resources on modern simula
   </code>
   </pre></details>
 
-- **Sensitivity-Aware Amortized Bayesian Inference** (2024)<br />_TLDR: Proposes a framework for amortized and thus efficient sensitivity analyses on all major dimensions of a Bayesian model._<br />by Lasse Elsemüller, Hans Olischläger, Marvin Schmitt, Paul-Christian Bürkner, Ullrich Köthe, Stefan T. Radev<br />[[Paper]](https://openreview.net/forum?id=Kxtpa9rvM0) [[Code]](https://github.com/bayesflow-org/SA-ABI) 
+- **Sensitivity-Aware Amortized Bayesian Inference** (2024)<br />_TLDR: Proposes a framework for amortized and thus efficient sensitivity analyses on all major dimensions of a Bayesian model._<br />by Lasse Elsemüller, Hans Olischläger, Marvin Schmitt, Paul-Christian Bürkner, Ullrich Köthe, Stefan T. Radev<br />┃🏷️ sensitivity analysis┃ ┃🏷️ simulation-based┃ ┃🏷️ meta learning┃<br />[[Paper]](https://openreview.net/forum?id=Kxtpa9rvM0) [[Code]](https://github.com/bayesflow-org/SA-ABI) 
   <details>
   <summary>Show BibTeX</summary>
   <pre><code>
@@ -198,7 +198,7 @@ We highly recommend checking out these lists for more resources on modern simula
   </code>
   </pre></details>
 
-- **Amortized Bayesian Multilevel Models** (2024)<br />_Reading this paper? Please consider contributing a TLDR summary._<br />by Daniel Habermann, Marvin Schmitt, Lars Kühmichel, Andreas Bulling, Stefan T. Radev, Paul-Christian Bürkner<br />┃🏷️ parameter estimation┃
+- **Amortized Bayesian Multilevel Models** (2024)<br />_Reading this paper? Please consider contributing a TLDR summary._<br />by Daniel Habermann, Marvin Schmitt, Lars Kühmichel, Andreas Bulling, Stefan T. Radev, Paul-Christian Bürkner<br />┃🏷️ parameter estimation┃ ┃🏷️ hierarchical models┃ ┃🏷️ simulation-based┃
   <details>
   <summary>Show BibTeX</summary>
   <pre><code>
@@ -214,7 +214,7 @@ We highly recommend checking out these lists for more resources on modern simula
   </code>
   </pre></details>
 
-- **Likelihood-Free Parameter Estimation with Neural Bayes Estimators** (2024)<br />_Reading this paper? Please consider contributing a TLDR summary._<br />by Matthew Sainsbury-Dale, Andrew Zammit-Mangion, Raphaël Huser<br />┃🏷️ parameter estimation┃
+- **Likelihood-Free Parameter Estimation with Neural Bayes Estimators** (2024)<br />_Reading this paper? Please consider contributing a TLDR summary._<br />by Matthew Sainsbury-Dale, Andrew Zammit-Mangion, Raphaël Huser<br />┃🏷️ parameter estimation┃ ┃🏷️ point estimation┃ ┃🏷️ simulation-based┃
   <details>
   <summary>Show BibTeX</summary>
   <pre><code>
@@ -233,7 +233,7 @@ We highly recommend checking out these lists for more resources on modern simula
   </code>
   </pre></details>
 
-- **Amortized Bayesian Workflow (Extended Abstract)** (2024)<br />_Reading this paper? Please consider contributing a TLDR summary._<br />by Marvin Schmitt, Chengkun Li, Aki Vehtari, Luigi Acerbi, Paul-Christian Bürkner, Stefan T. Radev
+- **Amortized Bayesian Workflow (Extended Abstract)** (2024)<br />_Reading this paper? Please consider contributing a TLDR summary._<br />by Marvin Schmitt, Chengkun Li, Aki Vehtari, Luigi Acerbi, Paul-Christian Bürkner, Stefan T. Radev<br />┃🏷️ likelihood-based┃ ┃🏷️ workflow┃
   <details>
   <summary>Show BibTeX</summary>
   <pre><code>
@@ -247,7 +247,7 @@ We highly recommend checking out these lists for more resources on modern simula
   </code>
   </pre></details>
 
-- **Consistency Models for Scalable and Fast Simulation-Based Inference** (2024)<br />_Reading this paper? Please consider contributing a TLDR summary._<br />by Marvin Schmitt, Valentin Pratz, Ullrich Köthe, Paul-Christian Bürkner, Stefan T. Radev
+- **Consistency Models for Scalable and Fast Simulation-Based Inference** (2024)<br />_Reading this paper? Please consider contributing a TLDR summary._<br />by Marvin Schmitt, Valentin Pratz, Ullrich Köthe, Paul-Christian Bürkner, Stefan T. Radev<br />┃🏷️ simulation-based┃
   <details>
   <summary>Show BibTeX</summary>
   <pre><code>
@@ -260,7 +260,7 @@ We highly recommend checking out these lists for more resources on modern simula
   </code>
   </pre></details>
 
-- **Detecting Model Misspecification in Amortized Bayesian Inference with Neural Networks** (2024)<br />_Reading this paper? Please consider contributing a TLDR summary._<br />by Marvin Schmitt, Paul-Christian Bürkner, Ullrich Köthe, Stefan T. Radev
+- **Detecting Model Misspecification in Amortized Bayesian Inference with Neural Networks** (2024)<br />_Reading this paper? Please consider contributing a TLDR summary._<br />by Marvin Schmitt, Paul-Christian Bürkner, Ullrich Köthe, Stefan T. Radev<br />┃🏷️ diagnostics┃ ┃🏷️ workflow┃
   <details>
   <summary>Show BibTeX</summary>
   <pre><code>
@@ -277,7 +277,7 @@ We highly recommend checking out these lists for more resources on modern simula
   </code>
   </pre></details>
 
-- **Leveraging Self-Consistency for Data-Efficient Amortized Bayesian Inference** (2024)<br />_Reading this paper? Please consider contributing a TLDR summary._<br />by Marvin Schmitt, Desi R. Ivanova, Daniel Habermann, Ullrich Köthe, Paul-Christian Bürkner, Stefan T. Radev
+- **Leveraging Self-Consistency for Data-Efficient Amortized Bayesian Inference** (2024)<br />_Reading this paper? Please consider contributing a TLDR summary._<br />by Marvin Schmitt, Desi R. Ivanova, Daniel Habermann, Ullrich Köthe, Paul-Christian Bürkner, Stefan T. Radev<br />┃🏷️ likelihood-based┃ ┃🏷️ simulation-based┃
   <details>
   <summary>Show BibTeX</summary>
   <pre><code>
@@ -294,7 +294,7 @@ We highly recommend checking out these lists for more resources on modern simula
   </code>
   </pre></details>
 
-- **Sequential Neural Score Estimation: Likelihood-free Inference with Conditional Score Based Diffusion Models** (2024)<br />_Reading this paper? Please consider contributing a TLDR summary._<br />by Louis Sharrock, Jack Simons, Song Liu, Mark Beaumont
+- **Sequential Neural Score Estimation: Likelihood-free Inference with Conditional Score Based Diffusion Models** (2024)<br />_Reading this paper? Please consider contributing a TLDR summary._<br />by Louis Sharrock, Jack Simons, Song Liu, Mark Beaumont<br />┃🏷️ simulation-based┃
   <details>
   <summary>Show BibTeX</summary>
   <pre><code>
@@ -311,7 +311,7 @@ We highly recommend checking out these lists for more resources on modern simula
   </code>
   </pre></details>
 
-- **Fast and Reliable Probabilistic Reflectometry Inversion with Prior-Amortized Neural Posterior Estimation** (2024)<br />_Reading this paper? Please consider contributing a TLDR summary._<br />by Vladimir Starostin, Maximilian Dax, Alexander Gerlach, Alexander Hinderhofer, Álvaro Tejero-Cantero, Frank Schreiber
+- **Fast and Reliable Probabilistic Reflectometry Inversion with Prior-Amortized Neural Posterior Estimation** (2024)<br />_Reading this paper? Please consider contributing a TLDR summary._<br />by Vladimir Starostin, Maximilian Dax, Alexander Gerlach, Alexander Hinderhofer, Álvaro Tejero-Cantero, Frank Schreiber<br />┃🏷️ physics┃ ┃🏷️ meta learning┃
   <details>
   <summary>Show BibTeX</summary>
   <pre><code>
@@ -328,7 +328,7 @@ We highly recommend checking out these lists for more resources on modern simula
   </code>
   </pre></details>
 
-- **Missing data in amortized simulation-based neural posterior estimation** (2024)<br />_TLDR: Encoding missing data in a time series by augmenting the data vector with binary indicators for presence or absence yields the most robust performance._<br />by Zijian Wang, Jan Hasenauer, Yannik Schälte<br />[[Paper]](https://doi.org/10.1371/journal.pcbi.1012184) [[Code]](https://github.com/emune-dev/Data-missingness-paper) 
+- **Missing data in amortized simulation-based neural posterior estimation** (2024)<br />_TLDR: Encoding missing data in a time series by augmenting the data vector with binary indicators for presence or absence yields the most robust performance._<br />by Zijian Wang, Jan Hasenauer, Yannik Schälte<br />┃🏷️ missing data┃ ┃🏷️ simulation-based┃ ┃🏷️ parameter estimation┃<br />[[Paper]](https://doi.org/10.1371/journal.pcbi.1012184) [[Code]](https://github.com/emune-dev/Data-missingness-paper) 
   <details>
   <summary>Show BibTeX</summary>
   <pre><code>
@@ -347,7 +347,7 @@ We highly recommend checking out these lists for more resources on modern simula
   </code>
   </pre></details>
 
-- **Conditional Generative Models Are Provably Robust: Pointwise Guarantees for Bayesian Inverse Problems** (2023)<br />_Reading this paper? Please consider contributing a TLDR summary._<br />by Fabian Altekrüger, Paul Hagemann, Gabriele Steidl
+- **Conditional Generative Models Are Provably Robust: Pointwise Guarantees for Bayesian Inverse Problems** (2023)<br />_Reading this paper? Please consider contributing a TLDR summary._<br />by Fabian Altekrüger, Paul Hagemann, Gabriele Steidl<br />┃🏷️ diagnostics┃ ┃🏷️ theory┃
   <details>
   <summary>Show BibTeX</summary>
   <pre><code>
@@ -361,7 +361,7 @@ We highly recommend checking out these lists for more resources on modern simula
   </code>
   </pre></details>
 
-- **Neural Importance Sampling for Rapid and Reliable Gravitational-Wave Inference** (2023)<br />_Reading this paper? Please consider contributing a TLDR summary._<br />by Maximilian Dax, Stephen R. Green, Jonathan Gair, Michael Pürrer, Jonas Wildberger, Jakob H. Macke, Alessandra Buonanno, Bernhard Schölkopf<br />[[Paper]](https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.130.171403) 
+- **Neural Importance Sampling for Rapid and Reliable Gravitational-Wave Inference** (2023)<br />_Reading this paper? Please consider contributing a TLDR summary._<br />by Maximilian Dax, Stephen R. Green, Jonathan Gair, Michael Pürrer, Jonas Wildberger, Jakob H. Macke, Alessandra Buonanno, Bernhard Schölkopf<br />┃🏷️ likelihood-based┃ ┃🏷️ physics┃ ┃🏷️ parameter estimation┃<br />[[Paper]](https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.130.171403) 
   <details>
   <summary>Show BibTeX</summary>
   <pre><code>
@@ -378,7 +378,7 @@ We highly recommend checking out these lists for more resources on modern simula
   </code>
   </pre></details>
 
-- **Calibrating Neural Simulation-Based Inference with Differentiable Coverage Probability** (2023)<br />_Reading this paper? Please consider contributing a TLDR summary._<br />by Maciej Falkiewicz, Naoya Takeishi, Imahn Shekhzadeh, Antoine Wehenkel, Arnaud Delaunoy, Gilles Louppe, Alexandros Kalousis
+- **Calibrating Neural Simulation-Based Inference with Differentiable Coverage Probability** (2023)<br />_Reading this paper? Please consider contributing a TLDR summary._<br />by Maciej Falkiewicz, Naoya Takeishi, Imahn Shekhzadeh, Antoine Wehenkel, Arnaud Delaunoy, Gilles Louppe, Alexandros Kalousis<br />┃🏷️ diagnostics┃ ┃🏷️ simulation-based┃
   <details>
   <summary>Show BibTeX</summary>
   <pre><code>
@@ -391,7 +391,7 @@ We highly recommend checking out these lists for more resources on modern simula
   </code>
   </pre></details>
 
-- **Amortized Bayesian Model Comparison With Evidential Deep Learning** (2023)<br />_Reading this paper? Please consider contributing a TLDR summary._<br />by Stefan T. Radev, Marco D'Alessandro, Ulf K. Mertens, Andreas Voss, Ullrich Köthe, Paul-Christian Bürkner
+- **Amortized Bayesian Model Comparison With Evidential Deep Learning** (2023)<br />_Reading this paper? Please consider contributing a TLDR summary._<br />by Stefan T. Radev, Marco D'Alessandro, Ulf K. Mertens, Andreas Voss, Ullrich Köthe, Paul-Christian Bürkner<br />┃🏷️ model comparison┃
   <details>
   <summary>Show BibTeX</summary>
   <pre><code>
@@ -409,7 +409,7 @@ We highly recommend checking out these lists for more resources on modern simula
   </code>
   </pre></details>
 
-- **JANA: Jointly Amortized Neural Approximation of Complex Bayesian Models** (2023)<br />_Reading this paper? Please consider contributing a TLDR summary._<br />by Stefan T. Radev, Marvin Schmitt, Valentin Pratz, Umberto Picchini, Ullrich Köthe, Paul-Christian Bürkner
+- **JANA: Jointly Amortized Neural Approximation of Complex Bayesian Models** (2023)<br />_Reading this paper? Please consider contributing a TLDR summary._<br />by Stefan T. Radev, Marvin Schmitt, Valentin Pratz, Umberto Picchini, Ullrich Köthe, Paul-Christian Bürkner<br />┃🏷️ joint learning┃ ┃🏷️ simulation-based┃ ┃🏷️ diagnostics┃
   <details>
   <summary>Show BibTeX</summary>
   <pre><code>
@@ -426,7 +426,7 @@ We highly recommend checking out these lists for more resources on modern simula
   </code>
   </pre></details>
 
-- **Fuse It or Lose It: Deep Fusion for Multimodal Simulation-Based Inference** (2023)<br />_Reading this paper? Please consider contributing a TLDR summary._<br />by Marvin Schmitt, Stefan T. Radev, Paul-Christian Bürkner
+- **Fuse It or Lose It: Deep Fusion for Multimodal Simulation-Based Inference** (2023)<br />_Reading this paper? Please consider contributing a TLDR summary._<br />by Marvin Schmitt, Stefan T. Radev, Paul-Christian Bürkner<br />┃🏷️ summary learning┃ ┃🏷️ parameter estimation┃
   <details>
   <summary>Show BibTeX</summary>
   <pre><code>
@@ -443,7 +443,7 @@ We highly recommend checking out these lists for more resources on modern simula
   </code>
   </pre></details>
 
-- **Flow Matching for Scalable Simulation-Based Inference** (2023)<br />_Reading this paper? Please consider contributing a TLDR summary._<br />by Jonas Wildberger, Maximilian Dax, Simon Buchholz, Stephen Green, Jakob H Macke, Bernhard Schölkopf
+- **Flow Matching for Scalable Simulation-Based Inference** (2023)<br />_Reading this paper? Please consider contributing a TLDR summary._<br />by Jonas Wildberger, Maximilian Dax, Simon Buchholz, Stephen Green, Jakob H Macke, Bernhard Schölkopf<br />┃🏷️ simulation-based┃
   <details>
   <summary>Show BibTeX</summary>
   <pre><code>
@@ -458,7 +458,7 @@ We highly recommend checking out these lists for more resources on modern simula
   </code>
   </pre></details>
 
-- **Investigating the Impact of Model Misspecification in Neural Simulation-based Inference** (2022)<br />_Reading this paper? Please consider contributing a TLDR summary._<br />by Patrick Cannon, Daniel Ward, Sebastian M. Schmon
+- **Investigating the Impact of Model Misspecification in Neural Simulation-based Inference** (2022)<br />_Reading this paper? Please consider contributing a TLDR summary._<br />by Patrick Cannon, Daniel Ward, Sebastian M. Schmon<br />┃🏷️ diagnostics┃ ┃🏷️ misspecification┃ ┃🏷️ simulation-based┃
   <details>
   <summary>Show BibTeX</summary>
   <pre><code>
@@ -475,7 +475,7 @@ We highly recommend checking out these lists for more resources on modern simula
   </code>
   </pre></details>
 
-- **Robust Neural Posterior Estimation and Statistical Model Criticism** (2022)<br />_Reading this paper? Please consider contributing a TLDR summary._<br />by Daniel Ward, Patrick Cannon, Mark Beaumont, Matteo Fasiolo, Sebastian M. Schmon
+- **Robust Neural Posterior Estimation and Statistical Model Criticism** (2022)<br />_Reading this paper? Please consider contributing a TLDR summary._<br />by Daniel Ward, Patrick Cannon, Mark Beaumont, Matteo Fasiolo, Sebastian M. Schmon<br />┃🏷️ model evaluation┃ ┃🏷️ simulation-based┃
   <details>
   <summary>Show BibTeX</summary>
   <pre><code>
@@ -488,7 +488,7 @@ We highly recommend checking out these lists for more resources on modern simula
   </code>
   </pre></details>
 
-- **Deep Adaptive Design: Amortizing Sequential Bayesian Experimental Design** (2021)<br />_Reading this paper? Please consider contributing a TLDR summary._<br />by Adam Foster, Desi R. Ivanova, Malik Ilyas, Tom Rainforth<br />┃🏷️ BED┃ ┃🏷️ adaptive design┃
+- **Deep Adaptive Design: Amortizing Sequential Bayesian Experimental Design** (2021)<br />_Reading this paper? Please consider contributing a TLDR summary._<br />by Adam Foster, Desi R. Ivanova, Malik Ilyas, Tom Rainforth<br />┃🏷️ experimental design┃ ┃🏷️ adaptive design┃
   <details>
   <summary>Show BibTeX</summary>
   <pre><code>
@@ -503,7 +503,7 @@ We highly recommend checking out these lists for more resources on modern simula
   </code>
   </pre></details>
 
-- **BayesFlow: Learning Complex Stochastic Models With Invertible Neural Networks** (2020)<br />_Reading this paper? Please consider contributing a TLDR summary._<br />by Stefan T. Radev, Ulf K. Mertens, Andreas Voss, Lynton Ardizzone, Ullrich Köthe
+- **BayesFlow: Learning Complex Stochastic Models With Invertible Neural Networks** (2020)<br />_Reading this paper? Please consider contributing a TLDR summary._<br />by Stefan T. Radev, Ulf K. Mertens, Andreas Voss, Lynton Ardizzone, Ullrich Köthe<br />┃🏷️ simulation-based┃ ┃🏷️ summary learning┃ ┃🏷️ parameter estimation┃
   <details>
   <summary>Show BibTeX</summary>
   <pre><code>
@@ -523,7 +523,7 @@ We highly recommend checking out these lists for more resources on modern simula
   </pre></details>
 ## Application Papers
 
-- **Advancing Tools for Simulation-Based Inference** (2024)<br />_Reading this paper? Please consider contributing a TLDR summary._<br />by Henning Bahl, Victor Bresó, Giovanni De Crescenzo, Tilman Plehn
+- **Advancing Tools for Simulation-Based Inference** (2024)<br />_Reading this paper? Please consider contributing a TLDR summary._<br />by Henning Bahl, Victor Bresó, Giovanni De Crescenzo, Tilman Plehn<br />┃🏷️ physics┃ ┃🏷️ simulation-based┃
   <details>
   <summary>Show BibTeX</summary>
   <pre><code>
@@ -540,7 +540,7 @@ We highly recommend checking out these lists for more resources on modern simula
   </code>
   </pre></details>
 
-- **Amortized Template-Matching of Molecular Conformations from Cryo-Electron Microscopy Images Using Simulation-Based Inference** (2024)<br />_Reading this paper? Please consider contributing a TLDR summary._<br />by Lars Dingeldein, David Silva-Sánchez, Luke Evans, Edoardo D'Imprima, Nikolaus Grigorieff, Roberto Covino, Pilar Cossio
+- **Amortized Template-Matching of Molecular Conformations from Cryo-Electron Microscopy Images Using Simulation-Based Inference** (2024)<br />_Reading this paper? Please consider contributing a TLDR summary._<br />by Lars Dingeldein, David Silva-Sánchez, Luke Evans, Edoardo D'Imprima, Nikolaus Grigorieff, Roberto Covino, Pilar Cossio<br />┃🏷️ biology┃ ┃🏷️ simulation-based┃ ┃🏷️ parameter estimation┃
   <details>
   <summary>Show BibTeX</summary>
   <pre><code>
@@ -555,7 +555,7 @@ We highly recommend checking out these lists for more resources on modern simula
   </code>
   </pre></details>
 
-- **Simulation-Based Inference for Cardiovascular Models** (2024)<br />_Reading this paper? Please consider contributing a TLDR summary._<br />by Antoine Wehenkel, Jens Behrmann, Andrew C. Miller, Guillermo Sapiro, Ozan Sener, Marco Cuturi Cameto, Jörn-Henrik Jacobsen
+- **Simulation-Based Inference for Cardiovascular Models** (2024)<br />_Reading this paper? Please consider contributing a TLDR summary._<br />by Antoine Wehenkel, Jens Behrmann, Andrew C. Miller, Guillermo Sapiro, Ozan Sener, Marco Cuturi Cameto, Jörn-Henrik Jacobsen<br />┃🏷️ medicine┃ ┃🏷️ simulation-based┃ ┃🏷️ parameter estimation┃
   <details>
   <summary>Show BibTeX</summary>
   <pre><code>
@@ -568,7 +568,7 @@ We highly recommend checking out these lists for more resources on modern simula
   </code>
   </pre></details>
 
-- **Evaluating Sparse Galaxy Simulations via Out-of-Distribution Detection and Amortized Bayesian Model Comparison** (2024)<br />_Reading this paper? Please consider contributing a TLDR summary._<br />by Lingyi Zhou, Stefan T. Radev, William H. Oliver, Aura Obreja, Zehao Jin, Tobias Buck
+- **Evaluating Sparse Galaxy Simulations via Out-of-Distribution Detection and Amortized Bayesian Model Comparison** (2024)<br />_Reading this paper? Please consider contributing a TLDR summary._<br />by Lingyi Zhou, Stefan T. Radev, William H. Oliver, Aura Obreja, Zehao Jin, Tobias Buck<br />┃🏷️ physics┃ ┃🏷️ model evaluation┃ ┃🏷️ model comparison┃
   <details>
   <summary>Show BibTeX</summary>
   <pre><code>
@@ -581,7 +581,7 @@ We highly recommend checking out these lists for more resources on modern simula
   </code>
   </pre></details>
 
-- **A General Integrative Neurocognitive Modeling Framework to Jointly Describe EEG and Decision-making on Single Trials** (2023)<br />_Reading this paper? Please consider contributing a TLDR summary._<br />by Amin Ghaderi-Kangavari, Jamal Amani Rad, Michael D. Nunez<br />┃🏷️ cognitive modeling┃
+- **A General Integrative Neurocognitive Modeling Framework to Jointly Describe EEG and Decision-making on Single Trials** (2023)<br />_Reading this paper? Please consider contributing a TLDR summary._<br />by Amin Ghaderi-Kangavari, Jamal Amani Rad, Michael D. Nunez<br />┃🏷️ cognitive modeling┃ ┃🏷️ simulation-based┃ ┃🏷️ parameter estimation┃
   <details>
   <summary>Show BibTeX</summary>
   <pre><code>
@@ -599,7 +599,7 @@ We highly recommend checking out these lists for more resources on modern simula
   </code>
   </pre></details>
 
-- **Amortized Inference with User Simulations** (2023)<br />_Reading this paper? Please consider contributing a TLDR summary._<br />by Hee-Seung Moon, Antti Oulasvirta, Byungjoo Lee<br />┃🏷️ human-computer interaction┃
+- **Amortized Inference with User Simulations** (2023)<br />_Reading this paper? Please consider contributing a TLDR summary._<br />by Hee-Seung Moon, Antti Oulasvirta, Byungjoo Lee<br />┃🏷️ human-computer interaction┃ ┃🏷️ simulation-based┃ ┃🏷️ user interfaces┃
   <details>
   <summary>Show BibTeX</summary>
   <pre><code>
@@ -615,7 +615,7 @@ We highly recommend checking out these lists for more resources on modern simula
   </code>
   </pre></details>
 
-- **Neural Superstatistics for Bayesian Estimation of Dynamic Cognitive Models** (2023)<br />_Reading this paper? Please consider contributing a TLDR summary._<br />by Lukas Schumacher, Paul-Christian Bürkner, Andreas Voss, Ullrich Köthe, Stefan T. Radev
+- **Neural Superstatistics for Bayesian Estimation of Dynamic Cognitive Models** (2023)<br />_Reading this paper? Please consider contributing a TLDR summary._<br />by Lukas Schumacher, Paul-Christian Bürkner, Andreas Voss, Ullrich Köthe, Stefan T. Radev<br />┃🏷️ simulation-based┃ ┃🏷️ dynamic modeling┃ ┃🏷️ parameter estimation┃
   <details>
   <summary>Show BibTeX</summary>
   <pre><code>
@@ -634,7 +634,7 @@ We highly recommend checking out these lists for more resources on modern simula
   </code>
   </pre></details>
 
-- **Reliable Amortized Variational Inference with Physics-Based Latent Distribution Correction** (2023)<br />_Reading this paper? Please consider contributing a TLDR summary._<br />by Ali Siahkoohi, Gabrio Rizzuti, Rafael Orozco, Felix J. Herrmann
+- **Reliable Amortized Variational Inference with Physics-Based Latent Distribution Correction** (2023)<br />_Reading this paper? Please consider contributing a TLDR summary._<br />by Ali Siahkoohi, Gabrio Rizzuti, Rafael Orozco, Felix J. Herrmann<br />┃🏷️ physics┃ ┃🏷️ correction┃ ┃🏷️ misspecification┃
   <details>
   <summary>Show BibTeX</summary>
   <pre><code>
@@ -653,7 +653,7 @@ We highly recommend checking out these lists for more resources on modern simula
   </code>
   </pre></details>
 
-- **Probabilistic Damage Detection Using a New Likelihood-Free Bayesian Inference Method** (2023)<br />_Reading this paper? Please consider contributing a TLDR summary._<br />by Jice Zeng, Michael D. Todd, Zhen Hu
+- **Probabilistic Damage Detection Using a New Likelihood-Free Bayesian Inference Method** (2023)<br />_Reading this paper? Please consider contributing a TLDR summary._<br />by Jice Zeng, Michael D. Todd, Zhen Hu<br />┃🏷️ structural health monitoring┃
   <details>
   <summary>Show BibTeX</summary>
   <pre><code>
@@ -672,7 +672,7 @@ We highly recommend checking out these lists for more resources on modern simula
   </code>
   </pre></details>
 
-- **Towards Reliable Parameter Extraction in MEMS Final Module Testing Using Bayesian Inference** (2022)<br />_Reading this paper? Please consider contributing a TLDR summary._<br />by Monika E. Heringhaus, Yi Zhang, Andr'e Zimmermann, Lars Mikelsons
+- **Towards Reliable Parameter Extraction in MEMS Final Module Testing Using Bayesian Inference** (2022)<br />_Reading this paper? Please consider contributing a TLDR summary._<br />by Monika E. Heringhaus, Yi Zhang, Andr'e Zimmermann, Lars Mikelsons<br />┃🏷️ parameter estimation┃ ┃🏷️ simulation-based┃ ┃🏷️ engineering┃
   <details>
   <summary>Show BibTeX</summary>
   <pre><code>
@@ -690,7 +690,7 @@ We highly recommend checking out these lists for more resources on modern simula
   </code>
   </pre></details>
 
-- **Mental Speed Is High until Age 60 as Revealed by Analysis of over a Million Participants** (2022)<br />_Reading this paper? Please consider contributing a TLDR summary._<br />by Mischa von Krause, Stefan T. Radev, Andreas Voss
+- **Mental Speed Is High until Age 60 as Revealed by Analysis of over a Million Participants** (2022)<br />_Reading this paper? Please consider contributing a TLDR summary._<br />by Mischa von Krause, Stefan T. Radev, Andreas Voss<br />┃🏷️ cognitive modeling┃ ┃🏷️ parameter estimation┃
   <details>
   <summary>Show BibTeX</summary>
   <pre><code>
@@ -709,7 +709,7 @@ We highly recommend checking out these lists for more resources on modern simula
   </code>
   </pre></details>
 
-- **Model Updating of Wind Turbine Blade Cross Sections with Invertible Neural Networks** (2022)<br />_Reading this paper? Please consider contributing a TLDR summary._<br />by Pablo Noever-Castelos, Lynton Ardizzone, Claudio Balzani
+- **Model Updating of Wind Turbine Blade Cross Sections with Invertible Neural Networks** (2022)<br />_Reading this paper? Please consider contributing a TLDR summary._<br />by Pablo Noever-Castelos, Lynton Ardizzone, Claudio Balzani<br />┃🏷️ simulation-based┃
   <details>
   <summary>Show BibTeX</summary>
   <pre><code>
@@ -728,7 +728,7 @@ We highly recommend checking out these lists for more resources on modern simula
   </code>
   </pre></details>
 
-- **Inverse Design under Uncertainty Using Conditional Normalizing Flows** (2022)<br />_Reading this paper? Please consider contributing a TLDR summary._<br />by Panagiotis Tsilifis, Sayan Ghosh
+- **Inverse Design under Uncertainty Using Conditional Normalizing Flows** (2022)<br />_Reading this paper? Please consider contributing a TLDR summary._<br />by Panagiotis Tsilifis, Sayan Ghosh<br />┃🏷️ engineering┃ ┃🏷️ aerospace┃ ┃🏷️ simulation-based┃
   <details>
   <summary>Show BibTeX</summary>
   <pre><code>
@@ -746,7 +746,7 @@ We highly recommend checking out these lists for more resources on modern simula
   </code>
   </pre></details>
 
-- **Measuring QCD Splittings with Invertible Networks** (2021)<br />_Reading this paper? Please consider contributing a TLDR summary._<br />by Sebastian Bieringer, Anja Butter, Theo Heimel, Stefan Höche, Ullrich Köthe, Tilman Plehn, Stefan T. Radev
+- **Measuring QCD Splittings with Invertible Networks** (2021)<br />_Reading this paper? Please consider contributing a TLDR summary._<br />by Sebastian Bieringer, Anja Butter, Theo Heimel, Stefan Höche, Ullrich Köthe, Tilman Plehn, Stefan T. Radev<br />┃🏷️ simulation-based┃ ┃🏷️ physics┃ ┃🏷️ parameter estimation┃
   <details>
   <summary>Show BibTeX</summary>
   <pre><code>
@@ -762,7 +762,7 @@ We highly recommend checking out these lists for more resources on modern simula
   </code>
   </pre></details>
 
-- **OutbreakFlow: Model-based Bayesian Inference of Disease Outbreak Dynamics with Invertible Neural Networks and Its Application to the COVID-19 Pandemics in Germany** (2021)<br />_Reading this paper? Please consider contributing a TLDR summary._<br />by Stefan T. Radev, Frederik Graw, Simiao Chen, Nico T. Mutters, Vanessa M. Eichel, Till Bärnighausen, Ullrich Köthe
+- **OutbreakFlow: Model-based Bayesian Inference of Disease Outbreak Dynamics with Invertible Neural Networks and Its Application to the COVID-19 Pandemics in Germany** (2021)<br />_Reading this paper? Please consider contributing a TLDR summary._<br />by Stefan T. Radev, Frederik Graw, Simiao Chen, Nico T. Mutters, Vanessa M. Eichel, Till Bärnighausen, Ullrich Köthe<br />┃🏷️ epidemiology┃ ┃🏷️ public health┃ ┃🏷️ simulation-based┃
   <details>
   <summary>Show BibTeX</summary>
   <pre><code>
@@ -782,7 +782,7 @@ We highly recommend checking out these lists for more resources on modern simula
   </code>
   </pre></details>
 
-- **Estimation of Agent-Based Models Using Bayesian Deep Learning Approach of BayesFlow** (2021)<br />_Reading this paper? Please consider contributing a TLDR summary._<br />by Takashi Shiono
+- **Estimation of Agent-Based Models Using Bayesian Deep Learning Approach of BayesFlow** (2021)<br />_Reading this paper? Please consider contributing a TLDR summary._<br />by Takashi Shiono<br />┃🏷️ agent modeling┃ ┃🏷️ simulation-based┃
   <details>
   <summary>Show BibTeX</summary>
   <pre><code>
