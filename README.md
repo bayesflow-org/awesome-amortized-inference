@@ -168,6 +168,20 @@ We highly recommend checking out these lists for more resources on modern simula
   </code>
   </pre></details>
 
+- **Amortized Probabilistic Conditioning for Optimization, Simulation and Inference** (2024)<br />_Reading this paper? Please consider contributing a TLDR summary._<br />by Paul E. Chang, Nasrulloh Loka, Daolang Huang, Ulpu Remes, Samuel Kaski, Luigi Acerbi<br />┃🏷️ meta-learning┃ ┃🏷️ optimization┃ ┃🏷️ simulation-based inference┃<br />[[Paper]](https://arxiv.org/abs/2410.15320) [[Code]](https://github.com/acerbilab/amortized-conditioning-engine/) 
+  <details>
+  <summary>Show BibTeX</summary>
+  <pre><code>
+  @misc{chang2024amortized,
+  title = {Amortized Probabilistic Conditioning for Optimization, Simulation and Inference},
+  year = {2024},
+  eprint = {2410.15320},
+  url = {https://arxiv.org/abs/2410.15320},
+  author = {Chang and Loka and Huang and Remes and Kaski and Acerbi}
+  }
+  </code>
+  </pre></details>
+
 - **A Deep Learning Method for Comparing Bayesian Hierarchical Models.** (2024)<br />_TLDR: Proposes a multilevel neural architecture for compressing hierarchical data structures in Bayesian model comparison._<br />by Lasse Elsemüller, Martin Schnuerch, Paul-Christian Bürkner, Stefan T. Radev<br />┃🏷️ hierarchical models┃ ┃🏷️ model comparison┃ ┃🏷️ simulation-based┃<br />[[Paper]](https://arxiv.org/abs/2301.11873) [[Code]](https://github.com/bayesflow-org/Hierarchical-Model-Comparison) 
   <details>
   <summary>Show BibTeX</summary>
