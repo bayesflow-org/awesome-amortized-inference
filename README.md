@@ -29,10 +29,23 @@ We highly recommend checking out these lists for more resources on modern simula
 - [Software](#software)
 - [Methodological Papers](#methodological-papers)
 - [Application Papers](#application-papers)
-- [Uncategorized](#uncategorized)
 
 
 ## Review Articles
+
+- **Diffusion Models in Simulation-Based Inference: A Tutorial Review** (2025)<br />_TLDR: This tutorial review explains how diffusion models can be used for simulation-based inference. It surveys and benchmards key design choices for training and sampling, discusses recent extensions such as guidance and score composition._<br />by Jonas Arruda, Niels Bracher, Ullrich Köthe, Jan Hasenauer, Stefan T Radev<br />[[Paper]](https://doi.org/10.48550/arXiv.2512.20685) 
+  <details>
+  <summary>Show BibTeX</summary>
+  <pre><code>
+  @article{arruda2025diffusionSBI,
+  title = {Diffusion Models in Simulation-Based Inference: A Tutorial Review},
+  journal = {arXiv preprint arXiv:2512.20685},
+  year = {2025},
+  url = {https://doi.org/10.48550/arXiv.2512.20685},
+  author = {Arruda and Bracher and Köthe and Hasenauer and Radev}
+  }
+  </code>
+  </pre></details>
 
 - **Neural Methods for Amortised Parameter Inference** (2024)<br />_Reading this paper? Please consider contributing a TLDR summary._<br />by Andrew Zammit-Mangion, Matthew Sainsbury-Dale, Raphaël Huser<br />[[Paper]](https://arxiv.org/abs/2404.12484) 
   <details>
@@ -823,21 +836,6 @@ We highly recommend checking out these lists for more resources on modern simula
   doi = {10.1016/j.jedc.2021.104082},
   langid = {english},
   author = {Shiono}
-  }
-  </code>
-  </pre></details>
-## Uncategorized
-
-- **Diffusion Models in Simulation-Based Inference: A Tutorial Review** (2025)<br />_TLDR: This tutorial review explains how diffusion models can be used for simulation-based inference. It surveys and benchmards key design choices for training and sampling, discusses recent extensions such as guidance and score composition._<br />by Jonas Arruda, Niels Bracher, Ullrich Köthe, Jan Hasenauer, Stefan T Radev<br />[[Paper]](https://doi.org/10.48550/arXiv.2512.20685) 
-  <details>
-  <summary>Show BibTeX</summary>
-  <pre><code>
-  @article{arruda2025diffusionSBI,
-  title = {Diffusion Models in Simulation-Based Inference: A Tutorial Review},
-  journal = {arXiv preprint arXiv:2512.20685},
-  year = {2025},
-  url = {https://doi.org/10.48550/arXiv.2512.20685},
-  author = {Arruda and Bracher and Köthe and Hasenauer and Radev}
   }
   </code>
   </pre></details>
