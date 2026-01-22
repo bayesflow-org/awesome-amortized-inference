@@ -33,6 +33,20 @@ We highly recommend checking out these lists for more resources on modern simula
 
 ## Review Articles
 
+- **Diffusion Models in Simulation-Based Inference: A Tutorial Review** (2025)<br />_TLDR: This tutorial review explains how diffusion models can be used for simulation-based inference. It surveys and benchmards key design choices for training and sampling, discusses recent extensions such as guidance and score composition._<br />by Jonas Arruda, Niels Bracher, Ullrich Köthe, Jan Hasenauer, Stefan T. Radev<br />[[Paper]](https://bayesflow-org.github.io/diffusion-experiments/)
+  <details>
+  <summary>Show BibTeX</summary>
+  <pre><code>
+  @article{arruda2025diffusionSBI,
+    title={Diffusion Models in Simulation-Based Inference: A Tutorial Review},
+    author={Arruda, Jonas and Bracher, Niels and K{\"o}the, Ullrich and Hasenauer, Jan and Radev, Stefan T},
+    journal={arXiv preprint arXiv:2512.20685},
+    year={2025},
+    url={https://doi.org/10.48550/arXiv.2512.20685}
+  }
+  </code>
+  </pre></details>
+
 - **Neural Methods for Amortised Parameter Inference** (2024)<br />_Reading this paper? Please consider contributing a TLDR summary._<br />by Andrew Zammit-Mangion, Matthew Sainsbury-Dale, Raphaël Huser<br />[[Paper]](https://arxiv.org/abs/2404.12484) 
   <details>
   <summary>Show BibTeX</summary>
