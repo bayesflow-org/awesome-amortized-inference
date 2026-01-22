@@ -142,6 +142,19 @@ We highly recommend checking out these lists for more resources on modern simula
   </pre></details>
 ## Methodological Papers
 
+- **Compositional amortized inference for large-scale hierarchical Bayesian models** (2025)<br />_Reading this paper? Please consider contributing a TLDR summary._<br />by Jonas Arruda, Vikas Pandey, Catherine Sherry, Margarida Barroso, Xavier Intes, Jan Hasenauer, Stefan T Radev<br />┃🏷️ parameter estimation┃ ┃🏷️ hierarchical models┃ ┃🏷️ amortized inference┃<br />[[Paper]](https://arxiv.org/abs/2505.14429) 
+  <details>
+  <summary>Show BibTeX</summary>
+  <pre><code>
+  @article{arruda2025compositional,
+  title = {Compositional amortized inference for large-scale hierarchical Bayesian models},
+  journal = {arXiv preprint arXiv:2505.14429},
+  year = {2025},
+  author = {Arruda and Pandey and Sherry and Barroso and Intes and Hasenauer and Radev}
+  }
+  </code>
+  </pre></details>
+
 - **An amortized approach to non-linear mixed-effects modeling based on neural posterior estimation** (2024)<br />_TLDR: Neural posterior estimation for hierarchical models, where the NPE is used in a first stage on a local level and then repeatedly used for global inference leveraging amortization._<br />by Jonas Arruda, Yannik Schälte, Clemens Peiter, Olga Teplytska, Ulrich Jaehde, Jan Hasenauer<br />┃🏷️ parameter estimation┃ ┃🏷️ hierarchical models┃<br />[[Paper]](https://openreview.net/forum?id=uCdcXRuHnC) [[Code]](https://github.com/arrjon/Amortized-NLME-Models/tree/ICML2024) 
   <details>
   <summary>Show BibTeX</summary>
@@ -815,7 +828,7 @@ We highly recommend checking out these lists for more resources on modern simula
   </pre></details>
 ## Uncategorized
 
-- **Diffusion Models in Simulation-Based Inference: A Tutorial Review** (2025)<br />by Jonas Arruda, Niels Bracher, Ullrich Köthe, Jan Hasenauer, Stefan T Radev
+- **Diffusion Models in Simulation-Based Inference: A Tutorial Review** (2025)<br />by Jonas Arruda, Niels Bracher, Ullrich Köthe, Jan Hasenauer, Stefan T Radev<br />[[Paper]](https://doi.org/10.48550/arXiv.2512.20685) 
   <details>
   <summary>Show BibTeX</summary>
   <pre><code>
@@ -825,19 +838,6 @@ We highly recommend checking out these lists for more resources on modern simula
   year = {2025},
   url = {https://doi.org/10.48550/arXiv.2512.20685},
   author = {Arruda and Bracher and Köthe and Hasenauer and Radev}
-  }
-  </code>
-  </pre></details>
-
-- **Compositional amortized inference for large-scale hierarchical Bayesian models** (2025)<br />by Jonas Arruda, Vikas Pandey, Catherine Sherry, Margarida Barroso, Xavier Intes, Jan Hasenauer, Stefan T Radev
-  <details>
-  <summary>Show BibTeX</summary>
-  <pre><code>
-  @article{arruda2025compositional,
-  title = {Compositional amortized inference for large-scale hierarchical Bayesian models},
-  journal = {arXiv preprint arXiv:2505.14429},
-  year = {2025},
-  author = {Arruda and Pandey and Sherry and Barroso and Intes and Hasenauer and Radev}
   }
   </code>
   </pre></details>
