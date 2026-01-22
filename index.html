@@ -1,0 +1,1100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="base" content="https://awesome-amortized-inference.bayesflow.org" />
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="color-scheme" content="dark light">
+    <meta name="theme-color" media="(prefers-color-scheme: dark)">
+    <meta name="theme-color" media="(prefers-color-scheme: light)">
+    
+    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    
+    <style>/* Set variables for light and dark mode */
+:root {
+  --layout-max-width: 50rem;
+  --background-color: #fffff4;
+  --header-color: aliceblue;
+  --text-color: black;
+  --link-color: #0366d6;
+  --link-visited-color: #5a3bb1;
+  --separator-color: #eaecef;
+  --button-bg-color: #0366d6;
+  --button-text-color: #fff;
+  --hover-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  --border-radius: 8px;
+  --font-family: 'Inter', sans-serif;
+  --font-size: 16px;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background-color: #1c1919;
+    --header-color: #252431;
+    --text-color: #f5f5f5;
+    --link-color: #3e8df2;
+    --link-visited-color: #9a76ff;
+    --separator-color: #373644;
+    --button-bg-color: #3e8df2;
+  }
+}
+
+body {
+  margin: 0;
+  background: var(--background-color);
+  color: var(--text-color);
+  font-family: var(--font-family);
+  font-size: var(--font-size);
+  line-height: 1.6;
+}
+
+h2 {
+  border-bottom: 1px solid var(--separator-color);
+  padding-bottom: 0.3rem;
+  margin-bottom: 1rem;
+}
+
+a {
+  color: var(--link-color);
+  text-decoration: none;
+  transition: color 0.2s ease-in-out;
+}
+
+a:hover {
+  color: var(--button-bg-color);
+}
+
+a:visited {
+  color: var(--link-visited-color);
+}
+
+.content {
+  max-width: var(--layout-max-width);
+  margin: auto;
+  padding: 1rem;
+}
+
+button, .btn {
+  background-color: var(--button-bg-color);
+  color: var(--button-text-color);
+  padding: 0.6rem 1rem;
+  border-radius: var(--border-radius);
+  border: none;
+  cursor: pointer;
+  transition: box-shadow 0.2s ease-in-out, background-color 0.2s ease-in-out;
+}
+
+button:hover, .btn:hover {
+  box-shadow: var(--hover-shadow);
+  background-color: #005bb5; /* Slightly darker shade */
+}
+
+/* Navigation/Top bar */
+
+.navigation-container {
+  background-color: var(--header-color);
+  box-shadow: var(--hover-shadow);
+  padding: 1rem 0;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: var(--layout-max-width);
+  margin: auto;
+}
+
+.top-bar--title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: var(--text-color);
+}
+
+.top-bar--links {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  gap: 1rem;
+}
+
+.top-bar--links a {
+  font-size: 1.1rem;
+  text-decoration: none;
+  color: var(--link-color);
+  transition: color 0.2s ease-in-out;
+}
+
+.top-bar--links a:hover {
+  text-decoration: underline;
+  color: var(--button-bg-color);
+}
+
+/* Content tweaks */
+.content h1:first-child {
+  display: none; /* Hide duplicate h1 */
+}
+
+footer {
+  background-color: var(--header-color);
+  padding: 1rem 0;
+  text-align: center;
+}
+
+footer .c {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+footer a {
+  color: var(--link-color);
+}
+
+footer a:hover {
+  color: var(--button-bg-color);
+}
+
+/* Small tweaks for modern spacing */
+p {
+  margin-bottom: 1.2rem;
+}
+
+h2, h3 {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+/* Improve button-like link appearance */
+.btn {
+  text-align: center;
+  display: inline-block;
+  padding: 0.8rem 1.5rem;
+  border-radius: var(--border-radius);
+  background-color: var(--button-bg-color);
+  color: var(--button-text-color);
+}
+
+.btn:hover {
+  background-color: var(--link-color);
+  box-shadow: var(--hover-shadow);
+}
+</style>
+  </head>  
+<body>
+  <header>
+    <div class="navigation-container">
+    <nav class="site-navigation top-bar" role="navigation">
+      <div class="top-bar--title"><a href="https://awesome-amortized-inference.bayesflow.org" title="Awesome Amortized Inference">Awesome Amortized Inference</a></div>
+
+      <div class="top-bar--links">
+        <a href="https://github.com/bayesflow-org/awesome-amortized-inference/blob/main/CONTRIBUTING.md">Contribute here!</a>
+      </div>
+    </nav>
+    </div>
+  </header>
+  <main>
+  <div class="content">
+    <h1 id="awesome-amortized-inference">Awesome Amortized Inference</h1>
+<p><a href="https://awesome.re"><img src="https://awesome.re/badge-flat2.svg" alt="Awesome" /></a>
+<img src="https://img.shields.io/badge/Contributions-Welcome-brightgreen" alt="Contributions Welcome" />
+<img src="https://img.shields.io/badge/License-CC0_1.0-lightgrey" alt="License: CC0" /></p>
+<p>Welcome to the Awesome Amortized Inference repository!
+This is a curated list of resources, including reviews, software, papers, and other resources related to amortized inference.
+Feel free to explore the entries below and use the provided BibTeX information for citation purposes.
+This is a community-driven project which is currently maintained by <a href="https://www.marvinschmitt.com">Marvin Schmitt</a>.
+Contributions are always welcome, see <a href="https://github.com/bayesflow-org/awesome-amortized-inference/blob/main/CONTRIBUTING.md"><code>CONTRIBUTING.md</code></a> for a contribution guide 🧡</p>
+<p>This list currently has some overlap with the <code>awesome-neural-sbi</code> list (<a href="https://github.com/smsharma/awesome-neural-sbi">Link</a>) because
+amortized inference has gained popularity in the context of simulation-based inference (SBI) with neural networks.
+However, there is a trend towards broader amortized inference methods that are not necessarily simulation-based.
+This list aims to cover all amortized inference methods, including but not limited to simulation-based inference.
+We highly recommend checking out these lists for more resources on modern simulation-based inference:</p>
+<ul>
+<li><a href="https://github.com/smsharma/awesome-neural-sbi">awesome-neural-sbi</a></li>
+<li><a href="https://simulation-based-inference.org/">simulation-based inference website</a></li>
+<li><a href="https://transferlab.ai/trainings/simulation-based-inference/">Introduction to simulation-based inference by TransferLab</a></li>
+</ul>
+<h2 id="contents">Contents</h2>
+<ul>
+<li><a href="https://awesome-amortized-inference.bayesflow.org/#review-articles">Review Articles</a></li>
+<li><a href="https://awesome-amortized-inference.bayesflow.org/#software">Software</a></li>
+<li><a href="https://awesome-amortized-inference.bayesflow.org/#methodological-papers">Methodological Papers</a></li>
+<li><a href="https://awesome-amortized-inference.bayesflow.org/#application-papers">Application Papers</a></li>
+</ul>
+<h2 id="review-articles">Review Articles</h2>
+<ul>
+<li>
+<p><strong>Diffusion Models in Simulation-Based Inference: A Tutorial Review</strong> (2025)<br /><em>TLDR: This tutorial review explains how diffusion models can be used for simulation-based inference. It surveys and benchmards key design choices for training and sampling, discusses recent extensions such as guidance and score composition.</em><br />by Jonas Arruda, Niels Bracher, Ullrich Köthe, Jan Hasenauer, Stefan T Radev<br /><a href="https://doi.org/10.48550/arXiv.2512.20685">[Paper]</a> </p>
+<details>
+<summary>Show BibTeX</summary>
+<pre><code>
+@article{arruda2025diffusionSBI,
+title = {Diffusion Models in Simulation-Based Inference: A Tutorial Review},
+journal = {arXiv preprint arXiv:2512.20685},
+year = {2025},
+url = {https://doi.org/10.48550/arXiv.2512.20685},
+author = {Arruda and Bracher and Köthe and Hasenauer and Radev}
+}
+</code>
+</pre></details>
+</li>
+<li>
+<p><strong>Neural Methods for Amortised Parameter Inference</strong> (2024)<br /><em>Reading this paper? Please consider contributing a TLDR summary.</em><br />by Andrew Zammit-Mangion, Matthew Sainsbury-Dale, Raphaël Huser<br /><a href="https://arxiv.org/abs/2404.12484">[Paper]</a> </p>
+<details>
+<summary>Show BibTeX</summary>
+<pre><code>
+@misc{zammit2024neural,
+title = {Neural Methods for Amortised Parameter Inference},
+year = {2024},
+number = {arXiv:2404.12484},
+eprint = {2404.12484},
+primaryclass = {cs},
+publisher = {arXiv},
+archiveprefix = {arXiv},
+author = {Zammit-Mangion and Sainsbury-Dale and Huser}
+}
+</code>
+</pre></details>
+</li>
+<li>
+<p><strong>Simulation Intelligence: Towards a New Generation of Scientific Methods</strong> (2022)<br /><em>Reading this paper? Please consider contributing a TLDR summary.</em><br />by Alexander Lavin, David Krakauer, Hector Zenil, Justin Gottschlich, Tim Mattson, Johann Brehmer, Anima Anandkumar, Sanjay Choudry, Kamil Rocki, Atılım Güneş Baydin, Carina Prunkl, Brooks Paige, Olexandr Isayev, Erik Peterson, Peter L. McMahon, Jakob Macke, Kyle Cranmer, Jiaxin Zhang, Haruko Wainwright, Adi Hanuka, Manuela Veloso, Samuel Assefa, Stephan Zheng, Avi Pfeffer<br /><a href="https://arxiv.org/abs/2112.03235">[Paper]</a> </p>
+<details>
+<summary>Show BibTeX</summary>
+<pre><code>
+@misc{lavin2022simulation,
+title = {Simulation {{Intelligence}}: {{Towards}} a {{New Generation}} of {{Scientific Methods}}},
+shorttitle = {Simulation {{Intelligence}}},
+year = {2022},
+number = {arXiv:2112.03235},
+eprint = {2112.03235},
+primaryclass = {cs},
+publisher = {arXiv},
+archiveprefix = {arXiv},
+author = {Lavin and Krakauer and Zenil and Gottschlich and Mattson and Brehmer and Anandkumar and Choudry and Rocki and Baydin and Prunkl and Paige and Isayev and Peterson and McMahon and Macke and Cranmer and Zhang and Wainwright and Hanuka and Veloso and Assefa and Zheng and Pfeffer}
+}
+</code>
+</pre></details>
+</li>
+<li>
+<p><strong>Normalizing Flows for Probabilistic Modeling and Inference</strong> (2021)<br /><em>Reading this paper? Please consider contributing a TLDR summary.</em><br />by George Papamakarios, Eric Nalisnick, Danilo Jimenez Rezende, Shakir Mohamed, Balaji Lakshminarayanan<br /><a href="https://www.jmlr.org/papers/v22/19-1028.html">[Paper]</a> </p>
+<details>
+<summary>Show BibTeX</summary>
+<pre><code>
+@article{papamakarios2021normalizing,
+title = {Normalizing Flows for Probabilistic Modeling and Inference},
+year = {2021},
+journal = {Journal of Machine Learning Research},
+volume = {22},
+number = {57},
+pages = {1--64},
+author = {Papamakarios and Nalisnick and Rezende and Mohamed and Lakshminarayanan}
+}
+</code>
+</pre></details>
+</li>
+<li>
+<p><strong>The Frontier of Simulation-Based Inference</strong> (2020)<br /><em>Reading this paper? Please consider contributing a TLDR summary.</em><br />by Kyle Cranmer, Johann Brehmer, Gilles Louppe<br /><a href="https://www.pnas.org/doi/abs/10.1073/pnas.1912789117">[Paper]</a> </p>
+<details>
+<summary>Show BibTeX</summary>
+<pre><code>
+@article{cranmer2020frontier,
+title = {The Frontier of Simulation-Based Inference},
+year = {2020},
+journal = {Proceedings of the National Academy of Sciences},
+volume = {117},
+number = {48},
+pages = {30055--30062},
+issn = {0027-8424, 1091-6490},
+doi = {10.1073/pnas.1912789117},
+langid = {english},
+author = {Cranmer and Brehmer and Louppe}
+}
+</code>
+</pre></details>
+</li>
+</ul>
+<h2 id="software">Software</h2>
+<ul>
+<li>
+<p><strong>BayesFlow: Amortized Bayesian Workflows with Neural Networks</strong><br /><a href="https://joss.theoj.org/papers/10.21105/joss.05702">[Paper]</a> <a href="https://github.com/bayesflow-org/bayesflow">[Code]</a> </p>
+<details>
+<summary>Show BibTeX</summary>
+<pre><code>
+@article{radev2023bayesflow,
+title = {{{BayesFlow}}: {{Amortized Bayesian}} Workflows with Neural Networks},
+year = {2023},
+journal = {Journal of Open Source Software},
+volume = {8},
+number = {89},
+pages = {5702},
+publisher = {The Open Journal},
+doi = {10.21105/joss.05702},
+author = {Radev and Schmitt and Schumacher and Elsemüller and Pratz and Schälte and Köthe and Bürkner}
+}
+</code>
+</pre></details>
+</li>
+<li>
+<p><strong>sbi: A Toolkit for Simulation-Based Inference</strong><br /><a href="https://joss.theoj.org/papers/10.21105/joss.02505">[Paper]</a> <a href="https://github.com/sbi-dev/sbi">[Code]</a> </p>
+<details>
+<summary>Show BibTeX</summary>
+<pre><code>
+@article{tejero-cantero2020sbi,
+title = {{sbi}: {{A}} Toolkit for Simulation-Based Inference},
+year = {2020},
+journal = {Journal of Open Source Software},
+volume = {5},
+number = {52},
+pages = {2505},
+publisher = {The Open Journal},
+doi = {10.21105/joss.02505},
+author = {Tejero-Cantero and Boelts and Deistler and Lueckmann and Durkan and Gonçalves and Greenberg and Macke}
+}
+</code>
+</pre></details>
+</li>
+</ul>
+<h2 id="methodological-papers">Methodological Papers</h2>
+<ul>
+<li>
+<p><strong>Compositional amortized inference for large-scale hierarchical Bayesian models</strong> (2025)<br /><em>TLDR: Introduces a compositional amortized inference framework for large-scale hierarchical Bayesian models with over 250,000 groups</em><br />by Jonas Arruda, Vikas Pandey, Catherine Sherry, Margarida Barroso, Xavier Intes, Jan Hasenauer, Stefan T Radev<br />┃🏷️ parameter estimation┃ ┃🏷️ hierarchical models┃ ┃🏷️ amortized inference┃<br /><a href="https://arxiv.org/abs/2505.14429">[Paper]</a> </p>
+<details>
+<summary>Show BibTeX</summary>
+<pre><code>
+@article{arruda2025compositional,
+title = {Compositional amortized inference for large-scale hierarchical Bayesian models},
+journal = {arXiv preprint arXiv:2505.14429},
+year = {2025},
+author = {Arruda and Pandey and Sherry and Barroso and Intes and Hasenauer and Radev}
+}
+</code>
+</pre></details>
+</li>
+<li>
+<p><strong>An amortized approach to non-linear mixed-effects modeling based on neural posterior estimation</strong> (2024)<br /><em>TLDR: Neural posterior estimation for hierarchical models, where the NPE is used in a first stage on a local level and then repeatedly used for global inference leveraging amortization.</em><br />by Jonas Arruda, Yannik Schälte, Clemens Peiter, Olga Teplytska, Ulrich Jaehde, Jan Hasenauer<br />┃🏷️ parameter estimation┃ ┃🏷️ hierarchical models┃<br /><a href="https://openreview.net/forum?id=uCdcXRuHnC">[Paper]</a> <a href="https://github.com/arrjon/Amortized-NLME-Models/tree/ICML2024">[Code]</a> </p>
+<details>
+<summary>Show BibTeX</summary>
+<pre><code>
+@inproceedings{arruda2024anamortized,
+title = {An amortized approach to non-linear mixed-effects modeling based on neural posterior estimation},
+booktitle = {Forty-first International Conference on Machine Learning},
+year = {2024},
+author = {Arruda and Schälte and Peiter and Teplytska and Jaehde and Hasenauer}
+}
+</code>
+</pre></details>
+</li>
+<li>
+<p><strong>A Practical Guide to Sample-Based Statistical Distances for Evaluating Generative Models in Science</strong> (2024)<br /><em>Reading this paper? Please consider contributing a TLDR summary.</em><br />by Sebastian Bischoff, Alana Darcher, Michael Deistler, Richard Gao, Franziska Gerken, Manuel Gloeckler, Lisa Haxel, Jaivardhan Kapoor, Janne K Lappalainen, Jakob H. Macke, Guy Moss, Matthijs Pals, Felix C Pei, Rachel Rapp, A Erdem Sağtekin, Cornelius Schröder, Auguste Schulz, Zinovia Stefanidi, Shoji Toyota, Linda Ulmer, Julius Vetter<br />┃🏷️ diagnostics┃ ┃🏷️ model evaluation┃<br /><a href="https://openreview.net/forum?id=isEFziui9p">[Paper]</a> </p>
+<details>
+<summary>Show BibTeX</summary>
+<pre><code>
+@article{bischoff2024practical,
+title = {A Practical Guide to Sample-Based Statistical Distances for Evaluating Generative Models in Science},
+year = {2024},
+journal = {Transactions on Machine Learning Research},
+issn = {2835-8856},
+author = {Bischoff and Darcher and Deistler and Gao and Gerken and Gloeckler and Haxel and Kapoor and Lappalainen and Macke and Moss and Pals and Pei and Rapp and Sağtekin and Schröder and Schulz and Stefanidi and Toyota and Ulmer and Vetter}
+}
+</code>
+</pre></details>
+</li>
+<li>
+<p><strong>Amortized Probabilistic Conditioning for Optimization, Simulation and Inference</strong> (2024)<br /><em>Reading this paper? Please consider contributing a TLDR summary.</em><br />by Paul E. Chang, Nasrulloh Loka, Daolang Huang, Ulpu Remes, Samuel Kaski, Luigi Acerbi<br />┃🏷️ meta-learning┃ ┃🏷️ optimization┃ ┃🏷️ simulation-based inference┃<br /><a href="https://arxiv.org/abs/2410.15320">[Paper]</a> <a href="https://github.com/acerbilab/amortized-conditioning-engine/">[Code]</a> </p>
+<details>
+<summary>Show BibTeX</summary>
+<pre><code>
+@misc{chang2024amortized,
+title = {Amortized Probabilistic Conditioning for Optimization, Simulation and Inference},
+year = {2024},
+eprint = {2410.15320},
+url = {https://arxiv.org/abs/2410.15320},
+author = {Chang and Loka and Huang and Remes and Kaski and Acerbi}
+}
+</code>
+</pre></details>
+</li>
+<li>
+<p><strong>A Deep Learning Method for Comparing Bayesian Hierarchical Models.</strong> (2024)<br /><em>TLDR: Proposes a multilevel neural architecture for compressing hierarchical data structures in Bayesian model comparison.</em><br />by Lasse Elsemüller, Martin Schnuerch, Paul-Christian Bürkner, Stefan T. Radev<br />┃🏷️ hierarchical models┃ ┃🏷️ model comparison┃ ┃🏷️ simulation-based┃<br /><a href="https://arxiv.org/abs/2301.11873">[Paper]</a> <a href="https://github.com/bayesflow-org/Hierarchical-Model-Comparison">[Code]</a> </p>
+<details>
+<summary>Show BibTeX</summary>
+<pre><code>
+@article{elsemuller2024deep,
+title = {A Deep Learning Method for Comparing {{Bayesian}} Hierarchical Models.},
+year = {2024},
+journal = {Psychological Methods},
+issn = {1939-1463, 1082-989X},
+doi = {10.1037/met0000645},
+author = {Elsemüller and Schnuerch and Bürkner and Radev}
+}
+</code>
+</pre></details>
+</li>
+<li>
+<p><strong>Sensitivity-Aware Amortized Bayesian Inference</strong> (2024)<br /><em>TLDR: Proposes a framework for amortized and thus efficient sensitivity analyses on all major dimensions of a Bayesian model.</em><br />by Lasse Elsemüller, Hans Olischläger, Marvin Schmitt, Paul-Christian Bürkner, Ullrich Köthe, Stefan T. Radev<br />┃🏷️ sensitivity analysis┃ ┃🏷️ simulation-based┃ ┃🏷️ meta learning┃<br /><a href="https://openreview.net/forum?id=Kxtpa9rvM0">[Paper]</a> <a href="https://github.com/bayesflow-org/SA-ABI">[Code]</a> </p>
+<details>
+<summary>Show BibTeX</summary>
+<pre><code>
+@article{elsemuller2024sensitivityaware,
+title = {Sensitivity-Aware Amortized {{Bayesian}} Inference},
+year = {2024},
+journal = {Transactions on Machine Learning Research},
+issn = {2835-8856},
+author = {Elsemüller and Olischläger and Schmitt and Bürkner and Köthe and Radev}
+}
+</code>
+</pre></details>
+</li>
+<li>
+<p><strong>Amortized Bayesian Multilevel Models</strong> (2024)<br /><em>Reading this paper? Please consider contributing a TLDR summary.</em><br />by Daniel Habermann, Marvin Schmitt, Lars Kühmichel, Andreas Bulling, Stefan T. Radev, Paul-Christian Bürkner<br />┃🏷️ parameter estimation┃ ┃🏷️ hierarchical models┃ ┃🏷️ simulation-based┃<br /><a href="https://arxiv.org/abs/2408.13230">[Paper]</a> </p>
+<details>
+<summary>Show BibTeX</summary>
+<pre><code>
+@misc{habermann2024amortized,
+title = {Amortized {{Bayesian Multilevel Models}}},
+year = {2024},
+number = {arXiv:2408.13230},
+eprint = {2408.13230},
+publisher = {arXiv},
+archiveprefix = {arXiv},
+author = {Habermann and Schmitt and Kühmichel and Bulling and Radev and Bürkner}
+}
+</code>
+</pre></details>
+</li>
+<li>
+<p><strong>Likelihood-Free Parameter Estimation with Neural Bayes Estimators</strong> (2024)<br /><em>Reading this paper? Please consider contributing a TLDR summary.</em><br />by Matthew Sainsbury-Dale, Andrew Zammit-Mangion, Raphaël Huser<br />┃🏷️ parameter estimation┃ ┃🏷️ point estimation┃ ┃🏷️ simulation-based┃<br /><a href="https://www.tandfonline.com/doi/full/10.1080/00031305.2023.2249522">[Paper]</a> </p>
+<details>
+<summary>Show BibTeX</summary>
+<pre><code>
+@article{sainsbury-dale2024likelihoodfree,
+title = {Likelihood-{{Free Parameter Estimation}} with {{Neural Bayes Estimators}}},
+year = {2024},
+journal = {The American Statistician},
+volume = {78},
+number = {1},
+pages = {1--14},
+issn = {0003-1305, 1537-2731},
+doi = {10.1080/00031305.2023.2249522},
+langid = {english},
+author = {Sainsbury-Dale and Zammit-Mangion and Huser}
+}
+</code>
+</pre></details>
+</li>
+<li>
+<p><strong>Amortized Bayesian Workflow (Extended Abstract)</strong> (2024)<br /><em>Reading this paper? Please consider contributing a TLDR summary.</em><br />by Marvin Schmitt, Chengkun Li, Aki Vehtari, Luigi Acerbi, Paul-Christian Bürkner, Stefan T. Radev<br />┃🏷️ likelihood-based┃ ┃🏷️ workflow┃<br /><a href="https://arxiv.org/abs/2409.04332">[Paper]</a> </p>
+<details>
+<summary>Show BibTeX</summary>
+<pre><code>
+@inproceedings{schmitt2024amortized,
+title = {Amortized {{Bayesian Workflow}} ({{Extended Abstract}})},
+booktitle = {{{NeurIPS Workshop}} on {{Bayesian Decision-Making}} and {{Uncertainty}}},
+year = {2024},
+publisher = {arXiv},
+author = {Schmitt and Li and Vehtari and Acerbi and Bürkner and Radev}
+}
+</code>
+</pre></details>
+</li>
+<li>
+<p><strong>Consistency Models for Scalable and Fast Simulation-Based Inference</strong> (2024)<br /><em>Reading this paper? Please consider contributing a TLDR summary.</em><br />by Marvin Schmitt, Valentin Pratz, Ullrich Köthe, Paul-Christian Bürkner, Stefan T. Radev<br />┃🏷️ simulation-based┃<br /><a href="https://arxiv.org/abs/2312.05440">[Paper]</a> </p>
+<details>
+<summary>Show BibTeX</summary>
+<pre><code>
+@inproceedings{schmitt2024consistency,
+title = {Consistency {{Models}} for {{Scalable}} and {{Fast Simulation-Based Inference}}},
+booktitle = {Proceedings of the 38th International Conference on Neural Information Processing Systems},
+year = {2024},
+author = {Schmitt and Pratz and Köthe and Bürkner and Radev}
+}
+</code>
+</pre></details>
+</li>
+<li>
+<p><strong>Detecting Model Misspecification in Amortized Bayesian Inference with Neural Networks</strong> (2024)<br /><em>Reading this paper? Please consider contributing a TLDR summary.</em><br />by Marvin Schmitt, Paul-Christian Bürkner, Ullrich Köthe, Stefan T. Radev<br />┃🏷️ diagnostics┃ ┃🏷️ workflow┃<br /><a href="https://link.springer.com/chapter/10.1007/978-3-031-54605-1_35">[Paper]</a> </p>
+<details>
+<summary>Show BibTeX</summary>
+<pre><code>
+@inproceedings{schmitt2024detecting,
+title = {Detecting Model Misspecification in Amortized {{Bayesian}} Inference with Neural Networks},
+booktitle = {Pattern Recognition},
+year = {2024},
+pages = {541--557},
+publisher = {Springer Nature Switzerland},
+address = {Cham},
+isbn = {978-3-031-54605-1},
+author = {Schmitt and Bürkner and Köthe and Radev}
+}
+</code>
+</pre></details>
+</li>
+<li>
+<p><strong>Leveraging Self-Consistency for Data-Efficient Amortized Bayesian Inference</strong> (2024)<br /><em>Reading this paper? Please consider contributing a TLDR summary.</em><br />by Marvin Schmitt, Desi R. Ivanova, Daniel Habermann, Ullrich Köthe, Paul-Christian Bürkner, Stefan T. Radev<br />┃🏷️ likelihood-based┃ ┃🏷️ simulation-based┃<br /><a href="https://arxiv.org/abs/2310.04395">[Paper]</a> </p>
+<details>
+<summary>Show BibTeX</summary>
+<pre><code>
+@inproceedings{schmitt2024leveraging,
+title = {Leveraging Self-Consistency for Data-Efficient Amortized {{Bayesian}} Inference},
+booktitle = {Proceedings of the 41st International Conference on Machine Learning},
+year = {2024},
+series = {Proceedings of Machine Learning Research},
+volume = {235},
+pages = {43723--43741},
+publisher = {PMLR},
+author = {Schmitt and Ivanova and Habermann and Köthe and Bürkner and Radev}
+}
+</code>
+</pre></details>
+</li>
+<li>
+<p><strong>Sequential Neural Score Estimation: Likelihood-free Inference with Conditional Score Based Diffusion Models</strong> (2024)<br /><em>Reading this paper? Please consider contributing a TLDR summary.</em><br />by Louis Sharrock, Jack Simons, Song Liu, Mark Beaumont<br />┃🏷️ simulation-based┃<br /><a href="https://arxiv.org/abs/2210.04872">[Paper]</a> </p>
+<details>
+<summary>Show BibTeX</summary>
+<pre><code>
+@inproceedings{sharrock2024sequential,
+title = {Sequential Neural Score Estimation: {{Likelihood-free}} Inference with Conditional Score Based Diffusion Models},
+booktitle = {Proceedings of the 41st International Conference on Machine Learning},
+year = {2024},
+series = {Proceedings of Machine Learning Research},
+volume = {235},
+pages = {44565--44602},
+publisher = {PMLR},
+author = {Sharrock and Simons and Liu and Beaumont}
+}
+</code>
+</pre></details>
+</li>
+<li>
+<p><strong>Fast and Reliable Probabilistic Reflectometry Inversion with Prior-Amortized Neural Posterior Estimation</strong> (2024)<br /><em>Reading this paper? Please consider contributing a TLDR summary.</em><br />by Vladimir Starostin, Maximilian Dax, Alexander Gerlach, Alexander Hinderhofer, Álvaro Tejero-Cantero, Frank Schreiber<br />┃🏷️ physics┃ ┃🏷️ meta learning┃<br /><a href="https://arxiv.org/abs/2407.18648">[Paper]</a> </p>
+<details>
+<summary>Show BibTeX</summary>
+<pre><code>
+@misc{starostin2024fast,
+title = {Fast and {{Reliable Probabilistic Reflectometry Inversion}} with {{Prior-Amortized Neural Posterior Estimation}}},
+year = {2024},
+number = {arXiv:2407.18648},
+eprint = {2407.18648},
+primaryclass = {cond-mat, physics:physics, stat},
+publisher = {arXiv},
+archiveprefix = {arXiv},
+author = {Starostin and Dax and Gerlach and Hinderhofer and Tejero-Cantero and Schreiber}
+}
+</code>
+</pre></details>
+</li>
+<li>
+<p><strong>Missing data in amortized simulation-based neural posterior estimation</strong> (2024)<br /><em>TLDR: Encoding missing data in a time series by augmenting the data vector with binary indicators for presence or absence yields the most robust performance.</em><br />by Zijian Wang, Jan Hasenauer, Yannik Schälte<br />┃🏷️ missing data┃ ┃🏷️ simulation-based┃ ┃🏷️ parameter estimation┃<br /><a href="https://doi.org/10.1371/journal.pcbi.1012184">[Paper]</a> <a href="https://github.com/emune-dev/Data-missingness-paper">[Code]</a> </p>
+<details>
+<summary>Show BibTeX</summary>
+<pre><code>
+@article{wang2024missing,
+doi = {10.1371/journal.pcbi.1012184},
+journal = {PLOS Computational Biology},
+publisher = {Public Library of Science},
+title = {Missing data in amortized simulation-based neural posterior estimation},
+year = {2024},
+month = {06},
+volume = {20},
+pages = {1-17},
+number = {6},
+author = {Wang and Hasenauer and Schälte}
+}
+</code>
+</pre></details>
+</li>
+<li>
+<p><strong>Conditional Generative Models Are Provably Robust: Pointwise Guarantees for Bayesian Inverse Problems</strong> (2023)<br /><em>Reading this paper? Please consider contributing a TLDR summary.</em><br />by Fabian Altekrüger, Paul Hagemann, Gabriele Steidl<br />┃🏷️ diagnostics┃ ┃🏷️ theory┃<br /><a href="https://arxiv.org/abs/2303.15845">[Paper]</a> </p>
+<details>
+<summary>Show BibTeX</summary>
+<pre><code>
+@article{altekruger2023conditional,
+title = {Conditional Generative Models Are Provably Robust: {{Pointwise}} Guarantees for Bayesian Inverse Problems},
+year = {2023},
+journal = {Transactions on Machine Learning Research},
+issn = {2835-8856},
+author = {Altekrüger and Hagemann and Steidl}
+}
+</code>
+</pre></details>
+</li>
+<li>
+<p><strong>Neural Importance Sampling for Rapid and Reliable Gravitational-Wave Inference</strong> (2023)<br /><em>Reading this paper? Please consider contributing a TLDR summary.</em><br />by Maximilian Dax, Stephen R. Green, Jonathan Gair, Michael Pürrer, Jonas Wildberger, Jakob H. Macke, Alessandra Buonanno, Bernhard Schölkopf<br />┃🏷️ likelihood-based┃ ┃🏷️ physics┃ ┃🏷️ parameter estimation┃<br /><a href="https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.130.171403">[Paper]</a> </p>
+<details>
+<summary>Show BibTeX</summary>
+<pre><code>
+@article{dax2023neural,
+title = {Neural Importance Sampling for Rapid and Reliable Gravitational-Wave Inference},
+year = {2023},
+journal = {Physical Review Letters},
+volume = {130},
+number = {17},
+pages = {171403},
+doi = {10.1103/PhysRevLett.130.171403},
+author = {Dax and Green and Gair and Pürrer and Wildberger and Macke and Buonanno and Schölkopf}
+}
+</code>
+</pre></details>
+</li>
+<li>
+<p><strong>Calibrating Neural Simulation-Based Inference with Differentiable Coverage Probability</strong> (2023)<br /><em>Reading this paper? Please consider contributing a TLDR summary.</em><br />by Maciej Falkiewicz, Naoya Takeishi, Imahn Shekhzadeh, Antoine Wehenkel, Arnaud Delaunoy, Gilles Louppe, Alexandros Kalousis<br />┃🏷️ diagnostics┃ ┃🏷️ simulation-based┃<br /><a href="https://proceedings.neurips.cc/paper_files/paper/2023/file/03a9a9c1e15850439653bb971a4ad4b3-Paper-Conference.pdf">[Paper]</a> </p>
+<details>
+<summary>Show BibTeX</summary>
+<pre><code>
+@inproceedings{falkiewicz2023calibrating,
+title = {Calibrating Neural Simulation-Based Inference with Differentiable Coverage Probability},
+booktitle = {Thirty-Seventh Conference on Neural Information Processing Systems},
+year = {2023},
+author = {Falkiewicz and Takeishi and Shekhzadeh and Wehenkel and Delaunoy and Louppe and Kalousis}
+}
+</code>
+</pre></details>
+</li>
+<li>
+<p><strong>Amortized Bayesian Model Comparison With Evidential Deep Learning</strong> (2023)<br /><em>Reading this paper? Please consider contributing a TLDR summary.</em><br />by Stefan T. Radev, Marco D'Alessandro, Ulf K. Mertens, Andreas Voss, Ullrich Köthe, Paul-Christian Bürkner<br />┃🏷️ model comparison┃<br /><a href="https://ieeexplore.ieee.org/abstract/document/9612724?casa_token=knr0jyL2bTAAAAAA:Dh8KfjVW9QJympB0c8UbUq8HozJjOw-BPBSdy1g-QUhPskT1IL-cN5RHFHU7EVJNyZnY78Id">[Paper]</a> </p>
+<details>
+<summary>Show BibTeX</summary>
+<pre><code>
+@article{radev2023amortized,
+title = {Amortized {{Bayesian Model Comparison With Evidential Deep Learning}}},
+year = {2023},
+journal = {IEEE Transactions on Neural Networks and Learning Systems},
+volume = {34},
+number = {8},
+pages = {4903--4917},
+issn = {2162-237X, 2162-2388},
+doi = {10.1109/TNNLS.2021.3124052},
+author = {Radev and D'Alessandro and Mertens and Voss and Köthe and Bürkner}
+}
+</code>
+</pre></details>
+</li>
+<li>
+<p><strong>JANA: Jointly Amortized Neural Approximation of Complex Bayesian Models</strong> (2023)<br /><em>Reading this paper? Please consider contributing a TLDR summary.</em><br />by Stefan T. Radev, Marvin Schmitt, Valentin Pratz, Umberto Picchini, Ullrich Köthe, Paul-Christian Bürkner<br />┃🏷️ joint learning┃ ┃🏷️ simulation-based┃ ┃🏷️ diagnostics┃<br /><a href="https://proceedings.mlr.press/v216/radev23a.html">[Paper]</a> </p>
+<details>
+<summary>Show BibTeX</summary>
+<pre><code>
+@inproceedings{radev2023jana,
+title = {{{JANA}}: {{Jointly}} Amortized Neural Approximation of Complex {{Bayesian}} Models},
+booktitle = {Proceedings of the Thirty-Ninth Conference on Uncertainty in Artificial Intelligence},
+year = {2023},
+series = {Proceedings of Machine Learning Research},
+volume = {216},
+pages = {1695--1706},
+publisher = {PMLR},
+author = {Radev and Schmitt and Pratz and Picchini and Köthe and Bürkner}
+}
+</code>
+</pre></details>
+</li>
+<li>
+<p><strong>Fuse It or Lose It: Deep Fusion for Multimodal Simulation-Based Inference</strong> (2023)<br /><em>Reading this paper? Please consider contributing a TLDR summary.</em><br />by Marvin Schmitt, Stefan T. Radev, Paul-Christian Bürkner<br />┃🏷️ summary learning┃ ┃🏷️ parameter estimation┃<br /><a href="https://arxiv.org/abs/2311.10671">[Paper]</a> </p>
+<details>
+<summary>Show BibTeX</summary>
+<pre><code>
+@misc{schmitt2023fuse,
+title = {Fuse {{It}} or {{Lose It}}: {{Deep Fusion}} for {{Multimodal Simulation-Based Inference}}},
+shorttitle = {Fuse {{It}} or {{Lose It}}},
+year = {2023},
+number = {arXiv:2311.10671},
+eprint = {2311.10671},
+publisher = {arXiv},
+archiveprefix = {arXiv},
+author = {Schmitt and Radev and Bürkner}
+}
+</code>
+</pre></details>
+</li>
+<li>
+<p><strong>Flow Matching for Scalable Simulation-Based Inference</strong> (2023)<br /><em>Reading this paper? Please consider contributing a TLDR summary.</em><br />by Jonas Wildberger, Maximilian Dax, Simon Buchholz, Stephen Green, Jakob H Macke, Bernhard Schölkopf<br />┃🏷️ simulation-based┃<br /><a href="https://arxiv.org/abs/2305.17161">[Paper]</a> </p>
+<details>
+<summary>Show BibTeX</summary>
+<pre><code>
+@inproceedings{wildberger2023flow,
+title = {Flow Matching for Scalable Simulation-Based Inference},
+booktitle = {Advances in Neural Information Processing Systems},
+year = {2023},
+volume = {36},
+pages = {16837--16864},
+author = {Wildberger and Dax and Buchholz and Green and Macke and Schölkopf}
+}
+</code>
+</pre></details>
+</li>
+<li>
+<p><strong>Investigating the Impact of Model Misspecification in Neural Simulation-based Inference</strong> (2022)<br /><em>Reading this paper? Please consider contributing a TLDR summary.</em><br />by Patrick Cannon, Daniel Ward, Sebastian M. Schmon<br />┃🏷️ diagnostics┃ ┃🏷️ misspecification┃ ┃🏷️ simulation-based┃<br /><a href="https://arxiv.org/abs/2209.01845">[Paper]</a> </p>
+<details>
+<summary>Show BibTeX</summary>
+<pre><code>
+@misc{cannon2022investigating,
+title = {Investigating the {{Impact}} of {{Model Misspecification}} in {{Neural Simulation-based Inference}}},
+year = {2022},
+number = {arXiv:2209.01845},
+eprint = {2209.01845},
+primaryclass = {stat},
+publisher = {arXiv},
+archiveprefix = {arXiv},
+author = {Cannon and Ward and Schmon}
+}
+</code>
+</pre></details>
+</li>
+<li>
+<p><strong>Robust Neural Posterior Estimation and Statistical Model Criticism</strong> (2022)<br /><em>Reading this paper? Please consider contributing a TLDR summary.</em><br />by Daniel Ward, Patrick Cannon, Mark Beaumont, Matteo Fasiolo, Sebastian M. Schmon<br />┃🏷️ model evaluation┃ ┃🏷️ simulation-based┃<br /><a href="https://proceedings.neurips.cc/paper_files/paper/2022/hash/db0eac6747e3631eb91095cd76065611-Abstract-Conference.html">[Paper]</a> </p>
+<details>
+<summary>Show BibTeX</summary>
+<pre><code>
+@inproceedings{ward2022robust,
+title = {Robust Neural Posterior Estimation and Statistical Model Criticism},
+booktitle = {Proceedings of the 36th International Conference on Neural Information Processing Systems},
+year = {2022},
+author = {Ward and Cannon and Beaumont and Fasiolo and Schmon}
+}
+</code>
+</pre></details>
+</li>
+<li>
+<p><strong>Deep Adaptive Design: Amortizing Sequential Bayesian Experimental Design</strong> (2021)<br /><em>Reading this paper? Please consider contributing a TLDR summary.</em><br />by Adam Foster, Desi R. Ivanova, Malik Ilyas, Tom Rainforth<br />┃🏷️ experimental design┃ ┃🏷️ adaptive design┃<br /><a href="http://proceedings.mlr.press/v139/foster21a.html">[Paper]</a> </p>
+<details>
+<summary>Show BibTeX</summary>
+<pre><code>
+@inproceedings{foster2021deep,
+title = {Deep {{Adaptive Design}}: {{Amortizing Sequential Bayesian Experimental Design}}},
+booktitle = {Proceedings of the 38th {{International Conference}} on {{Machine Learning}}},
+year = {2021},
+volume = {139},
+publisher = {PMLR},
+author = {Foster and Ivanova and Ilyas and Rainforth}
+}
+</code>
+</pre></details>
+</li>
+<li>
+<p><strong>BayesFlow: Learning Complex Stochastic Models With Invertible Neural Networks</strong> (2020)<br /><em>Reading this paper? Please consider contributing a TLDR summary.</em><br />by Stefan T. Radev, Ulf K. Mertens, Andreas Voss, Lynton Ardizzone, Ullrich Köthe<br />┃🏷️ simulation-based┃ ┃🏷️ summary learning┃ ┃🏷️ parameter estimation┃<br /><a href="https://ieeexplore.ieee.org/abstract/document/9298920?casa_token=fdTVHBVa5Z4AAAAA:Un2ZODPlovOuoZZaCPLPrBwA58re3eYXPMbBx9u_WAj9PRUJj34W3hTEuSG1osciKgjzZpiS">[Paper]</a> </p>
+<details>
+<summary>Show BibTeX</summary>
+<pre><code>
+@article{radev2020bayesflow,
+title = {{{BayesFlow}}: {{Learning Complex Stochastic Models With Invertible Neural Networks}}},
+shorttitle = {{{BayesFlow}}},
+year = {2020},
+journal = {IEEE Transactions on Neural Networks and Learning Systems},
+volume = {33},
+number = {4},
+pages = {1452--1466},
+issn = {2162-237X, 2162-2388},
+doi = {10.1109/TNNLS.2020.3042395},
+author = {Radev and Mertens and Voss and Ardizzone and Köthe}
+}
+</code>
+</pre></details>
+</li>
+</ul>
+<h2 id="application-papers">Application Papers</h2>
+<ul>
+<li>
+<p><strong>Advancing Tools for Simulation-Based Inference</strong> (2024)<br /><em>Reading this paper? Please consider contributing a TLDR summary.</em><br />by Henning Bahl, Victor Bresó, Giovanni De Crescenzo, Tilman Plehn<br />┃🏷️ physics┃ ┃🏷️ simulation-based┃<br /><a href="https://arxiv.org/abs/2410.07315">[Paper]</a> </p>
+<details>
+<summary>Show BibTeX</summary>
+<pre><code>
+@misc{bahl2024advancing,
+title = {Advancing {{Tools}} for {{Simulation-Based Inference}}},
+year = {2024},
+number = {arXiv:2410.07315},
+eprint = {2410.07315},
+primaryclass = {hep-ph},
+publisher = {arXiv},
+archiveprefix = {arXiv},
+author = {Bahl and Bresó and Crescenzo and Plehn}
+}
+</code>
+</pre></details>
+</li>
+<li>
+<p><strong>Amortized Template-Matching of Molecular Conformations from Cryo-Electron Microscopy Images Using Simulation-Based Inference</strong> (2024)<br /><em>Reading this paper? Please consider contributing a TLDR summary.</em><br />by Lars Dingeldein, David Silva-Sánchez, Luke Evans, Edoardo D'Imprima, Nikolaus Grigorieff, Roberto Covino, Pilar Cossio<br />┃🏷️ biology┃ ┃🏷️ simulation-based┃ ┃🏷️ parameter estimation┃<br /><a href="https://www.biorxiv.org/content/10.1101/2024.07.23.604154v2.abstract">[Paper]</a> </p>
+<details>
+<summary>Show BibTeX</summary>
+<pre><code>
+@article{dingeldein2024amortized,
+title = {Amortized Template-Matching of Molecular Conformations from Cryo-Electron Microscopy Images Using Simulation-Based Inference},
+year = {2024},
+journal = {bioRxiv : the preprint server for biology},
+pages = {2024.07.23.604154},
+doi = {10.1101/2024.07.23.604154},
+author = {Dingeldein and Silva-Sánchez and Evans and D'Imprima and Grigorieff and Covino and Cossio}
+}
+</code>
+</pre></details>
+</li>
+<li>
+<p><strong>Simulation-Based Inference for Cardiovascular Models</strong> (2024)<br /><em>Reading this paper? Please consider contributing a TLDR summary.</em><br />by Antoine Wehenkel, Jens Behrmann, Andrew C. Miller, Guillermo Sapiro, Ozan Sener, Marco Cuturi Cameto, Jörn-Henrik Jacobsen<br />┃🏷️ medicine┃ ┃🏷️ simulation-based┃ ┃🏷️ parameter estimation┃<br /><a href="https://arxiv.org/abs/2307.13918">[Paper]</a> </p>
+<details>
+<summary>Show BibTeX</summary>
+<pre><code>
+@inproceedings{wehenkel2024simulationbased,
+title = {Simulation-Based Inference for Cardiovascular Models},
+booktitle = {{{NeurIPS}} Workshop},
+year = {2024},
+author = {Wehenkel and Behrmann and Miller and Sapiro and Sener and Cameto and Jacobsen}
+}
+</code>
+</pre></details>
+</li>
+<li>
+<p><strong>Evaluating Sparse Galaxy Simulations via Out-of-Distribution Detection and Amortized Bayesian Model Comparison</strong> (2024)<br /><em>Reading this paper? Please consider contributing a TLDR summary.</em><br />by Lingyi Zhou, Stefan T. Radev, William H. Oliver, Aura Obreja, Zehao Jin, Tobias Buck<br />┃🏷️ physics┃ ┃🏷️ model evaluation┃ ┃🏷️ model comparison┃<br /><a href="https://arxiv.org/abs/2410.10606">[Paper]</a> </p>
+<details>
+<summary>Show BibTeX</summary>
+<pre><code>
+@inproceedings{zhou2024evaluating,
+title = {Evaluating {{Sparse Galaxy Simulations}} via {{Out-of-Distribution Detection}} and {{Amortized Bayesian Model Comparison}}},
+booktitle = {38th {{Conference}} on {{Neural Information Processing Systems}}},
+year = {2024},
+author = {Zhou and Radev and Oliver and Obreja and Jin and Buck}
+}
+</code>
+</pre></details>
+</li>
+<li>
+<p><strong>A General Integrative Neurocognitive Modeling Framework to Jointly Describe EEG and Decision-making on Single Trials</strong> (2023)<br /><em>Reading this paper? Please consider contributing a TLDR summary.</em><br />by Amin Ghaderi-Kangavari, Jamal Amani Rad, Michael D. Nunez<br />┃🏷️ cognitive modeling┃ ┃🏷️ simulation-based┃ ┃🏷️ parameter estimation┃<br /><a href="https://link.springer.com/article/10.1007/s42113-023-00167-4">[Paper]</a> </p>
+<details>
+<summary>Show BibTeX</summary>
+<pre><code>
+@article{ghaderi-kangavari2023general,
+title = {A {{General Integrative Neurocognitive Modeling Framework}} to {{Jointly Describe EEG}} and {{Decision-making}} on {{Single Trials}}},
+year = {2023},
+journal = {Computational Brain \& Behavior},
+volume = {6},
+number = {3},
+pages = {317--376},
+issn = {2522-0861, 2522-087X},
+doi = {10.1007/s42113-023-00167-4},
+author = {Ghaderi-Kangavari and Rad and Nunez}
+}
+</code>
+</pre></details>
+</li>
+<li>
+<p><strong>Amortized Inference with User Simulations</strong> (2023)<br /><em>Reading this paper? Please consider contributing a TLDR summary.</em><br />by Hee-Seung Moon, Antti Oulasvirta, Byungjoo Lee<br />┃🏷️ human-computer interaction┃ ┃🏷️ simulation-based┃ ┃🏷️ user interfaces┃<br /><a href="https://dl.acm.org/doi/pdf/10.1145/3544548.3581439">[Paper]</a> </p>
+<details>
+<summary>Show BibTeX</summary>
+<pre><code>
+@inproceedings{moon2023amortized,
+title = {Amortized Inference with User Simulations},
+booktitle = {Proceedings of the 2023 {{CHI}} Conference on Human Factors in Computing Systems},
+year = {2023},
+series = {Chi '23},
+publisher = {Association for Computing Machinery},
+doi = {10.1145/3544548.3581439},
+author = {Moon and Oulasvirta and Lee}
+}
+</code>
+</pre></details>
+</li>
+<li>
+<p><strong>Neural Superstatistics for Bayesian Estimation of Dynamic Cognitive Models</strong> (2023)<br /><em>Reading this paper? Please consider contributing a TLDR summary.</em><br />by Lukas Schumacher, Paul-Christian Bürkner, Andreas Voss, Ullrich Köthe, Stefan T. Radev<br />┃🏷️ simulation-based┃ ┃🏷️ dynamic modeling┃ ┃🏷️ parameter estimation┃<br /><a href="https://www.nature.com/articles/s41598-023-40278-3">[Paper]</a> </p>
+<details>
+<summary>Show BibTeX</summary>
+<pre><code>
+@article{schumacher2023neural,
+title = {Neural Superstatistics for {{Bayesian}} Estimation of Dynamic Cognitive Models},
+year = {2023},
+journal = {Scientific Reports},
+volume = {13},
+number = {1},
+pages = {13778},
+issn = {2045-2322},
+doi = {10.1038/s41598-023-40278-3},
+langid = {english},
+author = {Schumacher and Bürkner and Voss and Köthe and Radev}
+}
+</code>
+</pre></details>
+</li>
+<li>
+<p><strong>Reliable Amortized Variational Inference with Physics-Based Latent Distribution Correction</strong> (2023)<br /><em>Reading this paper? Please consider contributing a TLDR summary.</em><br />by Ali Siahkoohi, Gabrio Rizzuti, Rafael Orozco, Felix J. Herrmann<br />┃🏷️ physics┃ ┃🏷️ correction┃ ┃🏷️ misspecification┃<br /><a href="https://library.seg.org/doi/abs/10.1190/geo2022-0472.1">[Paper]</a> </p>
+<details>
+<summary>Show BibTeX</summary>
+<pre><code>
+@article{siahkoohi2023reliable,
+title = {Reliable Amortized Variational Inference with Physics-Based Latent Distribution Correction},
+year = {2023},
+journal = {GEOPHYSICS},
+volume = {88},
+number = {3},
+pages = {R297-R322},
+issn = {0016-8033, 1942-2156},
+doi = {10.1190/geo2022-0472.1},
+langid = {english},
+author = {Siahkoohi and Rizzuti and Orozco and Herrmann}
+}
+</code>
+</pre></details>
+</li>
+<li>
+<p><strong>Probabilistic Damage Detection Using a New Likelihood-Free Bayesian Inference Method</strong> (2023)<br /><em>Reading this paper? Please consider contributing a TLDR summary.</em><br />by Jice Zeng, Michael D. Todd, Zhen Hu<br />┃🏷️ structural health monitoring┃<br /><a href="https://link.springer.com/article/10.1007/s13349-022-00638-5">[Paper]</a> </p>
+<details>
+<summary>Show BibTeX</summary>
+<pre><code>
+@article{zeng2023probabilistic,
+title = {Probabilistic Damage Detection Using a New Likelihood-Free {{Bayesian}} Inference Method},
+year = {2023},
+journal = {Journal of Civil Structural Health Monitoring},
+volume = {13},
+number = {2-3},
+pages = {319--341},
+issn = {2190-5452, 2190-5479},
+doi = {10.1007/s13349-022-00638-5},
+langid = {english},
+author = {Zeng and Todd and Hu}
+}
+</code>
+</pre></details>
+</li>
+<li>
+<p><strong>Towards Reliable Parameter Extraction in MEMS Final Module Testing Using Bayesian Inference</strong> (2022)<br /><em>Reading this paper? Please consider contributing a TLDR summary.</em><br />by Monika E. Heringhaus, Yi Zhang, Andr'e Zimmermann, Lars Mikelsons<br />┃🏷️ parameter estimation┃ ┃🏷️ simulation-based┃ ┃🏷️ engineering┃<br /><a href="https://www.mdpi.com/1424-8220/22/14/5408">[Paper]</a> </p>
+<details>
+<summary>Show BibTeX</summary>
+<pre><code>
+@article{heringhaus2022reliable,
+title = {Towards {{Reliable Parameter Extraction}} in {{MEMS Final Module Testing Using Bayesian Inference}}},
+year = {2022},
+journal = {Sensors},
+volume = {22},
+number = {14},
+pages = {5408},
+issn = {1424-8220},
+doi = {10.3390/s22145408},
+author = {Heringhaus and Zhang and Zimmermann and Mikelsons}
+}
+</code>
+</pre></details>
+</li>
+<li>
+<p><strong>Mental Speed Is High until Age 60 as Revealed by Analysis of over a Million Participants</strong> (2022)<br /><em>Reading this paper? Please consider contributing a TLDR summary.</em><br />by Mischa von Krause, Stefan T. Radev, Andreas Voss<br />┃🏷️ cognitive modeling┃ ┃🏷️ parameter estimation┃<br /><a href="https://www.nature.com/articles/s41562-021-01282-7">[Paper]</a> </p>
+<details>
+<summary>Show BibTeX</summary>
+<pre><code>
+@article{vonkrause2022mental,
+title = {Mental Speed Is High until Age 60 as Revealed by Analysis of over a Million Participants},
+year = {2022},
+journal = {Nature Human Behaviour},
+volume = {6},
+number = {5},
+pages = {700--708},
+issn = {2397-3374},
+doi = {10.1038/s41562-021-01282-7},
+langid = {english},
+author = {von Krause and Radev and Voss}
+}
+</code>
+</pre></details>
+</li>
+<li>
+<p><strong>Model Updating of Wind Turbine Blade Cross Sections with Invertible Neural Networks</strong> (2022)<br /><em>Reading this paper? Please consider contributing a TLDR summary.</em><br />by Pablo Noever-Castelos, Lynton Ardizzone, Claudio Balzani<br />┃🏷️ simulation-based┃<br /><a href="https://onlinelibrary.wiley.com/doi/full/10.1002/we.2687">[Paper]</a> </p>
+<details>
+<summary>Show BibTeX</summary>
+<pre><code>
+@article{noever-castelos2022model,
+title = {Model Updating of Wind Turbine Blade Cross Sections with Invertible Neural Networks},
+year = {2022},
+journal = {Wind Energy},
+volume = {25},
+number = {3},
+pages = {573--599},
+issn = {1095-4244, 1099-1824},
+doi = {10.1002/we.2687},
+langid = {english},
+author = {Noever-Castelos and Ardizzone and Balzani}
+}
+</code>
+</pre></details>
+</li>
+<li>
+<p><strong>Inverse Design under Uncertainty Using Conditional Normalizing Flows</strong> (2022)<br /><em>Reading this paper? Please consider contributing a TLDR summary.</em><br />by Panagiotis Tsilifis, Sayan Ghosh<br />┃🏷️ engineering┃ ┃🏷️ aerospace┃ ┃🏷️ simulation-based┃<br /><a href="https://arc.aiaa.org/doi/abs/10.2514/6.2022-0631">[Paper]</a> </p>
+<details>
+<summary>Show BibTeX</summary>
+<pre><code>
+@inproceedings{tsilifis2022inverse,
+title = {Inverse {{Design}} under {{Uncertainty}} Using {{Conditional Normalizing Flows}}},
+booktitle = {{{AIAA SCITECH}} 2022 {{Forum}}},
+year = {2022},
+publisher = {{American Institute of Aeronautics and Astronautics}},
+address = {San Diego, CA \& Virtual},
+doi = {10.2514/6.2022-0631},
+isbn = {978-1-62410-631-6},
+langid = {english},
+author = {Tsilifis and Ghosh}
+}
+</code>
+</pre></details>
+</li>
+<li>
+<p><strong>Measuring QCD Splittings with Invertible Networks</strong> (2021)<br /><em>Reading this paper? Please consider contributing a TLDR summary.</em><br />by Sebastian Bieringer, Anja Butter, Theo Heimel, Stefan Höche, Ullrich Köthe, Tilman Plehn, Stefan T. Radev<br />┃🏷️ simulation-based┃ ┃🏷️ physics┃ ┃🏷️ parameter estimation┃<br /><a href="https://www.scipost.org/10.21468/SciPostPhys.10.6.126?acad_field_slug=astronomy">[Paper]</a> </p>
+<details>
+<summary>Show BibTeX</summary>
+<pre><code>
+@article{bieringer2021measuring,
+title = {Measuring {{QCD}} Splittings with Invertible Networks},
+year = {2021},
+journal = {SciPost Physics},
+volume = {10},
+pages = {126},
+doi = {10.21468/SciPostPhys.10.6.126},
+author = {Bieringer and Butter and Heimel and Höche and Köthe and Plehn and Radev}
+}
+</code>
+</pre></details>
+</li>
+<li>
+<p><strong>OutbreakFlow: Model-based Bayesian Inference of Disease Outbreak Dynamics with Invertible Neural Networks and Its Application to the COVID-19 Pandemics in Germany</strong> (2021)<br /><em>Reading this paper? Please consider contributing a TLDR summary.</em><br />by Stefan T. Radev, Frederik Graw, Simiao Chen, Nico T. Mutters, Vanessa M. Eichel, Till Bärnighausen, Ullrich Köthe<br />┃🏷️ epidemiology┃ ┃🏷️ public health┃ ┃🏷️ simulation-based┃<br /><a href="https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1009472">[Paper]</a> </p>
+<details>
+<summary>Show BibTeX</summary>
+<pre><code>
+@article{radev2021outbreakflow,
+title = {{{OutbreakFlow}}: {{Model-based Bayesian}} Inference of Disease Outbreak Dynamics with Invertible Neural Networks and Its Application to the {{COVID-19}} Pandemics in {{Germany}}},
+shorttitle = {{{OutbreakFlow}}},
+year = {2021},
+journal = {PLOS Computational Biology},
+volume = {17},
+number = {10},
+pages = {e1009472},
+issn = {1553-7358},
+doi = {10.1371/journal.pcbi.1009472},
+langid = {english},
+author = {Radev and Graw and Chen and Mutters and Eichel and Bärnighausen and Köthe}
+}
+</code>
+</pre></details>
+</li>
+<li>
+<p><strong>Estimation of Agent-Based Models Using Bayesian Deep Learning Approach of BayesFlow</strong> (2021)<br /><em>Reading this paper? Please consider contributing a TLDR summary.</em><br />by Takashi Shiono<br />┃🏷️ agent modeling┃ ┃🏷️ simulation-based┃<br /><a href="https://www.sciencedirect.com/science/article/pii/S0165188921000178?casa_token=lM5bqeFY9-AAAAAA:usisG1ypAZdWNDwk39x_KdFGIvgKXoxYD9x0fukFWDyiqBEtXHaLPRIFhShjyeXdAmvoKgwNmA">[Paper]</a> </p>
+<details>
+<summary>Show BibTeX</summary>
+<pre><code>
+@article{shiono2021estimation,
+title = {Estimation of Agent-Based Models Using {{Bayesian}} Deep Learning Approach of {{BayesFlow}}},
+year = {2021},
+journal = {Journal of Economic Dynamics and Control},
+volume = {125},
+pages = {104082},
+issn = {01651889},
+doi = {10.1016/j.jedc.2021.104082},
+langid = {english},
+author = {Shiono}
+}
+</code>
+</pre></details>
+</li>
+</ul>
+
+  </div>
+  </main>
+  <footer>
+    <div class="c">
+        <p> &copy;<span id="year">2026</span> Awesome Amortized Inference. Powered by <a href="https://www.getzola.org/" target="_blank">Zola</a>.</p>    </div>
+  </footer>
+</body>
+</html>
