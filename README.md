@@ -33,7 +33,7 @@ We highly recommend checking out these lists for more resources on modern simula
 
 ## Review Articles
 
-- **Diffusion Models in Simulation-Based Inference: A Tutorial Review** (2025)<br />_TLDR: This tutorial review explains how diffusion models can be used for simulation-based inference. It surveys and benchmards key design choices for training and sampling, discusses recent extensions such as guidance and score composition._<br />by Jonas Arruda, Niels Bracher, Ullrich Köthe, Jan Hasenauer, Stefan T. Radev<br />[[Paper]](https://bayesflow-org.github.io/diffusion-experiments/)
+- **Diffusion Models in Simulation-Based Inference: A Tutorial Review** (2025)<br />_TLDR: This tutorial review explains how diffusion models can be used for simulation-based inference. It surveys and benchmards key design choices for training and sampling, discusses recent extensions such as guidance and score composition._<br />by Jonas Arruda, Niels Bracher, Ullrich Köthe, Jan Hasenauer, Stefan T. Radev<br /> [[Web]](https://bayesflow-org.github.io/diffusion-experiments/)[[Paper]](https://arxiv.org/abs/2512.20685)
   <details>
   <summary>Show BibTeX</summary>
   <pre><code>
@@ -154,6 +154,19 @@ We highly recommend checking out these lists for more resources on modern simula
   </code>
   </pre></details>
 ## Methodological Papers
+
+- **Compositional amortized inference for large-scale hierarchical Bayesian models** (2025)<br />_TLDR: Introduces a compositional amortized inference framework for large-scale hierarchical Bayesian models with over 250,000 groups._<br />by Jonas Arruda, Vikas Pandey, Catherine Sherry, Margarida Barroso, Xavier Intes, Jan Hasenauer, Stefan T. Radev<br />┃🏷️ parameter estimation┃ ┃🏷️ hierarchical models┃ ┃🏷️ amortized inference┃<br />[[Paper]](https://arxiv.org/abs/2505.14429)
+  <details>
+  <summary>Show BibTeX</summary>
+  <pre><code>
+  @article{arruda2025compositional,
+    title={Compositional amortized inference for large-scale hierarchical Bayesian models},
+    author={Arruda, Jonas and Pandey, Vikas and Sherry, Catherine and Barroso, Margarida and Intes, Xavier and Hasenauer, Jan and Radev, Stefan T},
+    journal={arXiv preprint arXiv:2505.14429},
+    year={2025}
+  }
+  </code>
+  </pre></details>
 
 - **An amortized approach to non-linear mixed-effects modeling based on neural posterior estimation** (2024)<br />_TLDR: Neural posterior estimation for hierarchical models, where the NPE is used in a first stage on a local level and then repeatedly used for global inference leveraging amortization._<br />by Jonas Arruda, Yannik Schälte, Clemens Peiter, Olga Teplytska, Ulrich Jaehde, Jan Hasenauer<br />┃🏷️ parameter estimation┃ ┃🏷️ hierarchical models┃<br />[[Paper]](https://openreview.net/forum?id=uCdcXRuHnC) [[Code]](https://github.com/arrjon/Amortized-NLME-Models/tree/ICML2024) 
   <details>
