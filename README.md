@@ -142,7 +142,7 @@ We highly recommend checking out these lists for more resources on modern simula
   </pre></details>
 ## Methodological Papers
 
-- **Compositional amortized inference for large-scale hierarchical Bayesian models** (2025)<br />_Reading this paper? Please consider contributing a TLDR summary._<br />by Jonas Arruda, Vikas Pandey, Catherine Sherry, Margarida Barroso, Xavier Intes, Jan Hasenauer, Stefan T Radev<br />┃🏷️ parameter estimation┃ ┃🏷️ hierarchical models┃ ┃🏷️ amortized inference┃<br />[[Paper]](https://arxiv.org/abs/2505.14429) 
+- **Compositional amortized inference for large-scale hierarchical Bayesian models** (2025)<br />_TLDR: Introduces a compositional amortized inference framework for large-scale hierarchical Bayesian models with over 250,000 groups_<br />by Jonas Arruda, Vikas Pandey, Catherine Sherry, Margarida Barroso, Xavier Intes, Jan Hasenauer, Stefan T Radev<br />┃🏷️ parameter estimation┃ ┃🏷️ hierarchical models┃ ┃🏷️ amortized inference┃<br />[[Paper]](https://arxiv.org/abs/2505.14429) 
   <details>
   <summary>Show BibTeX</summary>
   <pre><code>
@@ -828,7 +828,7 @@ We highly recommend checking out these lists for more resources on modern simula
   </pre></details>
 ## Uncategorized
 
-- **Diffusion Models in Simulation-Based Inference: A Tutorial Review** (2025)<br />by Jonas Arruda, Niels Bracher, Ullrich Köthe, Jan Hasenauer, Stefan T Radev<br />[[Paper]](https://doi.org/10.48550/arXiv.2512.20685) 
+- **Diffusion Models in Simulation-Based Inference: A Tutorial Review** (2025)<br />_TLDR: This tutorial review explains how diffusion models can be used for simulation-based inference. It surveys and benchmards key design choices for training and sampling, discusses recent extensions such as guidance and score composition._<br />by Jonas Arruda, Niels Bracher, Ullrich Köthe, Jan Hasenauer, Stefan T Radev<br />[[Paper]](https://doi.org/10.48550/arXiv.2512.20685) 
   <details>
   <summary>Show BibTeX</summary>
   <pre><code>
